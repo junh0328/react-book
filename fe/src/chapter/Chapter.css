@@ -1,0 +1,43 @@
+* {
+	box-sizing: border-box;
+	margin: 0 auto;
+	padding: 0;
+}
+
+.wrap {
+	background-color: cornsilk;
+	width: 1080px;
+	height: auto;
+	padding: 20px;
+}
+
+.chapter__main {
+	margin-bottom: 10px;
+}
+
+.chapter__sub {
+	margin-bottom: 10px;
+}
+
+p {
+	margin-bottom: 10px;
+}
+
+b {
+	color: salmon;
+}
+
+ul {
+	margin-top: 10px;
+}
+.under_line {
+	text-decoration: underline;
+}
+
+.chapter__imgs {
+	display: block;
+	width: 500px;
+	height: auto;
+	margin-top: 10px;
+	margin-left: 0;
+}
