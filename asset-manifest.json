@@ -1,0 +1,25 @@
+{
+  "files": {
+    "main.css": "/junh0328/react-book/static/css/main.199a53d1.chunk.css",
+    "main.js": "/junh0328/react-book/static/js/main.c50733a7.chunk.js",
+    "main.js.map": "/junh0328/react-book/static/js/main.c50733a7.chunk.js.map",
+    "runtime-main.js": "/junh0328/react-book/static/js/runtime-main.69bc4d45.js",
+    "runtime-main.js.map": "/junh0328/react-book/static/js/runtime-main.69bc4d45.js.map",
+    "static/js/2.08a72f4d.chunk.js": "/junh0328/react-book/static/js/2.08a72f4d.chunk.js",
+    "static/js/2.08a72f4d.chunk.js.map": "/junh0328/react-book/static/js/2.08a72f4d.chunk.js.map",
+    "index.html": "/junh0328/react-book/index.html",
+    "precache-manifest.33292cc709d40c25efcc514160c125a6.js": "/junh0328/react-book/precache-manifest.33292cc709d40c25efcc514160c125a6.js",
+    "service-worker.js": "/junh0328/react-book/service-worker.js",
+    "static/css/main.199a53d1.chunk.css.map": "/junh0328/react-book/static/css/main.199a53d1.chunk.css.map",
+    "static/js/2.08a72f4d.chunk.js.LICENSE.txt": "/junh0328/react-book/static/js/2.08a72f4d.chunk.js.LICENSE.txt",
+    "static/media/JSX2.png": "/junh0328/react-book/static/media/JSX2.784e14da.png",
+    "static/media/JSX3.png": "/junh0328/react-book/static/media/JSX3.17233fb9.png",
+    "static/media/JSX4.png": "/junh0328/react-book/static/media/JSX4.afda2609.png"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.69bc4d45.js",
+    "static/js/2.08a72f4d.chunk.js",
+    "static/css/main.199a53d1.chunk.css",
+    "static/js/main.c50733a7.chunk.js"
+  ]
+}
