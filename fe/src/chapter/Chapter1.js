@@ -1,5 +1,7 @@
 import React from 'react';
 import './Chapter.css';
+import JSX1 from './imgs/JSX1.png';
+
 function Chapter1() {
 	return (
 		<div className="wrap">
@@ -30,6 +32,7 @@ function Chapter1() {
 				사항을 뷰에 반영합니다.
 			</p>
 			<p className="chpater__contents">
+				<img src={JSX1} alt="JSX1" className="chapter__imgs" />
 				예를 들어 JSON 파일의 객체중 likes 라는 객체의 값이 1 증가 시키고 싶을
 				때, likes 요소를 찾아 내부를 수정해야겠지요? 업데이트하는 항목에 따라
 				어떤 부분을 찾아서 변경할지 규칙을 정하는 작업은 간단하지만,

@@ -1,0 +1,27 @@
+1. 로컬 저장소 초기화하기
+git init
+>> Initialized empty Git repository ...
+or
+>> Reinitialized existing Git repository ...
+
+2. 깃허브에 저장소 만들기
+
+3. 깃허브 저장소에 업로드하기
+git remote add origin github.com/계정이름/앱이름
+
+>> git remote add origin github.com/junh0328/movie_app_2020.git
+
+4. 스테이징에 추가하기
+git add (파일이름) 
+or
+git add .  (전체)
+
+5. 커밋에 올리기 + 설명 남기기
+git commit -m " 깃 허브 올리기 및 설명 남기기"
+
+6. 푸쉬하기
+git push origin master
+
+* 번외
+원격 저장소 url 확인하기
+git remote -v
