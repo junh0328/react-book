@@ -1,6 +1,10 @@
 import React from "react";
 
 class test extends Component {
+  static defaultProps = {
+    name: "기본 이름",
+  };
+
   render() {
     const { name, children } = this.props;
 
@@ -11,9 +15,5 @@ class test extends Component {
     );
   }
 }
-
-test.defaultProps = {
-  name: "기본 이름",
-};
 
 export default test;

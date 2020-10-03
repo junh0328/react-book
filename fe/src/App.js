@@ -5,6 +5,7 @@ import Home from './Home';
 import Chapter1 from './chapter/Chapter1';
 import Chapter2 from './chapter/Chapter2';
 import Chapter3 from './chapter/Chapter3';
+import Say from './Say';
 
 function App() {
 	return (
@@ -22,12 +23,16 @@ function App() {
 				<li className="navbar__li">
 					<Link to="/Chapter3">챕터 3</Link>
 				</li>
+				<li className="navbar__li">
+					<Link to="/Say">Say</Link>
+				</li>
 			</ul>
 
 			<Route path="/" exact={true} component={Home} />
 			<Route path="/Chapter1" component={Chapter1} />
 			<Route path="/Chapter2" component={Chapter2} />
 			<Route path="/Chapter3" component={Chapter3} />
+			<Route path="/Say" component={Say} />
 		</div>
 	);
 }

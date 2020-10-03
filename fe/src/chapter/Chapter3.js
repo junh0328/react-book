@@ -6,6 +6,10 @@ import COMPO3 from './imgs/COMPO3.png';
 import COMPO4 from './imgs/COMPO4.png';
 import COMPO5 from './imgs/COMPO5.png';
 import COMPO6 from './imgs/COMPO6.png';
+import COMPO7 from './imgs/COMPO7.png';
+import COMPO8 from './imgs/COMPO8.png';
+import COMPO9 from './imgs/COMPO9.png';
+import COMPO10 from './imgs/COMPO10.png';
 
 function Chapter3() {
 	return (
@@ -130,6 +134,66 @@ function Chapter3() {
 				조회하면 됩니다. 그리고 defaultProps와 propTypes는 똑같은 방식으로
 				설정할 수 있습니다.
 				<img src={COMPO6} alt="compo6" className="chapter__imgs"></img>
+				또한 static 정적 변수를 사용하여 class 내부에서 defaultProps를 저장할
+				수도 있습니다.
+				<img src={COMPO7} alt="compo7" className="chapter__imgs" />
+			</p>
+			<h2 className="chapter__sub">3.4 state</h2>
+			<p className="chapter__contents">
+				리액트에서 state는 컴포넌트 내부에서 바뀔 수 있는 값을 의미합니다.
+				props는 컴포넌트가 사용되는 과정에서 부모 컴포넌트가 설정하는 값이며,
+				컴포넌트 자신은 해당 props를 읽기 전용으로만 사용할 수 있습니다. props를
+				바꾸려면 무조건 부모 컴포넌트에서 바꾸어 주어야 합니다.{' '}
+				<b>리액트에는 두 가지 종류의 state가 있습니다.</b> 하나는 클래스형
+				컴포넌트가 지니고 있는 state 이고, 다른 하나는 함수형 컴포넌트에서{' '}
+				<b>useState라는 훅 함수</b>를 통해 사용하는 state입니다.
+			</p>
+			<h3 className="chapter__sub">3.4.1 클래스형 컴포넌트의 state</h3>
+			<p className="chapter__contents">
+				클래스형 컴포넌트에서 state를 설정할 때는 다음과 같이 constructor
+				메소드를 작성하여 설정합니다. 이는 컴포넌트의 생성자 메서드입니다.
+				클래스형 컴포넌트에서 constructor를 작성할 때는 반드시 super(props)를
+				호출해 주어야 합니다. 이 함수가 호출되면 현재 클래스형 컴포넌트가
+				상속받고 있는 리액트의 Component 클래스가 지닌 생성자 함수를 호출해
+				줍니다. 그 다음에는 this.state 값에 초깃값을 설정해 주었습니다.
+				컴포넌트의 state는 객체 형식이어야합니다.
+				<img src={COMPO8} alt="compo8" className="chapter__imgs"></img>
+			</p>
+			<h3 className="chapter__sub">3.4.1.2 state를 constructor에서 꺼내기</h3>
+			<p className="chapter__contents">
+				앞에서 state의 초깃값을 지정하기 위해 constructor 메소드를 선언해
+				주었는데요, 또 다른 방식으로도 state의 초깃값을 지정해 줄 수 있습니다.
+				<img src={COMPO9} alt="compo9" className="chapter__imgs"></img>
+			</p>
+			<h3 className="chapter__sub">
+				3.4.2 함수형 컴포넌트에서 useState 사용하기
+			</h3>
+			<p className="chapter__contents">
+				리액트 16.8 이전 버전에서는 함수형 컴포넌트에서 state를 사용할 수
+				없었습니다. 하지만, 16.8 이후부터는 useState라는 함수형 컴포넌트에서도
+				state를 사용할 수 있게 되었습니다. 사용법은 조금 다릅니다. 이 과정에서
+				Hooks 라는 것을 사용하게 됩니다.
+			</p>
+			<h3 className="chapter__sub">3.4.2.1 useState 사용하기</h3>
+			<p className="chapter__contents">
+				배열 비 구조화 할당 문법을 통해 useState의 기본적인 구조를 알 수
+				있습니다. useState 함수의 인자에는 상태의 초깃값을 넣어 줍니다. 클래스형
+				컴포넌트에서의 state 초깃값은 객체 형태를 넣어 주어야 한다고 배웠습니다.
+				useState에서는 반드시 객체가 아니어도 상관없습니다. 값의 형태는
+				자유입니다. 함수를 호출하면 배열이 반환되는데요. 배열의 첫 번째 원소는
+				현재 상태이고, 두 번째 원소는 상태를 바꾸어 주는 함수입니다. 이 함수를
+				세터함수라고 부릅니다. 그리고 배열 비구조화 할당을 통해 이름을 자유롭게
+				정해줄 수 있습니다.현재 message 와 setMessage라고 이름을 설정해
+				주었는데요. text와 setText라고 이름을 자유롭게 바꾸어 주어도
+				상관없습니다.
+				<img src={COMPO10} alt="compo10" className="chapter__imgs" />
+				props와 state는 둘 다 컴포넌트에서 사용하거나 렌더링할 데이터를 담고
+				있으므로 비슷해 보일 수 있지만, 그 역할은 매우 다릅니다. props는 부모
+				컴포넌트가 설정하고, state는 컴포넌트 자체적으로 지닌 값으로 컴포넌트
+				내부에서 값을 업데이트할 수 있습니다. props를 사용한다고 해서 값이
+				부조건 고정적이지는 않습니다. 부모 컴포넌트의 state를 자식 컴포넌트의
+				props로 전달하고, 자식 컴포넌트에서 특정 이벤트가 발생할 때 부모
+				컴포넌트의 메서드를 호출하면 props도 유동적으로 사용할 수 있습니다.
 			</p>
 		</div>
 	);
