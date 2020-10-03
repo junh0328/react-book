@@ -1,9 +1,19 @@
 import React from "react";
 
-function App() {
-  const name = "리액트";
+class test extends Component {
+  render() {
+    const { name, children } = this.props;
 
-  return <div>{name === "리액트" && <h1>리액트 입니다.</h1>}</div>;
+    return (
+      <div>
+        안녕하세요 제 이름은 {name} 입니다. children값은 {children} 입니다.
+      </div>
+    );
+  }
 }
 
-export default App;
+test.defaultProps = {
+  name: "기본 이름",
+};
+
+export default test;
