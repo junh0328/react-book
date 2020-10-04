@@ -1,12 +1,54 @@
-// 객체 다루기
-const object = { a: 1, b: 2, c: 3 };
-const nextObject = { ...object, b: 2 }; // 사본을 만들어서 b 값만 덮어 쓰기
+import React, { useState } from "react";
 
-// 배열 다루기
-const array = [
-  { id: 1, value: true },
-  { id: 2, value: false },
-  { id: 3, value: true },
-];
+const test = () => {
+  const [form, setForm] = useState({
+    username: "",
+    message: "",
+  });
+  const { username, message } = form;
+  const onChange = (e) => {
+    const nextForm = {
+      ...form, // 기존의 form 내용을 이 자리에 복사한 뒤
+      [e.target.name]: e.target.value, // 원하는 값을 덮어 씌우기
+    };
+    setForm(nextForm);
+  };
 
-let nextArray = array.concat({ id: 4 }); // 새 항목 추가
+  const onClick = () => {
+    alert(username + " : " + message);
+    setUsername("");
+    setMessage("");
+  };
+  const onKeyPress = (e) => {
+    if (e.key === "Enter") {
+      onClick();
+    }
+  };
+
+  return (
+    <div>
+      <h1>이벤트 연습</h1>
+
+      <input
+        type="text"
+        name="username"
+        placeholder="사용자 명을 입력하세요"
+        value={username}
+        onChange={onChange}
+      />
+
+      <input
+        type="text"
+        name="message"
+        placeholder="아무거나 입력해 보세요"
+        value={message}
+        onChange={onChange}
+        onKeyPress={onKeyPress}
+      />
+
+      <button onClick={onClick}>확인</button>
+    </div>
+  );
+};
+
+export default test;
