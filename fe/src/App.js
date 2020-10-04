@@ -7,6 +7,8 @@ import Chapter2 from './chapter/Chapter2';
 import Chapter3 from './chapter/Chapter3';
 import Chapter4 from './chapter/Chapter4';
 import Say from './Say';
+import Input from './Input';
+import Inputs from './Inputs';
 
 function App() {
 	return (
@@ -30,6 +32,12 @@ function App() {
 				<li className="navbar__li">
 					<Link to="/Say">Say</Link>
 				</li>
+				<li className="navbar__li">
+					<Link to="/Input">Input</Link>
+				</li>
+				<li className="navbar__li">
+					<Link to="/Inputs">Inputs</Link>
+				</li>
 			</ul>
 
 			<Route path="/" exact={true} component={Home} />
@@ -38,6 +46,8 @@ function App() {
 			<Route path="/Chapter3" component={Chapter3} />
 			<Route path="/Chapter4" component={Chapter4} />
 			<Route path="/Say" component={Say} />
+			<Route path="/Input" component={Input} />
+			<Route path="/Inputs" component={Inputs} />
 		</div>
 	);
 }

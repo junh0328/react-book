@@ -1,9 +1,9 @@
-import React, { useState } from "react";
+import React, { useState } from 'react';
 
 const test = () => {
   const [form, setForm] = useState({
-    username: "",
-    message: "",
+    username: '',
+    message: '',
   });
   const { username, message } = form;
   const onChange = (e) => {
@@ -15,12 +15,15 @@ const test = () => {
   };
 
   const onClick = () => {
-    alert(username + " : " + message);
-    setUsername("");
-    setMessage("");
+    alert(username + ' : ' + message);
+    setForm({
+      username: '',
+      message: '',
+    });
   };
+
   const onKeyPress = (e) => {
-    if (e.key === "Enter") {
+    if (e.key === 'Enter') {
       onClick();
     }
   };
