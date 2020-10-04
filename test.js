@@ -1,19 +1,12 @@
-import React from "react";
+// 객체 다루기
+const object = { a: 1, b: 2, c: 3 };
+const nextObject = { ...object, b: 2 }; // 사본을 만들어서 b 값만 덮어 쓰기
 
-class test extends Component {
-  static defaultProps = {
-    name: "기본 이름",
-  };
+// 배열 다루기
+const array = [
+  { id: 1, value: true },
+  { id: 2, value: false },
+  { id: 3, value: true },
+];
 
-  render() {
-    const { name, children } = this.props;
-
-    return (
-      <div>
-        안녕하세요 제 이름은 {name} 입니다. children값은 {children} 입니다.
-      </div>
-    );
-  }
-}
-
-export default test;
+let nextArray = array.concat({ id: 4 }); // 새 항목 추가

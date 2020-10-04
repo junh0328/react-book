@@ -10,6 +10,7 @@ import COMPO7 from './imgs/COMPO7.png';
 import COMPO8 from './imgs/COMPO8.png';
 import COMPO9 from './imgs/COMPO9.png';
 import COMPO10 from './imgs/COMPO10.png';
+import COMPO11 from './imgs/COMPO11.png';
 
 function Chapter3() {
 	return (
@@ -113,13 +114,13 @@ function Chapter3() {
 				없을 때 defaultProps에 설정한 '기본이름'을 대신 넣어 랜더링합니다.
 			</p>
 			<h3 className="chpater__sub">
-				3.3.4 비구조화 할당 문법을 통해 props 내부 값 추출하기
+				3.3.4 <b>비구조화 할당 문법</b>을 통해 props 내부 값 추출하기
 			</h3>
 			<p className="chapter__contents">
 				현재 MyComponent에서 props 값을 조회할 때마다 props.name,
 				props.children과 같이 [props.] 이라는 키워드를 앞에 붙여 주고 있습니다.
-				이러한 작업을 더 편하게 하기 위해 ES6의 비구조화 할당 문법을 사용하여
-				내부 값을 바로 추출하는 방법을 알아보겠습니다.
+				이러한 작업을 더 편하게 하기 위해 ES6의 <b>비구조화 할당 문법</b>을
+				사용하여 내부 값을 바로 추출하는 방법을 알아보겠습니다.
 				<img src={COMPO4} alt="compo4" className="chapter__imgs"></img>
 				부모 컴포넌트에서 넘겨받을 props를 비구조화 할당을 통해 담은 파라미터를
 				더 간단하게 사용할 수 있습니다.
@@ -194,6 +195,19 @@ function Chapter3() {
 				부조건 고정적이지는 않습니다. 부모 컴포넌트의 state를 자식 컴포넌트의
 				props로 전달하고, 자식 컴포넌트에서 특정 이벤트가 발생할 때 부모
 				컴포넌트의 메서드를 호출하면 props도 유동적으로 사용할 수 있습니다.
+			</p>
+			<h2 className="chpater__sub">3.5 state를 사용할 때 주의 사항</h2>
+			<p className="chapter__contents">
+				클래스형 컴포넌트든 함수형 컴포넌트든 state를 사용할 때는 주의해야 할
+				사항이 있습니다. state 값을 바꾸어야 할 때는 setState 혹은 useState를
+				통해 전달받은 세터 함수를 사용해야 합니다. 그렇다면 배열이나 객체를
+				업그레이드 해야 할 때는 어떻게 해야 할까요? 이런 상황에서는 배열이나
+				객체 사본을 만들고 그 사본에 값을 업데이트한 후, 그 사본의 상태를
+				setState 혹은 세터 함수를 통해 업그레이드합니다.
+				<img src={COMPO11} alt="compo11" className="chapter__imgs" />
+				객체에 대한 사본을 만들 때는 <b>spread 연산자</b>라 불리는 (...) 을
+				사용하여 처리하고, 배열에 대한 사본을 만들 때는 배열의 내장 함수들을
+				활용합니다. 이에 대한 자세한 내용은 이후 차근차근 배워 보겠습니다.
 			</p>
 		</div>
 	);
