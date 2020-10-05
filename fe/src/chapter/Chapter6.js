@@ -1,7 +1,13 @@
 import React from 'react';
+import map0 from './imgs/chapter6/map0.png';
 import map1 from './imgs/chapter6/map1.png';
 import map2 from './imgs/chapter6/map2.png';
 import map3 from './imgs/chapter6/map3.png';
+import map4 from './imgs/chapter6/map4.png';
+import map5 from './imgs/chapter6/map5.png';
+import map5_5 from './imgs/chapter6/map5_5.png';
+import map6 from './imgs/chapter6/map6.png';
+import map7 from './imgs/chapter6/map7.png';
 
 function Chapter6() {
 	return (
@@ -35,6 +41,7 @@ function Chapter6() {
 					<b>2. thisArg(선택 항목): callback 함수 내부에서 사용할 this</b>
 				</li>
 			</ul>
+			<img src={map0} alt="map0" className="chapter__imgs"></img>
 			<h3 className="chapter__sub">6.1.2 예제</h3>
 			<p className="chapter__contents">
 				ES6 문법을 사용한 예제입니다. result 값을 콘솔에 찍으면 1,4,9,16,25 가
@@ -76,6 +83,50 @@ function Chapter6() {
 					index를 키값으로 사용하면 배열이 변경될 때 효율적으로 리렌더링하지
 					못합니다.
 				</b>
+			</p>
+			<h2 className="chapter__sub">6.4 응용</h2>
+			<p className="chapter__contents">
+				지금까지 배운 개념을 응용하여 고정된 배열을 렌더링하는 것이 아닌, 동적인
+				배열을 렌더링하는 것을 구현해 보겠습니다. 그리고 index 값을 key로
+				사용하면 리렌더링이 비효율적이라고 했는데, 이러한 상황에 어떻게 고윳값을
+				만들 수 있는지 알아보겠습니다.
+			</p>
+			<h3 className="chapter__sub">6.4.1 초기 상태 설정하기</h3>
+			<p className="chapter__contents">
+				Iteratopm 컴포넌트에서 useState를 사용하여 상태를 설정하겠습니다. 세
+				가지 상태를 사용할 텐데 하나는 <b>데이터 배열</b>이고, 다른 하나는{' '}
+				<b>텍스트를 입력할 수 있는 input의 상태</b>입니다. 마지막 하나는{' '}
+				<b>
+					데이터 배열에서 새로운 항목을 추가할 때 사용할 고유한 id를 위한 상태
+				</b>
+				입니다.
+				<h3 className="chapter__sub">6.4.2 데이터 추가 기능 구현하기</h3>
+				<img src={map4} alt="map4" className="chapter__imgs"></img>
+				<img src={map5} alt="map5" className="chapter__imgs"></img>
+				배열에 새 항목을 추가할 때 배열의 push 함수를 사용하지 않고 concat을
+				사용했는데요, push 함수는 기존 배열 자체를 변경해 주는 반면, concat은
+				새로운 배열을 만들어 준다는 차이점이 있습니다.{' '}
+				<b>
+					리액트에서 상태를 업데이트할 때는 기존 상태를 그대로 두면서 새로운
+					값을 상태로 설정해야 합니다.
+				</b>{' '}
+				이를 <b>불변성 유지</b>라고 하는데요, 불변성 유지를 해 주어야 나중에
+				리액트 컴포넌트의 성능을 최적화할 수 있습니다. onClick 함수에서 새로운
+				항목을 추가할 때 객체의 id 값은 nextId를 사용하도록 하고, 클릭될 때 마다
+				값이 1씩 올라가도록 구현했습니다. 추가로 button이 클릭될 때 기존의 input
+				내용을 비우는 것도 구현해 주었습니다.
+			</p>
+			<h3 className="chapter__sub">6.4.2 데이터 제거 기능 구현하기</h3>
+			<p className="chpater__contents">
+				이번에는 각 항목을 더블 클릭했을 때 해당 항목이 화면에서 사라지는 기능을
+				구현해 보겠습니다. 이번에도 마찬가지로 불변성을 유지하면서 업데이트해
+				주어야 합니다. 불변성을 유지하면서 배열의 특정 항목을 지울 때는 배열의
+				내장 함수 filter를 사용합니다.
+				<img src={map5_5} alt="map5_5" className="chapter__imgs"></img>
+				이제 filter 함수를 사용하여 IterationSample 컴포넌트의 항목 제거 기능을
+				구현해 봅시다.
+				<img src={map6} alt="map6" className="chapter__imgs"></img>
+				<img src={map7} alt="map7" className="chapter__imgs"></img>
 			</p>
 		</div>
 	);

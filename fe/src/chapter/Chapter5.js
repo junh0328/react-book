@@ -8,7 +8,7 @@ import ref5 from './imgs/chapter5/ref5.png';
 function Chapter5() {
 	return (
 		<div className="wrap">
-			<h1 className="chpater__main">ref:DOM에 이름 달기</h1>
+			<h1 className="chapter__main">Chapter 5, ref:DOM에 이름 달기</h1>
 			<p className="chapter__contents">
 				일반 HTML에서 DOM 요소에 이름을 달 때는 id 선택자를 사용합니다. <br />
 				특정 DOM 요소에 어떤 작업을 해야 할 때 이렇게 요소에 id를 달면 CSS에서
