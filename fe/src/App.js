@@ -9,6 +9,7 @@ import Chapter4 from './chapter/Chapter4';
 import Chapter5 from './chapter/Chapter5';
 import Say from './Say';
 import ValidationSample from './ValidationSample';
+import ScrollBox from './ScrollBox';
 import Input from './Input';
 import Inputs from './Inputs';
 
@@ -46,6 +47,9 @@ function App() {
 				<li className="navbar__li">
 					<Link to="/ValidationSample">Validate</Link>
 				</li>
+				<li className="navbar__li">
+					<Link to="/ScrollBox">ScrollBox</Link>
+				</li>
 			</ul>
 
 			<Route path="/" exact={true} component={Home} />
@@ -56,6 +60,7 @@ function App() {
 			<Route path="/Chapter5" component={Chapter5} />
 			<Route path="/Say" component={Say} />
 			<Route path="/ValidationSample" component={ValidationSample} />
+			<Route path="/ScrollBox" component={ScrollBox} />
 			<Route path="/Input" component={Input} />
 			<Route path="/Inputs" component={Inputs} />
 		</div>
