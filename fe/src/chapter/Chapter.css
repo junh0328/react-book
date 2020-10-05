@@ -25,10 +25,18 @@ p {
 
 b {
 	color: salmon;
+	font-weight: bolder;
 }
 
 ul {
 	margin-top: 10px;
+}
+
+.inner_li {
+	font-size: 0.8em;
+	font-weight: bold;
+	margin-left: 3px;
+	margin-bottom: 3px;
 }
 .under_line {
 	text-decoration: underline;

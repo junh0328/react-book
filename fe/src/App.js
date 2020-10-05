@@ -7,11 +7,13 @@ import Chapter2 from './chapter/Chapter2';
 import Chapter3 from './chapter/Chapter3';
 import Chapter4 from './chapter/Chapter4';
 import Chapter5 from './chapter/Chapter5';
+import Chapter6 from './chapter/Chapter6';
 import Say from './Say';
 import ValidationSample from './ValidationSample';
 import ScrollBox from './ScrollBox';
 import Input from './Input';
 import Inputs from './Inputs';
+import IterationSample from './IterationSample';
 
 function App() {
 	return (
@@ -36,6 +38,9 @@ function App() {
 					<Link to="/Chapter5">챕터 5</Link>
 				</li>
 				<li className="navbar__li">
+					<Link to="/Chapter6">챕터 6</Link>
+				</li>
+				<li className="navbar__li">
 					<Link to="/Say">Say</Link>
 				</li>
 				<li className="navbar__li">
@@ -50,6 +55,9 @@ function App() {
 				<li className="navbar__li">
 					<Link to="/ScrollBox">ScrollBox</Link>
 				</li>
+				<li className="navbar__li">
+					<Link to="/IterationSample">Iteration</Link>
+				</li>
 			</ul>
 
 			<Route path="/" exact={true} component={Home} />
@@ -58,11 +66,13 @@ function App() {
 			<Route path="/Chapter3" component={Chapter3} />
 			<Route path="/Chapter4" component={Chapter4} />
 			<Route path="/Chapter5" component={Chapter5} />
+			<Route path="/Chapter6" component={Chapter6} />
 			<Route path="/Say" component={Say} />
 			<Route path="/ValidationSample" component={ValidationSample} />
 			<Route path="/ScrollBox" component={ScrollBox} />
 			<Route path="/Input" component={Input} />
 			<Route path="/Inputs" component={Inputs} />
+			<Route path="/IterationSample" component={IterationSample} />
 		</div>
 	);
 }
