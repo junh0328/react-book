@@ -3,8 +3,6 @@ import EVENT1 from './imgs/chapter4/EVENT1.png';
 import EVENT2 from './imgs/chapter4/EVENT2.png';
 import EVENT3 from './imgs/chapter4/EVENT3.png';
 import EVENT4 from './imgs/chapter4/EVENT4.png';
-import EVENT5 from './imgs/chapter4/EVENT5.png';
-import EVENT6 from './imgs/chapter4/EVENT6.png';
 import EVENT7 from './imgs/chapter4/EVENT7.png';
 import EVENT8 from './imgs/chapter4/EVENT8.png';
 
@@ -83,8 +81,6 @@ function Chapter4() {
 				4.3 함수형 컴포넌트로 이벤트 여러 개 다루기
 			</h2>
 			<p className="chapter__contents">
-				<img src={EVENT5} alt="event5" className="chapter__imgs" />
-				<img src={EVENT6} alt="event6" className="chapter__imgs" />
 				위 코드에서는 e.target.name 을 활용하지 않고 onChange 관련 함수 두 개를
 				따로 만들어 주었습니다. 인풋이 두 개밖에 없다면 이런 코드도 나쁘지
 				않습니다. 하지만 인풋의 개수가 많아질 것 같으면 e.target.name을 활용하는

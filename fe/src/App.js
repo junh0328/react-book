@@ -9,6 +9,8 @@ import Chapter4 from './chapter/Chapter4';
 import Chapter5 from './chapter/Chapter5';
 import Say from './Say';
 import ValidationSample from './ValidationSample';
+import Input from './Input';
+import Inputs from './Inputs';
 
 function App() {
 	return (
@@ -36,6 +38,12 @@ function App() {
 					<Link to="/Say">Say</Link>
 				</li>
 				<li className="navbar__li">
+					<Link to="/Input">Input</Link>
+				</li>
+				<li className="navbar__li">
+					<Link to="/Inputs">Inputs</Link>
+				</li>
+				<li className="navbar__li">
 					<Link to="/ValidationSample">Validate</Link>
 				</li>
 			</ul>
@@ -48,6 +56,8 @@ function App() {
 			<Route path="/Chapter5" component={Chapter5} />
 			<Route path="/Say" component={Say} />
 			<Route path="/ValidationSample" component={ValidationSample} />
+			<Route path="/Input" component={Input} />
+			<Route path="/Inputs" component={Inputs} />
 		</div>
 	);
 }
