@@ -1,25 +1,16 @@
-import React, { Component } from "react";
+import React, { useState } from "react";
 
-class Counter extends Component {
-  state = {
-    number: 0,
-  };
-
-  render() {
-    const { number } = this.state;
-    return (
-      <div>
-        <h1>Button</h1>
-        <button
-          onClick={() => {
-            this.setState({ number: number + 1 });
-          }}
-        >
-          +1
-        </button>
-      </div>
-    );
-  }
-}
+const Counter = () => {
+  const [value, setValue] = useState(0);
+  return (
+    <div>
+      <p>
+        현재 카운트 값은 <b>{value}</b>입니다.
+      </p>
+      <button onClick={() => setValue(value + 1)}>1 더하기</button>
+      <button onClick={() => setValue(value - 1)}>1 빼기</button>
+    </div>
+  );
+};
 
 export default Counter;

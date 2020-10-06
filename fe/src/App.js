@@ -9,12 +9,14 @@ import Chapter4 from './chapter/Chapter4';
 import Chapter5 from './chapter/Chapter5';
 import Chapter6 from './chapter/Chapter6';
 import Chapter7 from './chapter/Chapter7';
+import Chapter8 from './chapter/Chapter8';
 import Say from './Say';
 import ValidationSample from './ValidationSample';
 import ScrollBox from './ScrollBox';
 import Input from './Input';
 import Inputs from './Inputs';
 import IterationSample from './IterationSample';
+import HookHome from './Hooks/HookHome';
 
 function App() {
 	return (
@@ -45,6 +47,12 @@ function App() {
 					<Link to="/Chapter7">챕터 7</Link>
 				</li>
 				<li className="navbar__li">
+					<Link to="/Chapter8">챕터 8</Link>
+				</li>
+				<li className="navbar__li">
+					<Link to="/HookHome">Hooks</Link>
+				</li>
+				<li className="navbar__li">
 					<Link to="/Say">Say</Link>
 				</li>
 				<li className="navbar__li">
@@ -72,6 +80,8 @@ function App() {
 			<Route path="/Chapter5" component={Chapter5} />
 			<Route path="/Chapter6" component={Chapter6} />
 			<Route path="/Chapter7" component={Chapter7} />
+			<Route path="/Chapter8" component={Chapter8} />
+			<Route path="/HookHome" component={HookHome} />
 			<Route path="/Say" component={Say} />
 			<Route path="/ValidationSample" component={ValidationSample} />
 			<Route path="/ScrollBox" component={ScrollBox} />
