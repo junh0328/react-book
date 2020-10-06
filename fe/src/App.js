@@ -8,6 +8,7 @@ import Chapter3 from './chapter/Chapter3';
 import Chapter4 from './chapter/Chapter4';
 import Chapter5 from './chapter/Chapter5';
 import Chapter6 from './chapter/Chapter6';
+import Chapter7 from './chapter/Chapter7';
 import Say from './Say';
 import ValidationSample from './ValidationSample';
 import ScrollBox from './ScrollBox';
@@ -41,6 +42,9 @@ function App() {
 					<Link to="/Chapter6">챕터 6</Link>
 				</li>
 				<li className="navbar__li">
+					<Link to="/Chapter7">챕터 7</Link>
+				</li>
+				<li className="navbar__li">
 					<Link to="/Say">Say</Link>
 				</li>
 				<li className="navbar__li">
@@ -67,6 +71,7 @@ function App() {
 			<Route path="/Chapter4" component={Chapter4} />
 			<Route path="/Chapter5" component={Chapter5} />
 			<Route path="/Chapter6" component={Chapter6} />
+			<Route path="/Chapter7" component={Chapter7} />
 			<Route path="/Say" component={Say} />
 			<Route path="/ValidationSample" component={ValidationSample} />
 			<Route path="/ScrollBox" component={ScrollBox} />

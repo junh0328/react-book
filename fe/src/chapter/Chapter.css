@@ -4,6 +4,10 @@
 	padding: 0;
 }
 
+h2 {
+	margin-bottom: 3px;
+}
+
 .wrap {
 	background-color: cornsilk;
 	width: 1080px;
@@ -50,4 +54,19 @@ ul {
 	margin-top: 10px;
 	margin-left: 0;
 	margin-bottom: 10px;
+}
+
+.chapter__imgs_w100 {
+	width: 100%;
+	display: block;
+	height: auto;
+	margin-top: 10px;
+	margin-left: 0;
+	margin-bottom: 10px;
+}
+.big {
+	font-weight: bold;
+	font-size: 1.2rem;
+	margin-bottom: 3px;
+	line-break: normal;
 }
