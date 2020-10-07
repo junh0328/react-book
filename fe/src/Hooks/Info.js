@@ -1,31 +1,26 @@
-import React, { useEffect, useState } from 'react';
+import React, { useReducer } from 'react';
+
+function reducer(state, action) {
+	return {
+		...state,
+		[action.name]: action.value,
+	};
+}
 
 const Info = () => {
-	const [name, setName] = useState('');
-	const [nickname, setNickname] = useState('');
-
-	useEffect(() => {
-		// useEffect는 리액트 컴포넌트가 렌더링될 때마다 특정 작업을 수행하도록 설정할 수 있는 Hook입니다.
-		console.log('effect');
-		console.log(name);
-		return () => {
-			console.log('cleanup');
-			console.log(name);
-		};
-	}, [name]);
-
-	const onChangeName = (e) => {
-		setName(e.target.value);
-	};
-
-	const onChangeNickname = (e) => {
-		setNickname(e.target.value);
+	const [state, dispatch] = useReducer(reducer, {
+		name: '',
+		nickname: '',
+	});
+	const { name, nickname } = state;
+	const onChange = (e) => {
+		dispatch(e.target);
 	};
 
 	return (
 		<div>
-			<input value={name} onChange={onChangeName} />
-			<input value={nickname} onChange={onChangeNickname} />
+			<input value={name} onChange={onChange} />
+			<input value={nickname} onChange={onChange} />
 
 			<div>
 				<b>이름 :</b>

@@ -11,6 +11,7 @@ import Chapter6 from './chapter/Chapter6';
 import Chapter7 from './chapter/Chapter7';
 import Chapter8 from './chapter/Chapter8';
 import Counter from './Counter';
+import Counter_Reducer from './Counter_Reducer';
 import Say from './Say';
 import ValidationSample from './ValidationSample';
 import ScrollBox from './ScrollBox';
@@ -57,6 +58,9 @@ function App() {
 					<Link to="/Counter">Counter</Link>
 				</li>
 				<li className="navbar__li">
+					<Link to="/Counter_Reducer">Counter_Re</Link>
+				</li>
+				<li className="navbar__li">
 					<Link to="/Say">Say</Link>
 				</li>
 				<li className="navbar__li">
@@ -87,6 +91,7 @@ function App() {
 			<Route path="/Chapter8" component={Chapter8} />
 			<Route path="/HookHome" component={HookHome} />
 			<Route path="/Counter" component={Counter} />
+			<Route path="/Counter_Reducer" component={Counter_Reducer} />
 			<Route path="/Say" component={Say} />
 			<Route path="/ValidationSample" component={ValidationSample} />
 			<Route path="/ScrollBox" component={ScrollBox} />
