@@ -6,7 +6,7 @@ import hook3 from './imgs/chapter8/hook3.png';
 const Chapter8 = () => {
 	return (
 		<div className="wrap">
-			<h1 className="chapter__main">Hooks</h1>
+			<h1 className="chapter__main">Chapter8, Hooks</h1>
 			<p className="chapter__contents">
 				Hooks는 리액트 v16.8에 새로 도입된 기능으로 함수형 컴포넌트에서도 상태
 				관리를 할 수 있는 useState, 렌더링 직후 작업을 설정하는 useEffect 등의

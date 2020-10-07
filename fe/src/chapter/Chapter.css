@@ -70,3 +70,7 @@ ul {
 	margin-bottom: 3px;
 	line-break: normal;
 }
+
+.chapter__ul {
+	font-weight: bold;
+}

@@ -34,10 +34,12 @@ function Chapter2() {
 			<p className="chpater__contents">
 				리액트를 불러오는 코드 하단에는 다음과 같이 SVG 파일과 CSS 파일을 import
 				하는 코드가 있습니다.
-				<ul>
-					<li>import logo from './logo.svg';</li>
-					<li>import './App.css';</li>
-				</ul>
+			</p>
+			<ul className="chapter__ul">
+				<li className="chapter__li">import logo from './logo.svg';</li>
+				<li className="chapter__li">import './App.css';</li>
+			</ul>
+			<p className="chapter__contents">
 				웹팩을 사용하면 SVG 파일과 CSS 파일도 불러와서 사용할 수 있습니다.
 				이렇게 파일들을 불러오는 것은 웹팩의 <b>로더</b> 라는 기능이 담당합니다.
 				로더는 여러 가지 종류가 있습니다. babel-loader는 자바스크립트 파일들을
@@ -72,38 +74,33 @@ function Chapter2() {
 				뿐만 아니라, 앞으로 만들 컴포넌트도 JSX 안에서 작성할 수 있습니다.
 			</p>
 			<p className="chapter__contents">
-				<p>
-					<b> ReactDOM.render는 무엇인가요?</b>
-				</p>
-				이 코드는 컴포넌트를 페이지에 렌더링하는 역할을 하며, react-dom 모듈을
-				불러와 사용할 수 있습니다. 이 함수의 첫 번째 파라미터에는 페이지에
-				렌더링할 내용을 JSX로 작성하고, 두 번째 파라미터에는 해당 JSX를 렌더링할
-				document 내부 요소를 설정합니다. 여기서는 id가 root인 요소 안에 렌더링을
-				하도록 설정했는데요, 이 요소는 public/index.html 파일을 열어 보면
-				있답니다.
+				<b> ReactDOM.render는 무엇인가요?</b>
+				<br />이 코드는 컴포넌트를 페이지에 렌더링하는 역할을 하며, react-dom
+				모듈을 불러와 사용할 수 있습니다. 이 함수의 첫 번째 파라미터에는
+				페이지에 렌더링할 내용을 JSX로 작성하고, 두 번째 파라미터에는 해당 JSX를
+				렌더링할 document 내부 요소를 설정합니다. 여기서는 id가 root인 요소 안에
+				렌더링을 하도록 설정했는데요, 이 요소는 public/index.html 파일을 열어
+				보면 있답니다.
 			</p>
 			<p className="chapter__contents">
 				<b> React.StrictMode는 무엇인가요?</b>
-				<p>
-					React.StrictMode는 리액트 프로젝트에서 리액트의 레거시 기능을 사용하지
-					못하게 하는 기능입니다. 이를 사용하면 문자열 ref, componentWillMount
-					등 나중에는 완전히 사라지게 될 옛날 기능을 사용했을 때 경고를
-					출력합니다. 이 책을 작성할 시점에는 해당 옵션이 기본적으로 적용되어
-					있지 않았습니다.
-				</p>
+				<br />
+				React.StrictMode는 리액트 프로젝트에서 리액트의 레거시 기능을 사용하지
+				못하게 하는 기능입니다. 이를 사용하면 문자열 ref, componentWillMount 등
+				나중에는 완전히 사라지게 될 옛날 기능을 사용했을 때 경고를 출력합니다.
+				이 책을 작성할 시점에는 해당 옵션이 기본적으로 적용되어 있지 않았습니다.
 			</p>
 			<p className="chapter__contents">
 				<b>
 					리액트 컴포넌트에서 요소 여러 개를 왜 하나의 요소로 꼭 감싸 주어야
 					할까요?
 				</b>
-				<p>
-					React 에서 사용하는 Virtual DOM에서 컴포넌트 변화를 감지해낼 때
-					효율적으로 비교할 수 있도록 규칙을 세웠기 때문입니다. (컴포넌트 내부는
-					반드시 하나의 DOM 트리 구조로 이루어져야 한다.) 여기서 꼭 div 요소를
-					사용하고 싶지 않을 수도 있습니다. 그런 경우에는 리액트 <b>v16</b>부터
-					도입된 Fragment라는 기능을 사용하면 됩니다.
-				</p>
+				<br />
+				React 에서 사용하는 Virtual DOM에서 컴포넌트 변화를 감지해낼 때
+				효율적으로 비교할 수 있도록 규칙을 세웠기 때문입니다. (컴포넌트 내부는
+				반드시 하나의 DOM 트리 구조로 이루어져야 한다.) 여기서 꼭 div 요소를
+				사용하고 싶지 않을 수도 있습니다. 그런 경우에는 리액트 <b>v16</b>부터
+				도입된 Fragment라는 기능을 사용하면 됩니다.
 			</p>
 			<h3 className="chapter__sub">2.4.3 if문 대신 조건부 연산자</h3>
 			<p className="chapter__contents">

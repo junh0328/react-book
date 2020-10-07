@@ -83,13 +83,13 @@ function Chapter1() {
 				마크업을 만들고, 이를 우리가 정하는 실제 페이지의 DOM 요소 안에
 				주입합니다.
 			</p>
-			<p>
+			<p className="chpater__contents">
 				컴포넌트를 실제 페이지에 렌더링할 때는 분리된 두 가지 절차를 따릅니다.
-				<ul>
-					<li>문자열 형태의 HTML 코드를 생성합니다.</li>
-					<li>특정 DOM에 해당 내용을 주입하면 이벤트가 적용됩니다.</li>
-				</ul>
 			</p>
+			<ul className="chapter__ul">
+				<li>문자열 형태의 HTML 코드를 생성합니다.</li>
+				<li>특정 DOM에 해당 내용을 주입하면 이벤트가 적용됩니다.</li>
+			</ul>
 			<h2 className="chapter__sub">1.1.1.2 조화 과정</h2>
 			<p className="chpater__contents">
 				리액트에서 뷰를 업데이트할 때는 "업데이트 과정을 거친다"라고 하기 보다는
@@ -140,11 +140,13 @@ function Chapter1() {
 				자바스크립트 객체를 구성하여 사용합니다. 마치 실제 DOM의 가벼운 사본과
 				비슷합니다. 리액트에서 데이터가 변하여 웹 브라우저에 실제 DOM을
 				업데이트할 때는 다음 세 가지 절차를 밟습니다.
-				<ul>
-					<li>전체 UI를 Virtual DOM에 리렌더링</li>
-					<li>이전 내용과 현재 내용을 비교</li>
-					<li>바뀐 부분만 실제 DOM에 적용</li>
-				</ul>
+			</p>
+			<ul className="chapter__ul">
+				<li>전체 UI를 Virtual DOM에 리렌더링</li>
+				<li>이전 내용과 현재 내용을 비교</li>
+				<li>바뀐 부분만 실제 DOM에 적용</li>
+			</ul>
+			<p className="chpater__contents">
 				리액트와 Virtual DOM이 언제나 제공할 수 있는 것은 바로 업데이트 처리
 				간결성입니다. UI를 업데이트하는 과정에서 생기는 복잡함을 모두 해소하고,
 				더욱 쉽게 업데이트에 접근할 수 있습니다.

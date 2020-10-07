@@ -1,19 +1,6 @@
-import React, { Component } from "react";
-
-class RefSample extends Component {
-  input = React.createRef();
-
-  handleFocus = () => {
-    this.input.current.focus();
-  };
-
-  render() {
-    return (
-      <div>
-        <input ref={this.input} />
-      </div>
-    );
-  }
+componentDidCatch(error, info){
+  this.setState({
+    error: true
+  });
+  console.log({ error, info})
 }
-
-export default RefSample;
