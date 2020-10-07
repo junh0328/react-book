@@ -169,13 +169,13 @@ function Chapter7() {
 				getSnapshotBeforeUpdate에서 반환한 값이 있다면 여기서 snapshot 값을
 				전달받을 수 있습니다.{' '}
 			</p>
-			<h3 className="chapter__sub"> componenetWillUnMount 메서드</h3>
+			<h3 className="chapter__sub">7.2.8. componenetWillUnMount 메서드</h3>
 			<p className="chpater__contents">
 				이것은 컴포넌트를 DOM에서 제거할 때 실행합니다. componenetDidMount에서
 				등록한 이벤트, 타이머, 직접 생성한 DOM이 있다면 여기서 제거 작업을 해야
 				합니다.
 			</p>
-			<h3 className="chapter__sub">componentDidCatch 메서드</h3>
+			<h3 className="chapter__sub">7.2.9. componentDidCatch 메서드</h3>
 			<p className="chpater__contents">
 				componentDidCatch 메서드는 리애그 v16에서 새롭게 도입되었으며, 컴포넌트
 				렌더링 도중에 에러가 발생했을 때 애플리케이션이 먹통이 되지 않고 오류
