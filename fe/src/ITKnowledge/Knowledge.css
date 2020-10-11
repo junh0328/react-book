@@ -3,3 +3,8 @@
 	border-radius: 10px;
 	padding: 20px;
 }
+
+.it__wrap b {
+	color: black;
+	font-weight: bold;
+}
