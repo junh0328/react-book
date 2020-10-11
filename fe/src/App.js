@@ -10,15 +10,16 @@ import Chapter5 from './chapter/Chapter5';
 import Chapter6 from './chapter/Chapter6';
 import Chapter7 from './chapter/Chapter7';
 import Chapter8 from './chapter/Chapter8';
-import Counter from './Counter';
-import Counter_Reducer from './Counter_Reducer';
-import Say from './Say';
-import ValidationSample from './ValidationSample';
-import ScrollBox from './ScrollBox';
-import Input from './Input';
-import Inputs from './Inputs';
-import IterationSample from './IterationSample';
+import Counter from './function/Counter';
+import Counter_Reducer from './function/Counter_Reducer';
+import Say from './function/Say';
+import ValidationSample from './function/ValidationSample';
+import ScrollBox from './function/ScrollBox';
+import Input from './function/Input';
+import Inputs from './function/Inputs';
+import IterationSample from './function/IterationSample';
 import HookHome from './Hooks/HookHome';
+import Knowledge from './ITKnowledge/Knowledge';
 
 function App() {
 	return (
@@ -26,6 +27,9 @@ function App() {
 			<ul className="navbar__ul">
 				<li className="navbar__li">
 					<Link to="/">홈</Link>
+				</li>
+				<li className="navbar__li">
+					<Link to="/IT">IT</Link>
 				</li>
 				<li className="navbar__li">
 					<Link to="/Chapter1">챕터 1</Link>
@@ -81,6 +85,7 @@ function App() {
 			</ul>
 
 			<Route path="/" exact={true} component={Home} />
+			<Route path="/IT" component={Knowledge} />
 			<Route path="/Chapter1" component={Chapter1} />
 			<Route path="/Chapter2" component={Chapter2} />
 			<Route path="/Chapter3" component={Chapter3} />
