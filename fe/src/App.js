@@ -10,6 +10,7 @@ import Chapter5 from './chapter/Chapter5';
 import Chapter6 from './chapter/Chapter6';
 import Chapter7 from './chapter/Chapter7';
 import Chapter8 from './chapter/Chapter8';
+import Chapter9 from './chapter/Chapter9';
 import Counter from './function/Counter';
 import Counter_Reducer from './function/Counter_Reducer';
 import Say from './function/Say';
@@ -58,6 +59,9 @@ function App() {
 					<Link to="/Chapter8">챕터 8</Link>
 				</li>
 				<li className="navbar__li">
+					<Link to="/Chapter9">챕터 9</Link>
+				</li>
+				<li className="navbar__li">
 					<Link to="/HookHome">Hooks</Link>
 				</li>
 				<li className="navbar__li">
@@ -102,6 +106,7 @@ function App() {
 			<Route path="/Chapter6" component={Chapter6} />
 			<Route path="/Chapter7" component={Chapter7} />
 			<Route path="/Chapter8" component={Chapter8} />
+			<Route path="/Chapter9" component={Chapter9} />
 			<Route path="/HookHome" component={HookHome} />
 			<Route path="/Counter" component={Counter} />
 			<Route path="/Counter_Reducer" component={Counter_Reducer} />

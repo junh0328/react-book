@@ -71,6 +71,6 @@ ul {
 	line-break: normal;
 }
 
-.chapter__ul {
-	font-weight: bold;
+.chapter__li {
+	margin-top: 5px;
 }
