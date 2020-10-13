@@ -19,6 +19,8 @@ import Input from './function/Input';
 import Inputs from './function/Inputs';
 import IterationSample from './function/IterationSample';
 import HookHome from './Hooks/HookHome';
+import Average from './function/Average';
+import Average_useMemo from './function/Average_useMemo';
 import Knowledge from './ITKnowledge/Knowledge';
 
 function App() {
@@ -82,6 +84,12 @@ function App() {
 				<li className="navbar__li">
 					<Link to="/IterationSample">Iteration</Link>
 				</li>
+				<li className="navbar__li">
+					<Link to="/Average">Average</Link>
+				</li>
+				<li className="navbar__li">
+					<Link to="/Average_useMemo">useMemo</Link>
+				</li>
 			</ul>
 
 			<Route path="/" exact={true} component={Home} />
@@ -103,6 +111,8 @@ function App() {
 			<Route path="/Input" component={Input} />
 			<Route path="/Inputs" component={Inputs} />
 			<Route path="/IterationSample" component={IterationSample} />
+			<Route path="/Average" component={Average} />
+			<Route path="/Average_useMemo" component={Average_useMemo} />
 		</div>
 	);
 }

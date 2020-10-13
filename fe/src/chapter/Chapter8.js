@@ -4,6 +4,13 @@ import hook2 from './imgs/chapter8/hook2.png';
 import hook3 from './imgs/chapter8/hook3.png';
 import hook4 from './imgs/chapter8/hook4.png';
 import hook5 from './imgs/chapter8/hook5.png';
+import hook6 from './imgs/chapter8/hook6.png';
+import hook7 from './imgs/chapter8/hook7.png';
+import hook8 from './imgs/chapter8/hook8.png';
+import hook9 from './imgs/chapter8/hook9.png';
+import hook10 from './imgs/chapter8/hook10.png';
+import hook11 from './imgs/chapter8/hook11.png';
+
 
 const Chapter8 = () => {
 	return (
@@ -101,6 +108,29 @@ const Chapter8 = () => {
 				이벤트 객체가 지니고 있는 e.target 값 자체를 액션 값으로 사용했습니다.
 				이런 식으로 인풋을 관리하면 아무리 인풋의 개수가 많아져도 코드를 짧고
 				깔끔하게 유지할 수 있습니다.
+			</p>
+			<h2 className="chapter__sub">useMemo</h2>
+			<p className="chapter__contents">
+				useMemo를 사용하면 함수형 컴포넌트 내부에서 발생하는 연산을 최적화할 수 있습니다. 먼저 리스트에 숫자를 추가하면 추가된 숫자들의 평균을 보여주는 함수형 컴포넌트를 작성해 봅시다.
+				<img src={hook6} alt="hook6" className="chapter__imgs"/>
+				<img src={hook7} alt="hook7" className="chapter__imgs"/>
+				하지만 이렇게 되면 숫자를 등록할 때뿐만 아니라, 인풋 내용이 수정될 때도 우리가 만든 getAverage 함수가 호출되는 것을 확인할 수 있습니다. 인풋 내용이 바뀔 때는 평균값을 다시 계산할 필요가 없는데, 이렇게 렌더링할 때마다 계산하는 것은 낭비입니다. 
+			</p>
+			<p> 따라서 useMemo를 사용하면 이러한 작업을 최적화할 수 있습니다. 렌더링하는 과정에서 특정 값이 바뀌었을 때만 연산을 실행하고, 원하는 값이 바뀌지 않았다면 이전에 연산했던 결과를 다시 사용하는 방식입니다.
+			<img src={hook8} alt="hook8" className="chapter__imgs"/>
+			<img src={hook9} alt="hook9" className="chapter__imgs"/>
+			useMemo 또한 useEffect의 형식과 같이 마운트시에만 렌더링 시키기 위해서 배열([ ])안에 해당 내용을 작성합니다. 따라서 현재는 list 배열의 내용이 바뀔 때만 getAverage 함수가 호출됩니다.
+			</p>
+			
+			<h2 className="chpater__sub">8.5 useRef</h2>
+			<p className="chpater__contents">
+				useRef Hook은 함수형 컴포넌트에서 ref를 쉽게 사용할 수 있도록 해 줍니다. Average 컴포넌트에서 등록 버튼을 눌렀을 때 포커스가 인풋 쪽으로 넘아가도록 코드를 작성해 보겠습니다.
+				<img src={hook10} alt="hook10" className="chapter__imgs"/>
+				<img src={hook11} alt="hook11" className="chapter__imgs"/>
+				useRef를 사용하여 ref를 설정하면 useRef를 통해 만든 객체 안의 current 값이 실제 엘리먼트를 가리킵니다.
+			</p>
+			<p className="chapter__contents">
+				리액트 메뉴얼에 따르면, 기존의 클래스형 컴포넌트는 앞으로도 계속해서 지원될 예정입니다. 그렇기 때문에 만약 유지 보수하고 있는 프로젝트에서 클래스형 컴포넌트를 사용하고 있다면, 이를 굳이 함수형 컴포넌트와 Hooks를 사용하는 형태로 전환할 필요는 없습니다. 다만, 메뉴얼에서는 새로 작성하는 컴포넌트의 경우 함수형 컴포넌트와 Hooks를 사용할 것을 권장하고 있습니다.
 			</p>
 		</div>
 	);
