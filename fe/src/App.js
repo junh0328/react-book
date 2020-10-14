@@ -22,7 +22,7 @@ import HookHome from './Hooks/HookHome';
 import Average from './function/Average';
 import Average_useMemo from './function/Average_useMemo';
 import Knowledge from './ITKnowledge/Knowledge';
-import {ImPencil2} from 'react-icons/im'
+import { ImPencil2 } from 'react-icons/im';
 
 function App() {
 	return (
@@ -30,93 +30,95 @@ function App() {
 			<div className="navbar">
 				<ul className="navbar__ul">
 					<li className="navbar__li">
-						<Link to="/"><ImPencil2/>홈</Link>
+						<Link to="/react-book/">
+							<ImPencil2 />홈
+						</Link>
 					</li>
 					<li className="navbar__li">
-						<Link to="/IT">IT 지식</Link>
+						<Link to="/react-book/IT">IT 지식</Link>
 					</li>
 					<li className="navbar__li">
-						<Link to="/Chapter1">리액트, 챕터 1</Link>
+						<Link to="/react-book/Chapter1">리액트, 챕터 1</Link>
 					</li>
 					<li className="navbar__li">
-						<Link to="/Chapter2">리액트, 챕터 2</Link>
+						<Link to="/react-book/Chapter2">리액트, 챕터 2</Link>
 					</li>
 					<li className="navbar__li">
-						<Link to="/Chapter3">리액트, 챕터 3</Link>
+						<Link to="/react-book/Chapter3">리액트, 챕터 3</Link>
 					</li>
 					<li className="navbar__li">
-						<Link to="/Chapter4">리액트, 챕터 4</Link>
+						<Link to="/react-book/Chapter4">리액트, 챕터 4</Link>
 					</li>
 					<li className="navbar__li">
-						<Link to="/Chapter5">리액트, 챕터 5</Link>
+						<Link to="/react-book/Chapter5">리액트, 챕터 5</Link>
 					</li>
 					<li className="navbar__li">
-						<Link to="/Chapter6">리액트, 챕터 6</Link>
+						<Link to="/react-book/Chapter6">리액트, 챕터 6</Link>
 					</li>
 					<li className="navbar__li">
-						<Link to="/Chapter7">리액트, 챕터 7</Link>
+						<Link to="/react-book/Chapter7">리액트, 챕터 7</Link>
 					</li>
 					<li className="navbar__li">
-						<Link to="/Chapter8">리액트, 챕터 8</Link>
+						<Link to="/react-book/Chapter8">리액트, 챕터 8</Link>
 					</li>
 					<li className="navbar__li">
-						<Link to="/Chapter9">리액트, 챕터 9</Link>
+						<Link to="/react-book/Chapter9">리액트, 챕터 9</Link>
 					</li>
 					<li className="navbar__li">
-						<Link to="/HookHome">Hooks</Link>
+						<Link to="/react-book/HookHome">Hooks</Link>
 					</li>
 					<li className="navbar__li">
-						<Link to="/Counter">Counter</Link>
+						<Link to="/react-book/Counter">Counter</Link>
 					</li>
 					<li className="navbar__li">
-						<Link to="/Counter_Reducer">Counter_Re</Link>
+						<Link to="/react-book/Counter_Reducer">Counter_Re</Link>
 					</li>
 					<li className="navbar__li">
-						<Link to="/Say">Say</Link>
+						<Link to="/react-book/Say">Say</Link>
 					</li>
 					<li className="navbar__li">
-						<Link to="/Input">Input</Link>
+						<Link to="/react-book/Input">Input</Link>
 					</li>
 					<li className="navbar__li">
-						<Link to="/Inputs">Inputs</Link>
+						<Link to="/react-book/Inputs">Inputs</Link>
 					</li>
 					<li className="navbar__li">
-						<Link to="/ValidationSample">Validate</Link>
+						<Link to="/react-book/ValidationSample">Validate</Link>
 					</li>
-				
+
 					<li className="navbar__li">
-						<Link to="/IterationSample">Iteration</Link>
-					</li>
-					<li className="navbar__li">
-						<Link to="/Average">Average</Link>
+						<Link to="/react-book/IterationSample">Iteration</Link>
 					</li>
 					<li className="navbar__li">
-						<Link to="/Average_useMemo">useMemo</Link>
+						<Link to="/react-book/Average">Average</Link>
+					</li>
+					<li className="navbar__li">
+						<Link to="/react-book/Average_useMemo">useMemo</Link>
 					</li>
 				</ul>
 			</div>
 
-			<Route path="/" exact={true} component={Home} />
-			<Route path="/IT" component={Knowledge} />
-			<Route path="/Chapter1" component={Chapter1} />
-			<Route path="/Chapter2" component={Chapter2} />
-			<Route path="/Chapter3" component={Chapter3} />
-			<Route path="/Chapter4" component={Chapter4} />
-			<Route path="/Chapter5" component={Chapter5} />
-			<Route path="/Chapter6" component={Chapter6} />
-			<Route path="/Chapter7" component={Chapter7} />
-			<Route path="/Chapter8" component={Chapter8} />
-			<Route path="/Chapter9" component={Chapter9} />
-			<Route path="/HookHome" component={HookHome} />
-			<Route path="/Counter" component={Counter} />
-			<Route path="/Counter_Reducer" component={Counter_Reducer} />
-			<Route path="/Say" component={Say} />
-			<Route path="/ValidationSample" component={ValidationSample} />
-			<Route path="/Input" component={Input} />
-			<Route path="/Inputs" component={Inputs} />
-			<Route path="/IterationSample" component={IterationSample} />
-			<Route path="/Average" component={Average} />
-			<Route path="/Average_useMemo" component={Average_useMemo} />
+			<Route path="/react-book/" exact={true} component={Home} />
+			<Route path="/react-book/IT" component={Knowledge} />
+			<Route path="/react-book/Chapter1" component={Chapter1} />
+			<Route path="/react-book/Chapter2" component={Chapter2} />
+			<Route path="/react-book/Chapter3" component={Chapter3} />
+			<Route path="/react-book/Chapter4" component={Chapter4} />
+			<Route path="/react-book/Chapter5" component={Chapter5} />
+			<Route path="/react-book/Chapter6" component={Chapter6} />
+			<Route path="/react-book/Chapter7" component={Chapter7} />
+			<Route path="/react-book/Chapter8" component={Chapter8} />
+			<Route path="/react-book/Chapter9" component={Chapter9} />
+			<Route path="/react-book/HookHome" component={HookHome} />
+			<Route path="/react-book/Counter" component={Counter} />
+			<Route path="/react-book/Counter_Reducer" component={Counter_Reducer} />
+			<Route path="/react-book/Say" component={Say} />
+			<Route path="/react-book/ValidationSample" component={ValidationSample} />
+			<Route path="/react-book/Input" component={Input} />
+			<Route path="/react-book/Inputs" component={Inputs} />
+			<Route path="/react-book/IterationSample" component={IterationSample} />
+			<Route path="/react-book/Average" component={Average} />
+			<Route path="/react-book/Average_useMemo" component={Average_useMemo} />
 		</div>
 	);
 }
