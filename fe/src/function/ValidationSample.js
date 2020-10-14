@@ -24,7 +24,7 @@ class ValidationSample extends Component {
 
 	render() {
 		return (
-			<div>
+			<div className="wrap">
 				<input
 					ref={(ref) => (this.input = ref)}
 					type="password"

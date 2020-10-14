@@ -8,7 +8,7 @@ const Say = () => {
 	const [color, setColor] = useState('black');
 
 	return (
-		<div>
+		<div className="wrap">
 			<button onClick={onClickEnter}>입장</button>
 			<button onClick={onClickLeave}>퇴장</button>
 			<h1 style={{ color }}>{message}</h1>

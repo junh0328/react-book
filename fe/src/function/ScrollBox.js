@@ -24,6 +24,7 @@ class ScrollBox extends Component {
 
 		return (
 			<div
+				className="wrap"
 				style={style}
 				ref={(ref) => {
 					this.box = ref;

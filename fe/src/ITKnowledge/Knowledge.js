@@ -3,7 +3,7 @@ import './Knowledge.css';
 
 const Knowledge = () => {
 	return (
-		<div className="it__wrap">
+		<div className="wrap">
 			<div className="section1">
 				<h2> - '저수준' 언어와 '고수준' 언어</h2>
 				<p>

@@ -8,13 +8,6 @@ h2 {
 	margin-bottom: 3px;
 }
 
-.wrap {
-	background-color: cornsilk;
-	width: 1080px;
-	height: auto;
-	padding: 20px;
-}
-
 .chapter__main {
 	margin-bottom: 10px;
 	text-align: center;
@@ -29,7 +22,6 @@ p {
 }
 
 b {
-	color: salmon;
 	font-weight: bolder;
 }
 

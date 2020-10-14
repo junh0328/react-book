@@ -15,7 +15,7 @@ const Counter_Reducer = () => {
 	const [state, dispatch] = useReducer(reducer, { value: 0 });
 
 	return (
-		<div>
+		<div className="wrap">
 			<h1> useReducer를 이용한 Count 활용입니다.</h1>
 			<p>
 				현재 카운터 값은 <b>{state.value}</b> 입니다.

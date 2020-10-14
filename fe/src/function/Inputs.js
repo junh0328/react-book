@@ -29,7 +29,7 @@ const Inputs = () => {
 	};
 
 	return (
-		<div>
+		<div className="wrap">
 			<h1>이벤트 연습</h1>
 
 			<input

@@ -12,7 +12,7 @@ const Counter = () => {
 	};
 
 	return (
-		<div>
+		<div className="wrap">
 			<p>
 				현재 카운트 값은 <b>{value}</b>입니다.
 			</p>

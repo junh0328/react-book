@@ -54,11 +54,11 @@ const IterationSample = () => {
 	));
 
 	return (
-		<>
+		<div className="wrap">
 			<input value={inputText} onChange={onChange} onKeyPress={onPress} />
 			<button onClick={onClick}>추가</button>
 			<ul>{nameList}</ul>
-		</>
+		</div>
 	);
 };
 
