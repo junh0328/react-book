@@ -22,6 +22,7 @@ import HookHome from './Hooks/HookHome';
 import Average from './function/Average';
 import Average_useMemo from './function/Average_useMemo';
 import Knowledge from './ITKnowledge/Knowledge';
+import {ImPencil2} from 'react-icons/im'
 
 function App() {
 	return (
@@ -29,37 +30,37 @@ function App() {
 			<div className="navbar">
 				<ul className="navbar__ul">
 					<li className="navbar__li">
-						<Link to="/">홈</Link>
+						<Link to="/"><ImPencil2/>홈</Link>
 					</li>
 					<li className="navbar__li">
 						<Link to="/IT">IT 지식</Link>
 					</li>
 					<li className="navbar__li">
-						<Link to="/Chapter1">챕터 1</Link>
+						<Link to="/Chapter1">리액트, 챕터 1</Link>
 					</li>
 					<li className="navbar__li">
-						<Link to="/Chapter2">챕터 2</Link>
+						<Link to="/Chapter2">리액트, 챕터 2</Link>
 					</li>
 					<li className="navbar__li">
-						<Link to="/Chapter3">챕터 3</Link>
+						<Link to="/Chapter3">리액트, 챕터 3</Link>
 					</li>
 					<li className="navbar__li">
-						<Link to="/Chapter4">챕터 4</Link>
+						<Link to="/Chapter4">리액트, 챕터 4</Link>
 					</li>
 					<li className="navbar__li">
-						<Link to="/Chapter5">챕터 5</Link>
+						<Link to="/Chapter5">리액트, 챕터 5</Link>
 					</li>
 					<li className="navbar__li">
-						<Link to="/Chapter6">챕터 6</Link>
+						<Link to="/Chapter6">리액트, 챕터 6</Link>
 					</li>
 					<li className="navbar__li">
-						<Link to="/Chapter7">챕터 7</Link>
+						<Link to="/Chapter7">리액트, 챕터 7</Link>
 					</li>
 					<li className="navbar__li">
-						<Link to="/Chapter8">챕터 8</Link>
+						<Link to="/Chapter8">리액트, 챕터 8</Link>
 					</li>
 					<li className="navbar__li">
-						<Link to="/Chapter9">챕터 9</Link>
+						<Link to="/Chapter9">리액트, 챕터 9</Link>
 					</li>
 					<li className="navbar__li">
 						<Link to="/HookHome">Hooks</Link>
