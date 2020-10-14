@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.css": "/react-book/static/css/main.bfcfd4db.chunk.css",
-    "main.js": "/react-book/static/js/main.fd4beee8.chunk.js",
-    "main.js.map": "/react-book/static/js/main.fd4beee8.chunk.js.map",
+    "main.css": "/react-book/static/css/main.3d528917.chunk.css",
+    "main.js": "/react-book/static/js/main.8fc770d1.chunk.js",
+    "main.js.map": "/react-book/static/js/main.8fc770d1.chunk.js.map",
     "runtime-main.js": "/react-book/static/js/runtime-main.562540ef.js",
     "runtime-main.js.map": "/react-book/static/js/runtime-main.562540ef.js.map",
     "static/js/2.4326acae.chunk.js": "/react-book/static/js/2.4326acae.chunk.js",
     "static/js/2.4326acae.chunk.js.map": "/react-book/static/js/2.4326acae.chunk.js.map",
     "index.html": "/react-book/index.html",
-    "precache-manifest.e7d3771dfce5dd9d061a560f7847969b.js": "/react-book/precache-manifest.e7d3771dfce5dd9d061a560f7847969b.js",
+    "precache-manifest.b90422ca09de0292a0425b7c0f418c3c.js": "/react-book/precache-manifest.b90422ca09de0292a0425b7c0f418c3c.js",
     "service-worker.js": "/react-book/service-worker.js",
-    "static/css/main.bfcfd4db.chunk.css.map": "/react-book/static/css/main.bfcfd4db.chunk.css.map",
+    "static/css/main.3d528917.chunk.css.map": "/react-book/static/css/main.3d528917.chunk.css.map",
     "static/js/2.4326acae.chunk.js.LICENSE.txt": "/react-book/static/js/2.4326acae.chunk.js.LICENSE.txt",
     "static/media/COMPO1.png": "/react-book/static/media/COMPO1.c56a3cd7.png",
     "static/media/COMPO10.png": "/react-book/static/media/COMPO10.5277348b.png",
@@ -69,7 +69,7 @@
   "entrypoints": [
     "static/js/runtime-main.562540ef.js",
     "static/js/2.4326acae.chunk.js",
-    "static/css/main.bfcfd4db.chunk.css",
-    "static/js/main.fd4beee8.chunk.js"
+    "static/css/main.3d528917.chunk.css",
+    "static/js/main.8fc770d1.chunk.js"
   ]
 }
