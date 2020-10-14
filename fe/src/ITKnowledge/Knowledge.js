@@ -4,7 +4,7 @@ import './Knowledge.css';
 const Knowledge = () => {
 	return (
 		<div className="wrap">
-			<div className="section1">
+			<div className="section">
 				<h2> - '저수준' 언어와 '고수준' 언어</h2>
 				<p>
 					개발자들은 기존의 것을 반전시키거나 새로운 것을 만들기 좋아합니다.
@@ -52,7 +52,7 @@ const Knowledge = () => {
 					사용되고 있습니다.
 				</p>
 			</div>
-			<div className="section2">
+			<div className="section">
 				<h2> - 우리가 자바 최신 버전을 설치해야 하는 이유</h2>
 				<p>
 					과거에는 운영체제의 종류가 훨씬 다양했습니다. 따라서 개발자가
@@ -79,7 +79,7 @@ const Knowledge = () => {
 					프로그램을 돌리는 것이기 때문입니다.
 				</p>
 			</div>
-			<div className="section3">
+			<div className="section">
 				<h2> - 도대체 우분투가 뭐죠?</h2>
 				<p>
 					이 질문을 설명하기 위해서는 리눅스를 알아야 합니다. 리눅스는
@@ -127,7 +127,7 @@ const Knowledge = () => {
 					없습니다. 하지만, 이러한 회사들이 운영체제의 품질을 보장해줍니다.
 				</p>
 			</div>
-			<div className="section4">
+			<div className="section">
 				<h2> - API(Application Programming Interface)가 뭐죠?</h2>
 				<p>
 					클라이언트 컴퓨터와 서버 컴퓨터가 있다고 생각해봅시다. 클라이언트는
@@ -195,7 +195,7 @@ const Knowledge = () => {
 					지도에 요청을 보낼 수 있습니다.
 				</p>
 			</div>
-			<div className="section5">
+			<div className="section">
 				<h2>애플리케이션은 뭔가요?</h2>
 				<p>
 					애플리케이션은 설치해서 사용하는 모든 프로그램입니다. 우리가 사용하던
@@ -267,7 +267,7 @@ const Knowledge = () => {
 					여러분의 기기에 저장합니다.
 				</p>
 			</div>
-			<div className="section6">
+			<div className="section">
 				<h2>프레임워크와 리아브러리는 뭐가 다른 거죠?</h2>
 				<p>
 					여러분이 도넛 가게를 창업한다고 생각해봅시다. 먼저 도넛이 있어야
