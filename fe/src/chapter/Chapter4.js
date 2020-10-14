@@ -20,30 +20,31 @@ function Chapter4() {
 				리액트의 이벤트 시스템은 웹 브라우저의 HTML 이벤트와 인터페이스가
 				동일하기 대문에 사용법이 꽤 비슷합니다. 사용법은 일반 HTML에서 이벤트를
 				작성하는 것과 비슷한데, 주의해야 할 몇 가지 사항이 있습니다.
-				<ul>
-					<b>이벤트를 사용할 때 주의 사항</b>
-					<li>1. 이벤트 이름은 카멜 표기법으로 작성합니다. (낙타 등 표기법)</li>
-					<li>
-						2. 이벤트에 실행할 자바스크립트 코드를 전달하는 것이 아니라. 함수
-						형태의 값을 전달합니다. HTML에서 이벤트를 설정할 때는 큰따옴표 안에
-						실행할 코드를 넣었지만, 리액트에서는 함수형태의 객체를 전달합니다.
-					</li>
-					<li>
-						3. DOM 요소에만 이벤트를 설정할 수 있습니다. 즉 div, button, input,
-						form, ...등의 DOM 요소에는 이벤트를 설정할 수 있지만, 우리가 직접
-						만든 컴포넌트에는 이벤트를 자체적으로 설정할 수 없습니다.
-						<b>
-							{' '}
-							예를 들어 다음과 같이 MyComponent에 onClick 값을 설정한다면
-							MyComponent를 클릭할 때 doSomething 함수를 실행하는 것이 아니라,
-							그냥 이름이 onclick인 props를 MyComponent에게 전달해 줄 뿐입니다.
-						</b>
-						따라서 컴포넌트에 자체적으로 이벤트를 설정할 수는 없습니다. 하지만
-						전달받은 props를 컴포넌트 내부의 DOM 이벤트로 설정할 수는 있습니다.
-					</li>
-				</ul>
-				<img src={EVENT1} alt="event1" className="chapter__imgs"></img>
 			</p>
+			<ul>
+				<b>이벤트를 사용할 때 주의 사항</b>
+				<li>1. 이벤트 이름은 카멜 표기법으로 작성합니다. (낙타 등 표기법)</li>
+				<li>
+					2. 이벤트에 실행할 자바스크립트 코드를 전달하는 것이 아니라. 함수
+					형태의 값을 전달합니다. HTML에서 이벤트를 설정할 때는 큰따옴표 안에
+					실행할 코드를 넣었지만, 리액트에서는 함수형태의 객체를 전달합니다.
+				</li>
+				<li>
+					3. DOM 요소에만 이벤트를 설정할 수 있습니다. 즉 div, button, input,
+					form, ...등의 DOM 요소에는 이벤트를 설정할 수 있지만, 우리가 직접 만든
+					컴포넌트에는 이벤트를 자체적으로 설정할 수 없습니다.
+					<b>
+						{' '}
+						예를 들어 다음과 같이 MyComponent에 onClick 값을 설정한다면
+						MyComponent를 클릭할 때 doSomething 함수를 실행하는 것이 아니라,
+						그냥 이름이 onclick인 props를 MyComponent에게 전달해 줄 뿐입니다.
+					</b>
+					따라서 컴포넌트에 자체적으로 이벤트를 설정할 수는 없습니다. 하지만
+					전달받은 props를 컴포넌트 내부의 DOM 이벤트로 설정할 수는 있습니다.
+				</li>
+			</ul>
+			<img src={EVENT1} alt="event1" className="chapter__imgs"></img>
+
 			<h2 className="chapter__sub">4.2 onChange 이벤트 핸들링하기</h2>
 			<p className="chapter__contents">
 				<img src={EVENT2} alt="event2" className="chapter__imgs" />

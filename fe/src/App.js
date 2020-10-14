@@ -26,75 +26,77 @@ import Knowledge from './ITKnowledge/Knowledge';
 
 function App() {
 	return (
-		<div className="navbar">
-			<ul className="navbar__ul">
-				<li className="navbar__li">
-					<Link to="/">홈</Link>
-				</li>
-				<li className="navbar__li">
-					<Link to="/IT">IT</Link>
-				</li>
-				<li className="navbar__li">
-					<Link to="/Chapter1">챕터 1</Link>
-				</li>
-				<li className="navbar__li">
-					<Link to="/Chapter2">챕터 2</Link>
-				</li>
-				<li className="navbar__li">
-					<Link to="/Chapter3">챕터 3</Link>
-				</li>
-				<li className="navbar__li">
-					<Link to="/Chapter4">챕터 4</Link>
-				</li>
-				<li className="navbar__li">
-					<Link to="/Chapter5">챕터 5</Link>
-				</li>
-				<li className="navbar__li">
-					<Link to="/Chapter6">챕터 6</Link>
-				</li>
-				<li className="navbar__li">
-					<Link to="/Chapter7">챕터 7</Link>
-				</li>
-				<li className="navbar__li">
-					<Link to="/Chapter8">챕터 8</Link>
-				</li>
-				<li className="navbar__li">
-					<Link to="/Chapter9">챕터 9</Link>
-				</li>
-				<li className="navbar__li">
-					<Link to="/HookHome">Hooks</Link>
-				</li>
-				<li className="navbar__li">
-					<Link to="/Counter">Counter</Link>
-				</li>
-				<li className="navbar__li">
-					<Link to="/Counter_Reducer">Counter_Re</Link>
-				</li>
-				<li className="navbar__li">
-					<Link to="/Say">Say</Link>
-				</li>
-				<li className="navbar__li">
-					<Link to="/Input">Input</Link>
-				</li>
-				<li className="navbar__li">
-					<Link to="/Inputs">Inputs</Link>
-				</li>
-				<li className="navbar__li">
-					<Link to="/ValidationSample">Validate</Link>
-				</li>
-				<li className="navbar__li">
-					<Link to="/ScrollBox">ScrollBox</Link>
-				</li>
-				<li className="navbar__li">
-					<Link to="/IterationSample">Iteration</Link>
-				</li>
-				<li className="navbar__li">
-					<Link to="/Average">Average</Link>
-				</li>
-				<li className="navbar__li">
-					<Link to="/Average_useMemo">useMemo</Link>
-				</li>
-			</ul>
+		<div className="container">
+			<div className="navbar">
+				<ul className="navbar__ul">
+					<li className="navbar__li">
+						<Link to="/">홈</Link>
+					</li>
+					<li className="navbar__li">
+						<Link to="/IT">IT</Link>
+					</li>
+					<li className="navbar__li">
+						<Link to="/Chapter1">챕터 1</Link>
+					</li>
+					<li className="navbar__li">
+						<Link to="/Chapter2">챕터 2</Link>
+					</li>
+					<li className="navbar__li">
+						<Link to="/Chapter3">챕터 3</Link>
+					</li>
+					<li className="navbar__li">
+						<Link to="/Chapter4">챕터 4</Link>
+					</li>
+					<li className="navbar__li">
+						<Link to="/Chapter5">챕터 5</Link>
+					</li>
+					<li className="navbar__li">
+						<Link to="/Chapter6">챕터 6</Link>
+					</li>
+					<li className="navbar__li">
+						<Link to="/Chapter7">챕터 7</Link>
+					</li>
+					<li className="navbar__li">
+						<Link to="/Chapter8">챕터 8</Link>
+					</li>
+					<li className="navbar__li">
+						<Link to="/Chapter9">챕터 9</Link>
+					</li>
+					<li className="navbar__li">
+						<Link to="/HookHome">Hooks</Link>
+					</li>
+					<li className="navbar__li">
+						<Link to="/Counter">Counter</Link>
+					</li>
+					<li className="navbar__li">
+						<Link to="/Counter_Reducer">Counter_Re</Link>
+					</li>
+					<li className="navbar__li">
+						<Link to="/Say">Say</Link>
+					</li>
+					<li className="navbar__li">
+						<Link to="/Input">Input</Link>
+					</li>
+					<li className="navbar__li">
+						<Link to="/Inputs">Inputs</Link>
+					</li>
+					<li className="navbar__li">
+						<Link to="/ValidationSample">Validate</Link>
+					</li>
+					<li className="navbar__li">
+						<Link to="/ScrollBox">ScrollBox</Link>
+					</li>
+					<li className="navbar__li">
+						<Link to="/IterationSample">Iteration</Link>
+					</li>
+					<li className="navbar__li">
+						<Link to="/Average">Average</Link>
+					</li>
+					<li className="navbar__li">
+						<Link to="/Average_useMemo">useMemo</Link>
+					</li>
+				</ul>
+			</div>
 
 			<Route path="/" exact={true} component={Home} />
 			<Route path="/IT" component={Knowledge} />

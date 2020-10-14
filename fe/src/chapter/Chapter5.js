@@ -16,9 +16,11 @@ function Chapter5() {
 				요소를 찾아서 작업할 수 있겠죠. 이렇게 HTML에서 id를 사용하여 DOM에
 				이름을 다는 것처럼 리액트 프로젝트 내부에서 DOM에 이름을 다는 방법이
 				있습니다. 바로 <b>ref (refrences)</b> 개념입니다.
-				<p className="chapter__contents">
-					<b>리액트 컴포넌트 안에서는 id를 사용하면 안 되나요?</b>
-				</p>
+			</p>
+			<p className="chapter__contents">
+				<b>리액트 컴포넌트 안에서는 id를 사용하면 안 되나요?</b>
+			</p>
+			<p>
 				리액트 컴포넌트 안에서도 id를 사용할 수는 있습니다. JSX 안에 DOM에 id를
 				달면 해당 DOM을 렌더링할 떄 그대로 전달합니다. 하지만 특수한 경우가
 				아니면 사용을 권장하지 않습니다.{' '}

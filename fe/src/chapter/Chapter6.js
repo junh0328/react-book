@@ -22,20 +22,19 @@ function Chapter6() {
 			</p>
 			<h3 className="chapter__sub">6.1.1 문법</h3>
 			<b>arr.map(callback, [thisArg])</b>
+
+			<p>이 함수의 파라미터는 다음과 같습니다.</p>
 			<ul>
-				<li>이 함수의 파라미터는 다음과 같습니다.</li>
-				<li>
-					{' '}
-					<b>
-						1. call back: 새로운 배열의 요소를 생성하는 함수로 파라미터는 다음
-						세 가지입니다.{' '}
-					</b>
-					<li className="inner_li">- currentValue: 현재 처리하고 있는 요소</li>
-					<li className="inner_li">
-						- index: 현재 처리하고 있는 요소의 index 값
-					</li>
-					<li className="inner_li">- array: 현재 처리하고 있는 원본 배열</li>
+				{' '}
+				<b>
+					1. call back: 새로운 배열의 요소를 생성하는 함수로 파라미터는 다음 세
+					가지입니다.{' '}
+				</b>
+				<li className="inner_li">- currentValue: 현재 처리하고 있는 요소</li>
+				<li className="inner_li">
+					- index: 현재 처리하고 있는 요소의 index 값
 				</li>
+				<li className="inner_li">- array: 현재 처리하고 있는 원본 배열</li>
 				<li>
 					{' '}
 					<b>2. thisArg(선택 항목): callback 함수 내부에서 사용할 this</b>
@@ -100,9 +99,11 @@ function Chapter6() {
 					데이터 배열에서 새로운 항목을 추가할 때 사용할 고유한 id를 위한 상태
 				</b>
 				입니다.
-				<h3 className="chapter__sub">6.4.2 데이터 추가 기능 구현하기</h3>
-				<img src={map4} alt="map4" className="chapter__imgs"></img>
-				<img src={map5} alt="map5" className="chapter__imgs"></img>
+			</p>
+			<h3 className="chapter__sub">6.4.2 데이터 추가 기능 구현하기</h3>
+			<img src={map4} alt="map4" className="chapter__imgs"></img>
+			<img src={map5} alt="map5" className="chapter__imgs"></img>
+			<p>
 				배열에 새 항목을 추가할 때 배열의 push 함수를 사용하지 않고 concat을
 				사용했는데요, push 함수는 기존 배열 자체를 변경해 주는 반면, concat은
 				새로운 배열을 만들어 준다는 차이점이 있습니다.{' '}
