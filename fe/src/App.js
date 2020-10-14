@@ -15,7 +15,6 @@ import Counter from './function/Counter';
 import Counter_Reducer from './function/Counter_Reducer';
 import Say from './function/Say';
 import ValidationSample from './function/ValidationSample';
-import ScrollBox from './function/ScrollBox';
 import Input from './function/Input';
 import Inputs from './function/Inputs';
 import IterationSample from './function/IterationSample';
@@ -33,7 +32,7 @@ function App() {
 						<Link to="/">홈</Link>
 					</li>
 					<li className="navbar__li">
-						<Link to="/IT">IT</Link>
+						<Link to="/IT">IT 지식</Link>
 					</li>
 					<li className="navbar__li">
 						<Link to="/Chapter1">챕터 1</Link>
@@ -83,9 +82,7 @@ function App() {
 					<li className="navbar__li">
 						<Link to="/ValidationSample">Validate</Link>
 					</li>
-					<li className="navbar__li">
-						<Link to="/ScrollBox">ScrollBox</Link>
-					</li>
+				
 					<li className="navbar__li">
 						<Link to="/IterationSample">Iteration</Link>
 					</li>
@@ -114,7 +111,6 @@ function App() {
 			<Route path="/Counter_Reducer" component={Counter_Reducer} />
 			<Route path="/Say" component={Say} />
 			<Route path="/ValidationSample" component={ValidationSample} />
-			<Route path="/ScrollBox" component={ScrollBox} />
 			<Route path="/Input" component={Input} />
 			<Route path="/Inputs" component={Inputs} />
 			<Route path="/IterationSample" component={IterationSample} />

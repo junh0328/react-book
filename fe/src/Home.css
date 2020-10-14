@@ -3,3 +3,7 @@
 	margin: 0 auto;
 	padding: 0;
 }
+
+.wrap h1 {
+	margin-bottom: 10px;
+}

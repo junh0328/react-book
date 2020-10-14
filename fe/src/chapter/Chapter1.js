@@ -87,8 +87,8 @@ function Chapter1() {
 				컴포넌트를 실제 페이지에 렌더링할 때는 분리된 두 가지 절차를 따릅니다.
 			</p>
 			<ul className="chapter__ul">
-				<li>문자열 형태의 HTML 코드를 생성합니다.</li>
-				<li>특정 DOM에 해당 내용을 주입하면 이벤트가 적용됩니다.</li>
+				<li className="chapter__li">문자열 형태의 HTML 코드를 생성합니다.</li>
+				<li className="chapter__li">특정 DOM에 해당 내용을 주입하면 이벤트가 적용됩니다.</li>
 			</ul>
 			<h2 className="chapter__sub">1.1.1.2 조화 과정</h2>
 			<p className="chpater__contents">
@@ -142,9 +142,9 @@ function Chapter1() {
 				업데이트할 때는 다음 세 가지 절차를 밟습니다.
 			</p>
 			<ul className="chapter__ul">
-				<li>전체 UI를 Virtual DOM에 리렌더링</li>
-				<li>이전 내용과 현재 내용을 비교</li>
-				<li>바뀐 부분만 실제 DOM에 적용</li>
+				<li className="chapter__li">전체 UI를 Virtual DOM에 리렌더링</li>
+				<li className="chapter__li">이전 내용과 현재 내용을 비교</li>
+				<li className="chapter__li">바뀐 부분만 실제 DOM에 적용</li>
 			</ul>
 			<p className="chpater__contents">
 				리액트와 Virtual DOM이 언제나 제공할 수 있는 것은 바로 업데이트 처리

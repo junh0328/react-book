@@ -8,10 +8,11 @@ body,
 .container {
 	display: flex;
 	flex-wrap: wrap;
+	min-height: 980px;
 }
 
 .wrap {
-	background-color: #8aacc8;
+	background-color: #dbe2e7;
 	flex: 0.8;
 	margin-left: 0;
 	margin-right: 0;
@@ -19,7 +20,7 @@ body,
 }
 
 .navbar {
-	background-color: #bbdefb;
+	background-color: white;
 	display: flex;
 	flex: 0.2;
 	margin-left: 0;
@@ -31,22 +32,20 @@ body,
 }
 
 .navbar li {
-	font-size: 1.3rem;
 	margin-bottom: 5px;
-	border: 1px solid black;
-	border-radius: 8px;
 	padding: 5px;
 	text-align: left;
 	width: 180px;
 }
 
 .navbar ul :hover {
-	font-size: 1.5rem;
-	background-color: white;
+	font-weight: bold;
+	font-size: 1.2rem;
 	transition: 0.25s ease-in;
 }
 
 .navbar li a {
+	padding-left: 5px;
 	text-decoration: none;
 	color: black;
 }

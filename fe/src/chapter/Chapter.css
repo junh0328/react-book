@@ -63,6 +63,7 @@ ul {
 	line-break: normal;
 }
 
-.chapter__li {
-	margin-top: 5px;
+li {
+	margin-bottom: 5px;
+	list-style: none;
 }
