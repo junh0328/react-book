@@ -1,14 +1,14 @@
 {
   "files": {
     "main.css": "/react-book/static/css/main.49d8935e.chunk.css",
-    "main.js": "/react-book/static/js/main.d6accbe3.chunk.js",
-    "main.js.map": "/react-book/static/js/main.d6accbe3.chunk.js.map",
+    "main.js": "/react-book/static/js/main.ae3791ee.chunk.js",
+    "main.js.map": "/react-book/static/js/main.ae3791ee.chunk.js.map",
     "runtime-main.js": "/react-book/static/js/runtime-main.562540ef.js",
     "runtime-main.js.map": "/react-book/static/js/runtime-main.562540ef.js.map",
     "static/js/2.78ca0f6a.chunk.js": "/react-book/static/js/2.78ca0f6a.chunk.js",
     "static/js/2.78ca0f6a.chunk.js.map": "/react-book/static/js/2.78ca0f6a.chunk.js.map",
     "index.html": "/react-book/index.html",
-    "precache-manifest.065c2a9783bcb38615eb71a19a2bc65c.js": "/react-book/precache-manifest.065c2a9783bcb38615eb71a19a2bc65c.js",
+    "precache-manifest.491a82f22174d4c36527c6a9793af566.js": "/react-book/precache-manifest.491a82f22174d4c36527c6a9793af566.js",
     "service-worker.js": "/react-book/service-worker.js",
     "static/css/main.49d8935e.chunk.css.map": "/react-book/static/css/main.49d8935e.chunk.css.map",
     "static/js/2.78ca0f6a.chunk.js.LICENSE.txt": "/react-book/static/js/2.78ca0f6a.chunk.js.LICENSE.txt",
@@ -83,6 +83,6 @@
     "static/js/runtime-main.562540ef.js",
     "static/js/2.78ca0f6a.chunk.js",
     "static/css/main.49d8935e.chunk.css",
-    "static/js/main.d6accbe3.chunk.js"
+    "static/js/main.ae3791ee.chunk.js"
   ]
 }
