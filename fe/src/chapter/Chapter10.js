@@ -19,7 +19,7 @@ const Chapter10 = () => {
 		<div className="wrap">
 			<h1 className="chapter__main">Chapter 10, todo-app 만들기</h1>
 			<h2 className="toGit">
-				<a href="https://github.com/junh0328/react-todoapp">
+				<a href="https://github.com/junh0328/react-todoapp" target="_blank">
 					<GoFile />
 					완성된 todo-app 코드 보러 가기 (github)
 				</a>
