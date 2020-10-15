@@ -1,23 +1,23 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "b77f408dfb7065d49df450c6b110ac16",
+    "revision": "0de8a5d314774e8fcc9ec424e81752bc",
     "url": "/react-book/index.html"
   },
   {
-    "revision": "d78e861fe4d0973e42ed",
-    "url": "/react-book/static/css/main.3a45e3a4.chunk.css"
+    "revision": "79e0e51de4e2e001155e",
+    "url": "/react-book/static/css/main.561aca7d.chunk.css"
   },
   {
-    "revision": "80879381bd398cdd00e7",
-    "url": "/react-book/static/js/2.001d1d52.chunk.js"
+    "revision": "7128399ef3e6310e82b1",
+    "url": "/react-book/static/js/2.10f7acbe.chunk.js"
   },
   {
     "revision": "c64c486544348f10a6d6c716950bc223",
-    "url": "/react-book/static/js/2.001d1d52.chunk.js.LICENSE.txt"
+    "url": "/react-book/static/js/2.10f7acbe.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "d78e861fe4d0973e42ed",
-    "url": "/react-book/static/js/main.8768d028.chunk.js"
+    "revision": "79e0e51de4e2e001155e",
+    "url": "/react-book/static/js/main.d1b7e904.chunk.js"
   },
   {
     "revision": "35d6a8c7b420b3f4c849",
@@ -234,5 +234,57 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "ad7076605d47f700277bb91338972810",
     "url": "/react-book/static/media/ref5.ad707660.png"
+  },
+  {
+    "revision": "b1ea1a9ac091cd504fddf27c84867708",
+    "url": "/react-book/static/media/todo0.b1ea1a9a.png"
+  },
+  {
+    "revision": "1cd3ebcfbd45a92b67d876df5dc43fe4",
+    "url": "/react-book/static/media/todo1.1cd3ebcf.png"
+  },
+  {
+    "revision": "c20419c04129eb45fb50cb8c27c953ca",
+    "url": "/react-book/static/media/todo10.c20419c0.png"
+  },
+  {
+    "revision": "29b8225e0c0d6b9fc76c0c40d8737487",
+    "url": "/react-book/static/media/todo11.29b8225e.png"
+  },
+  {
+    "revision": "3d2ba00bd000681bf57f53f1ab814a30",
+    "url": "/react-book/static/media/todo12.3d2ba00b.png"
+  },
+  {
+    "revision": "ebc9baafe61fbd482622df672ac396f6",
+    "url": "/react-book/static/media/todo2.ebc9baaf.png"
+  },
+  {
+    "revision": "815d46c7f652ce76c58ddd17fcda6ce4",
+    "url": "/react-book/static/media/todo3.815d46c7.png"
+  },
+  {
+    "revision": "521d4865802b93959dbb8bc5f5c4f152",
+    "url": "/react-book/static/media/todo4.521d4865.png"
+  },
+  {
+    "revision": "6dad56d5ff647bb4a5faea2da0da84fa",
+    "url": "/react-book/static/media/todo5.6dad56d5.png"
+  },
+  {
+    "revision": "54f24db3942294d98f9dedcceda23ae2",
+    "url": "/react-book/static/media/todo6.54f24db3.png"
+  },
+  {
+    "revision": "ace6893cd403d2ec163c2009bdd5a96d",
+    "url": "/react-book/static/media/todo7.ace6893c.png"
+  },
+  {
+    "revision": "31494cde6eacdced748895cc5a18498f",
+    "url": "/react-book/static/media/todo8.31494cde.png"
+  },
+  {
+    "revision": "62f8b3e219cc32d2b24fe185015b72bc",
+    "url": "/react-book/static/media/todo9.62f8b3e2.png"
   }
 ]);

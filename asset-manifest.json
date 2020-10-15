@@ -1,17 +1,17 @@
 {
   "files": {
-    "main.css": "/react-book/static/css/main.3a45e3a4.chunk.css",
-    "main.js": "/react-book/static/js/main.8768d028.chunk.js",
-    "main.js.map": "/react-book/static/js/main.8768d028.chunk.js.map",
+    "main.css": "/react-book/static/css/main.561aca7d.chunk.css",
+    "main.js": "/react-book/static/js/main.d1b7e904.chunk.js",
+    "main.js.map": "/react-book/static/js/main.d1b7e904.chunk.js.map",
     "runtime-main.js": "/react-book/static/js/runtime-main.562540ef.js",
     "runtime-main.js.map": "/react-book/static/js/runtime-main.562540ef.js.map",
-    "static/js/2.001d1d52.chunk.js": "/react-book/static/js/2.001d1d52.chunk.js",
-    "static/js/2.001d1d52.chunk.js.map": "/react-book/static/js/2.001d1d52.chunk.js.map",
+    "static/js/2.10f7acbe.chunk.js": "/react-book/static/js/2.10f7acbe.chunk.js",
+    "static/js/2.10f7acbe.chunk.js.map": "/react-book/static/js/2.10f7acbe.chunk.js.map",
     "index.html": "/react-book/index.html",
-    "precache-manifest.6a1da87dceb373cc36e2bf9fbdfd9593.js": "/react-book/precache-manifest.6a1da87dceb373cc36e2bf9fbdfd9593.js",
+    "precache-manifest.6ad9a7f273706c86c6f8dfa00479e1ca.js": "/react-book/precache-manifest.6ad9a7f273706c86c6f8dfa00479e1ca.js",
     "service-worker.js": "/react-book/service-worker.js",
-    "static/css/main.3a45e3a4.chunk.css.map": "/react-book/static/css/main.3a45e3a4.chunk.css.map",
-    "static/js/2.001d1d52.chunk.js.LICENSE.txt": "/react-book/static/js/2.001d1d52.chunk.js.LICENSE.txt",
+    "static/css/main.561aca7d.chunk.css.map": "/react-book/static/css/main.561aca7d.chunk.css.map",
+    "static/js/2.10f7acbe.chunk.js.LICENSE.txt": "/react-book/static/js/2.10f7acbe.chunk.js.LICENSE.txt",
     "static/media/COMPO1.png": "/react-book/static/media/COMPO1.c56a3cd7.png",
     "static/media/COMPO10.png": "/react-book/static/media/COMPO10.5277348b.png",
     "static/media/COMPO11.png": "/react-book/static/media/COMPO11.35701622.png",
@@ -64,12 +64,25 @@
     "static/media/ref2.png": "/react-book/static/media/ref2.978802bf.png",
     "static/media/ref3.png": "/react-book/static/media/ref3.5b983ea3.png",
     "static/media/ref4.png": "/react-book/static/media/ref4.86d01d17.png",
-    "static/media/ref5.png": "/react-book/static/media/ref5.ad707660.png"
+    "static/media/ref5.png": "/react-book/static/media/ref5.ad707660.png",
+    "static/media/todo0.png": "/react-book/static/media/todo0.b1ea1a9a.png",
+    "static/media/todo1.png": "/react-book/static/media/todo1.1cd3ebcf.png",
+    "static/media/todo10.png": "/react-book/static/media/todo10.c20419c0.png",
+    "static/media/todo11.png": "/react-book/static/media/todo11.29b8225e.png",
+    "static/media/todo12.png": "/react-book/static/media/todo12.3d2ba00b.png",
+    "static/media/todo2.png": "/react-book/static/media/todo2.ebc9baaf.png",
+    "static/media/todo3.png": "/react-book/static/media/todo3.815d46c7.png",
+    "static/media/todo4.png": "/react-book/static/media/todo4.521d4865.png",
+    "static/media/todo5.png": "/react-book/static/media/todo5.6dad56d5.png",
+    "static/media/todo6.png": "/react-book/static/media/todo6.54f24db3.png",
+    "static/media/todo7.png": "/react-book/static/media/todo7.ace6893c.png",
+    "static/media/todo8.png": "/react-book/static/media/todo8.31494cde.png",
+    "static/media/todo9.png": "/react-book/static/media/todo9.62f8b3e2.png"
   },
   "entrypoints": [
     "static/js/runtime-main.562540ef.js",
-    "static/js/2.001d1d52.chunk.js",
-    "static/css/main.3a45e3a4.chunk.css",
-    "static/js/main.8768d028.chunk.js"
+    "static/js/2.10f7acbe.chunk.js",
+    "static/css/main.561aca7d.chunk.css",
+    "static/js/main.d1b7e904.chunk.js"
   ]
 }
