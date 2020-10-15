@@ -9,6 +9,7 @@ body,
 	display: flex;
 	flex-wrap: wrap;
 	min-height: 980px;
+	min-width: 960px;
 }
 
 .wrap {

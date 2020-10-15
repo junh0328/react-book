@@ -18,7 +18,7 @@ h2 {
 }
 
 p {
-	margin-bottom: 10px;
+	margin-bottom: 20px;
 }
 
 b {
@@ -27,6 +27,7 @@ b {
 
 ul {
 	margin-top: 10px;
+	margin-bottom: 30px;
 }
 
 .inner_li {
@@ -45,7 +46,7 @@ ul {
 	height: auto;
 	margin-top: 10px;
 	margin-left: 0;
-	margin-bottom: 10px;
+	margin-bottom: 20px;
 }
 
 .chapter__imgs_w100 {
@@ -54,7 +55,7 @@ ul {
 	height: auto;
 	margin-top: 10px;
 	margin-left: 0;
-	margin-bottom: 10px;
+	margin-bottom: 20px;
 }
 .big {
 	font-weight: bold;

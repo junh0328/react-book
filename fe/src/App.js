@@ -11,6 +11,7 @@ import Chapter6 from './chapter/Chapter6';
 import Chapter7 from './chapter/Chapter7';
 import Chapter8 from './chapter/Chapter8';
 import Chapter9 from './chapter/Chapter9';
+import Chapter10 from './chapter/Chapter10';
 import Counter from './function/Counter';
 import Counter_Reducer from './function/Counter_Reducer';
 import Say from './function/Say';
@@ -65,6 +66,9 @@ function App() {
 						<Link to="/react-book/Chapter9">리액트, 챕터 9</Link>
 					</li>
 					<li className="navbar__li">
+						<Link to="/react-book/Chapter10">리액트, 챕터 10</Link>
+					</li>
+					<li className="navbar__li">
 						<Link to="/react-book/HookHome">Hooks</Link>
 					</li>
 					<li className="navbar__li">
@@ -109,6 +113,7 @@ function App() {
 			<Route path="/react-book/Chapter7" component={Chapter7} />
 			<Route path="/react-book/Chapter8" component={Chapter8} />
 			<Route path="/react-book/Chapter9" component={Chapter9} />
+			<Route path="/react-book/Chapter10" component={Chapter10} />
 			<Route path="/react-book/HookHome" component={HookHome} />
 			<Route path="/react-book/Counter" component={Counter} />
 			<Route path="/react-book/Counter_Reducer" component={Counter_Reducer} />
