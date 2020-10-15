@@ -76,3 +76,21 @@ li {
 b {
 	color: rgb(243, 112, 97);
 }
+
+.toGit {
+	display: inline-block;
+	margin-bottom: 20px;
+}
+
+.toGit a {
+	text-decoration: none;
+	color: black;
+}
+
+.toGit svg {
+	font-size: 22px;
+}
+.toGit:hover {
+	font-size: 2rem;
+	transition: 0.5s ease-out;
+}

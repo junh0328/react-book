@@ -1,4 +1,5 @@
 import React from 'react';
+import { GoFile } from 'react-icons/go';
 import todo0 from './imgs/chapter10/todo0.png';
 import todo1 from './imgs/chapter10/todo1.png';
 import todo2 from './imgs/chapter10/todo2.png';
@@ -17,6 +18,12 @@ const Chapter10 = () => {
 	return (
 		<div className="wrap">
 			<h1 className="chapter__main">Chapter 10, todo-app 만들기</h1>
+			<h2 className="toGit">
+				<a href="https://github.com/junh0328/react-todoapp">
+					<GoFile />
+					완성된 todo-app 코드 보러 가기 (github)
+				</a>
+			</h2>
 			<h2 className="chapter__sub">10.1 UI 구현하기</h2>
 			<p>앞으로 만들 컴포넌트를 하나하나 용도별로 소개하겠습니다</p>
 			<ul>
