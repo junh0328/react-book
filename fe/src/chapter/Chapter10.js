@@ -19,6 +19,9 @@ import todo13 from './imgs/chapter10/todo13.png';
 import todo14 from './imgs/chapter10/todo14.png';
 import todo15 from './imgs/chapter10/todo15.png';
 import todo16 from './imgs/chapter10/todo16.png';
+import todo17 from './imgs/chapter10/todo17.png';
+import todo18 from './imgs/chapter10/todo18.png';
+import todo19 from './imgs/chapter10/todo19.png';
 
 const Chapter10 = () => {
 	return (
@@ -267,6 +270,51 @@ const Chapter10 = () => {
 				이제 삭제 버튼을 누르면 TodoListItem에서 onRemove 함수에 현재 자신이
 				가진 id를 넣어서 삭제 함수를 호출하도록 설정할 수 있습니다.
 				<img src={todo16} alt="todo16" className="chapter__imgs" />
+			</p>
+			<h3 className="chapter__sub">10.2.3 수정 기능</h3>
+			<p>
+				수정 기능도 삭제 기능과 비슷합니다. onToggle이라는 함수를 App에 만들어,
+				해당 함수를 TodoList에 props로 넣어 줍니다. 그 다음에 TodoList를 통해
+				TodoListItem까지 전달해 주면 됩니다.
+				<img src={todo17} alt="todo17" className="chapter__imgs" />
+				실제 로직 작성은 App.js에서 만드는 onToggle 함수가 끝입니다. TodoList와
+				TodoListItem 컴포넌트에서는 App에서 만든 onToggle 기능을 props로 받아
+				사용하기만 하면 됩니다. 위 코드에서는 배열 내장 함수 map을 사용하여 특정
+				id를 가지고 있는 객체의 checked 값을 반전시켜 주었습니다. '우리가 만든
+				todos 객체에 담긴 checked 값을 클릭할 때마다 때마다 반전시킵니다.'
+				스프레드 함수를 통해 기존의 값은 그대로 받아옵니다. (...todo) 후에
+				변경하고 싶은 프로퍼티에 대한 값을 줍니다. 불변성을 유지하면서 특정 배열
+				원소를 업데이트 할 때 이렇게 map을 사용하면 짧은 코드로 쉽게 작성할 수
+				있습니다.{' '}
+			</p>
+			<p>
+				<b>( checked: !todo.checked )</b>
+			</p>
+			<p>
+				여기서 갑자기 왜 map이 사용된 것인지 이해하기 힘들 수도 있습니다.
+				onToggle 함수를 보면 <b>(todo.id === id ? ... : ...) </b>이라는 삼항
+				연산자가 사용되었습니다. 여기서 사용한 코드에 대해 좀 더 자세히
+				알아봅시다. todo.id와 현재 파라미터로 사용된 id 값이 같을 때는 우리가
+				정해 준 규칙대로 새로운 객체를 생성하지만, id 값이 다를 때는 변화를 주지
+				않고 처음 받아 왔던 상태 그대로 반환합니다. 그렇기 때문에 map을 사용하여
+				만든 배열에서 변화가 필요한 원소만 업데이트되고 나머지는 그대로 남아
+				있게 되는 것입니다.
+			</p>
+			<p>
+				이제 TodoList에 App 컴포넌트에서 만든 onToggle 함수를 props로
+				추가합니다.
+				<img src={todo18} alt="todo18" className="chapter__imgs" />
+				후에 TodoListItem에도 onToggle 기능을 props로 추가합니다.
+				<img src={todo19} alt="todo19" className="chapter__imgs" />
+			</p>
+			<h2 className="chapter__sub">10.3 정리</h2>
+			<p>
+				이번에 만든 프로젝트는 소규모이기 때문에 따로 컴포넌트 리렌더링 최적화
+				작업을 하지 않아도 정상적으로 작동합니다. 하지만 일정 항목이 몇 만 개씩
+				생긴다면 새로운 항목을 추가하거나 기존 항목을 삭제 및 토글할 때 지연이
+				발생할 수 있습니다. 클라이언트 자원을 더욱 효율적으로 사용하려면
+				불필요한 리렌더링을 방지해야 하는데요, 다음 장에서 이러한 컴포넌트를
+				최적화 하는 과정에 대해 배워보겠습니다.
 			</p>
 		</div>
 	);
