@@ -1,5 +1,6 @@
 import React from 'react';
 import { GoFile } from 'react-icons/go';
+import cn from './imgs/chapter10/classnames.png';
 import todo0 from './imgs/chapter10/todo0.png';
 import todo1 from './imgs/chapter10/todo1.png';
 import todo2 from './imgs/chapter10/todo2.png';
@@ -13,13 +14,18 @@ import todo9 from './imgs/chapter10/todo9.png';
 import todo10 from './imgs/chapter10/todo10.png';
 import todo11 from './imgs/chapter10/todo11.png';
 import todo12 from './imgs/chapter10/todo12.png';
+import todo13 from './imgs/chapter10/todo13.png';
 
 const Chapter10 = () => {
 	return (
 		<div className="wrap">
 			<h1 className="chapter__main">Chapter 10, todo-app 만들기</h1>
 			<h2 className="toGit">
-				<a href="https://github.com/junh0328/react-todoapp" target="_blank">
+				<a
+					href="https://github.com/junh0328/react-todoapp"
+					target="_blank"
+					rel="noopener noreferrer"
+				>
 					<GoFile />
 					완성된 todo-app 코드 보러 가기 (github)
 				</a>
@@ -51,14 +57,13 @@ const Chapter10 = () => {
 			<h3 className="chapter__sub">10.1.1 TodoTemplate 만들기</h3>
 			<img src={todo2} alt="todo2" className="chapter__imgs" />
 			<p>
-				content 클래스에 속한 내용은 JSX의 props로 children을 받게 됩니다.
-				컴포넌트 사이에 둘러 쌓인 값을 사용한다고 보면 됩니다.
+				content 클래스에 속한 내용은 App.js의 JSX에서 props로 children을 받게
+				됩니다. 컴포넌트 사이에 둘러 쌓인 값을 사용한다고 보면 됩니다.
 				<img src={todo3} alt="todo3" className="chapter__imgs" />
 				위의 이미지는 추후 완성된 App.js의 컴포넌트 내용입니다. TodoTemplate이
 				감싸고 있는 컴포넌트 TodoInsert, TodoList 가 바로 children으로 받게 될
 				내용입니다.
 			</p>
-
 			<h3 className="chapter__sub">10.1.2 TodoInsert 만들기</h3>
 			<img src={todo4} alt="todo4" className="chapter__imgs" />
 			<p>
@@ -73,7 +78,7 @@ const Chapter10 = () => {
 			<img src={todo5} alt="todo5" className="chapter__imgs" />
 			<img src={todo6} alt="todo6" className="chapter__imgs" />
 			<p>
-				TodoListItem들은 TodoList에 들어갈 컴포넌트로써 현재는 우리가 텍스틀
+				TodoListItem들은 TodoList에 들어갈 컴포넌트로써 현재는 우리가 텍스트틀
 				사전에 주어 작성하였지만, 후에는 props를 통해 클라이언트가 입력한 값을
 				넘겨 받아 매핑하여 뿌려줄 것입니다. 그 컴포넌트들(TodoListItem)을
 				TodoList에 담을 것입니다.
@@ -110,12 +115,17 @@ const Chapter10 = () => {
 				<img src={todo10} alt="todo10" className="chapter__imgs" />
 				이제 TodoList 컴포넌트에서 받아 온 todo값에 따라 제대로 된 UI를 보여 줄
 				수 있도록 컴포넌트를 수정하겠습니다. 또한 <b>classnames</b> 모듈을
-				이용하여 조건부 스타일링을 줄 것입니다. 체크가 되어 있다면 MdCheckBox
-				아이콘을 사용하여 우리가 만든 scss를 이용한 줄 그어진 모습을 보여줄
-				것이고, 체크가 되어있지 않다면 MdCheckBoxOutline 아이콘을 통해 검은색
-				체크박스를 보여줄 것입니다. 아이콘과 더불어 todos의 객체로 전달 받은
-				'text'를 같이 보여줍니다. 뒤의 클래스인 remove 클래스는 후에 구성할
-				것입니다.
+				이용하여 조건부 스타일링을 줄 것입니다.{' '}
+			</p>
+			<p>
+				classnames 모듈을 사용하면 프로퍼티의 기능들을 사용할 수 있습니다.
+				"checkbox" class가 checked 되었다는 내용의 의미를 함축하고 있습니다.
+				<img src={cn} alt="classnames" className="chapter__imgs" />
+				따라서, 체크가 되어 있다면 MdCheckBox 아이콘을 사용하여 우리가 만든
+				scss를 이용한 줄 그어진 모습을 보여줄 것이고, 체크가 되어있지 않다면
+				MdCheckBoxOutline 아이콘을 통해 검은색 체크박스를 보여줄 것입니다.
+				아이콘과 더불어 todos의 객체로 전달 받은 'text'를 같이 보여줍니다. 뒤의
+				클래스인 remove 클래스는 후에 구성할 것입니다.
 			</p>
 			<img src={todo0} alt="todo0" className="chapter__imgs" />
 			<p>
@@ -190,6 +200,32 @@ const Chapter10 = () => {
 				concat(이어 붙일 것)합니다. 후에 nextId는 1을 추가시킵니다. 밑에 배열에
 				담긴 [todos]는 우리가 배운 Hooks들 중 useEffect와 관계가 있습니다.
 				오로지 [todos] 객체에만 반응하는 onInsert를 만들기 위함입니다.
+			</p>
+			<h4 className="chapter__sub">
+				10.2.2.3 TodoInsert에서 onSubmit 이벤트 설정하기
+			</h4>
+			<p>
+				지금부터 TodoInsert 컴포넌트에 추가한 (+) 아이콘 [ MdAdd ]을 통해 발생할
+				이벤트를 설정해 보겠습니다. 방금 App에서 TodoInsert에 넣어 준 onInsert
+				함수에 현재 useState를 통해 관리하고 있는 value 값을 파라미터로 넣어서
+				호출합니다.
+				<img src={todo13} alt="todo13" className="chapter__imgs" />
+				onSubmit라는 함수를 만들고, form의 onSubmit으로 설정합니다. 이 함수가
+				호출되면 props로 받아 온 onInsert 함수에 현재 value 값을 파라미터로
+				넣어서 호출하고, 현재 value 값을 초기화합니다.
+			</p>
+			<p>
+				추가로 onSubmit 이벤트는 브라우저를 새로고침시키는 기능이 있습니다. 이때
+				<b> e.preventDefault() </b>함수를 호출하면 새로고침을 방지할 수
+				있습니다.
+			</p>
+			<p>
+				물론 onClick() 이벤트로도 충분히 처리할 수 있는데, 이렇게 굳이 form과
+				onSubmit 이벤트를 사용한 이유는 무엇일까요? onSubmit 이벤트의 경우
+				인풋에서 'Enter' 키를 눌렀을 때도 발생하기 때문입니다. 반면 버튼에서
+				onClick만 사용했다면, 인풋에서 onkeyPress 이벤트를 통해 'Enter'를
+				감지하는 로직을 따로 만들어 줘야겠죠? 그렇기 때문에 이번에는 onClick이
+				아닌 onSubmit으로 새 항목을 추가하도록 처리했습니다.
 			</p>
 		</div>
 	);
