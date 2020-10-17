@@ -1,6 +1,7 @@
 import React from 'react';
 import { GoFile } from 'react-icons/go';
 import cn from './imgs/chapter10/classnames.png';
+import filter from './imgs/chapter10/filter.png';
 import todo0 from './imgs/chapter10/todo0.png';
 import todo1 from './imgs/chapter10/todo1.png';
 import todo2 from './imgs/chapter10/todo2.png';
@@ -15,6 +16,9 @@ import todo10 from './imgs/chapter10/todo10.png';
 import todo11 from './imgs/chapter10/todo11.png';
 import todo12 from './imgs/chapter10/todo12.png';
 import todo13 from './imgs/chapter10/todo13.png';
+import todo14 from './imgs/chapter10/todo14.png';
+import todo15 from './imgs/chapter10/todo15.png';
+import todo16 from './imgs/chapter10/todo16.png';
 
 const Chapter10 = () => {
 	return (
@@ -226,6 +230,43 @@ const Chapter10 = () => {
 				onClick만 사용했다면, 인풋에서 onkeyPress 이벤트를 통해 'Enter'를
 				감지하는 로직을 따로 만들어 줘야겠죠? 그렇기 때문에 이번에는 onClick이
 				아닌 onSubmit으로 새 항목을 추가하도록 처리했습니다.
+			</p>
+			<h3 className="chapter__sub">10.2.3 지우기 기능 구현하기</h3>
+			<h4 className="chapter__sub">10.2.3.1 배열 내장 함수 filter</h4>
+			<p>
+				지우기 기능을 구현하기 위해서, filter 함수를 사용합니다. 리액트
+				컴포넌트에서 배열의 불변성을 지키면서 배열 원소를 제거해야 할 경우,
+				filter 함수를 사용하면 매우 간편합니다.
+				<img src={filter} alt="filter" className="chapter__imgs" />
+				filter 함수에는 조건을 확인해 주는 함수를 파라미터로 넣어 주어야 합니다.
+				<b>
+					파라미터로 넣는 함수는 true 혹은 false 값을 반환할 수 있어야 하며,
+					여기서 true를 반환하는 경우만 새로운 배열에 포함됩니다.
+				</b>
+			</p>
+			<h4 className="chapter__sub">10.2.3.2 todos 배열에서 id로 항목 지우기</h4>
+			<p>
+				방금 익힌 filter 내장 함수를 사용하여 onRemove 함수를 만들어 보겠습니다.
+				App 컴포넌트에 id를 파라미터로 받아 와서 같은 id를 가진 항목을 todos
+				배열에서 지우는 함수입니다. 이 함수를 만들고 나서 TodoList의 props로
+				설정해야 합니다. App.js에서 만든 onRemove함수를 props로 받아와서
+				TodoList에서 onRemove 함수를 사용하기 위함입니다.
+				<img src={todo14} alt="todo14" className="chapter__imgs" />
+				위의 이미지는 App.js에 onRemove 함수를 만든 코드만을 가져온
+				이미지입니다. 앞서 설명한 것처럼 id를 파라미터로 받아 와 같은 id를 가진
+				항목을 todos 배열에서 지웁니다.
+			</p>
+			<h4 className="chapter__sub">
+				10.2.3.3 TodoListItem에서 삭제 함수 호출하기
+			</h4>
+			<p>
+				TodoListItem에서 방금 만든 onRemove 함수를 사용하려면 우선 TodoList
+				컴포넌트를 거쳐야 합니다. 다음과 같이 props로 받아 온 onRemove 함수를
+				TodoListItem에 그대로 전달해 주세요.
+				<img src={todo15} alt="todo15" className="chapter__imgs" />
+				이제 삭제 버튼을 누르면 TodoListItem에서 onRemove 함수에 현재 자신이
+				가진 id를 넣어서 삭제 함수를 호출하도록 설정할 수 있습니다.
+				<img src={todo16} alt="todo16" className="chapter__imgs" />
 			</p>
 		</div>
 	);
