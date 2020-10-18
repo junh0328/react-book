@@ -1,4 +1,7 @@
-const array = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
-const NotFive = array.filter((number) => number != 5);
+const [number, setNumber] = useState(0);
+// prevNumbers 는 현재 number 값을 가리킵니다.
 
-console.log(NotFive);
+const onIncrease = useCallback(
+  () => setNumber((prevNumber) => prevNumber + 1),
+  []
+);
