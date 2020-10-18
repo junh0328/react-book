@@ -1,23 +1,23 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "612405826b555e7008ed8bd625718b30",
+    "revision": "7d0c7ed64175491d05b1b45655d7e8d7",
     "url": "/react-book/index.html"
   },
   {
-    "revision": "3ade53e6b2d4c93fd732",
-    "url": "/react-book/static/css/main.49d8935e.chunk.css"
+    "revision": "0795b3ecf23ef268ec7c",
+    "url": "/react-book/static/css/main.3dd71019.chunk.css"
   },
   {
-    "revision": "552cea6c1ffe34fa193f",
-    "url": "/react-book/static/js/2.49126519.chunk.js"
+    "revision": "3cbcd6756826a685b0be",
+    "url": "/react-book/static/js/2.fc61ada6.chunk.js"
   },
   {
     "revision": "c64c486544348f10a6d6c716950bc223",
-    "url": "/react-book/static/js/2.49126519.chunk.js.LICENSE.txt"
+    "url": "/react-book/static/js/2.fc61ada6.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "3ade53e6b2d4c93fd732",
-    "url": "/react-book/static/js/main.ff5880a4.chunk.js"
+    "revision": "0795b3ecf23ef268ec7c",
+    "url": "/react-book/static/js/main.cd55053f.chunk.js"
   },
   {
     "revision": "35d6a8c7b420b3f4c849",
@@ -222,6 +222,34 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "e0aec29e21b37449f4331b8634828042",
     "url": "/react-book/static/media/map7.e0aec29e.png"
+  },
+  {
+    "revision": "80cf150568a4192a485d04c5c52cb5cb",
+    "url": "/react-book/static/media/opt01.80cf1505.png"
+  },
+  {
+    "revision": "91f0dd2dcaa20e54fb4d44d3c5c4aa6b",
+    "url": "/react-book/static/media/opt02.91f0dd2d.png"
+  },
+  {
+    "revision": "10fed94cad8ff2a0b6e3c055cf7fa675",
+    "url": "/react-book/static/media/opt03.10fed94c.png"
+  },
+  {
+    "revision": "2455632f1c3721f03319d8b5c2b61e3e",
+    "url": "/react-book/static/media/opt04.2455632f.png"
+  },
+  {
+    "revision": "fc50d699af9a819222c3b7659f3f2943",
+    "url": "/react-book/static/media/opt05.fc50d699.png"
+  },
+  {
+    "revision": "3ad798f3f936488021f447bcd243b56c",
+    "url": "/react-book/static/media/opt06.3ad798f3.png"
+  },
+  {
+    "revision": "1bde4ce43b51d7d386cf4c245bd7c211",
+    "url": "/react-book/static/media/opt07.1bde4ce4.png"
   },
   {
     "revision": "b567cf20c3935f837045a4bceab49ee8",
