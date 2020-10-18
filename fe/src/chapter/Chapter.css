@@ -94,3 +94,13 @@ b {
 	font-size: 2rem;
 	transition: 0.5s ease-out;
 }
+
+.li__box {
+	background-color: antiquewhite;
+	margin: 0;
+	margin-bottom: 3px;
+}
+
+.li__box::before {
+	content: ' - ';
+}
