@@ -228,11 +228,14 @@ const Chapter10 = () => {
 			</p>
 			<p>
 				물론 onClick() 이벤트로도 충분히 처리할 수 있는데, 이렇게 굳이 form과
-				onSubmit 이벤트를 사용한 이유는 무엇일까요? onSubmit 이벤트의 경우
-				인풋에서 'Enter' 키를 눌렀을 때도 발생하기 때문입니다. 반면 버튼에서
-				onClick만 사용했다면, 인풋에서 onkeyPress 이벤트를 통해 'Enter'를
-				감지하는 로직을 따로 만들어 줘야겠죠? 그렇기 때문에 이번에는 onClick이
-				아닌 onSubmit으로 새 항목을 추가하도록 처리했습니다.
+				onSubmit 이벤트를 사용한 이유는 무엇일까요?{' '}
+				<b>
+					onSubmit 이벤트의 경우 인풋에서 'Enter' 키를 눌렀을 때도 발생하기
+					때문입니다.
+				</b>{' '}
+				반면 버튼에서 onClick만 사용했다면, 인풋에서 onkeyPress 이벤트를 통해
+				'Enter'를 감지하는 로직을 따로 만들어 줘야겠죠? 그렇기 때문에 이번에는
+				onClick이 아닌 onSubmit으로 새 항목을 추가하도록 처리했습니다.
 			</p>
 			<h3 className="chapter__sub">10.2.3 지우기 기능 구현하기</h3>
 			<h4 className="chapter__sub">10.2.3.1 배열 내장 함수 filter</h4>

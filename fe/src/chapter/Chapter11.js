@@ -6,6 +6,12 @@ import opt04 from './imgs/chapter11/opt04.png';
 import opt05 from './imgs/chapter11/opt05.png';
 import opt06 from './imgs/chapter11/opt06.png';
 import opt07 from './imgs/chapter11/opt07.png';
+import opt08 from './imgs/chapter11/opt08.png';
+import opt09 from './imgs/chapter11/opt09.png';
+import opt10 from './imgs/chapter11/opt10.png';
+import opt11 from './imgs/chapter11/opt11.png';
+import opt12 from './imgs/chapter11/opt12.png';
+import opt13 from './imgs/chapter11/opt13.png';
 const Chapter11 = () => {
 	return (
 		<div className="wrap">
@@ -168,6 +174,29 @@ const Chapter11 = () => {
 				기존의 값을 직접 수정하지 않으면서 새로운 값을 만들어 내는 것을
 				'불변성을 지킨다'고 합니다. 다음 예시 코드에서는 불변성을 어떻게 지키고
 				있는지 생각해 보세요.
+				<img src={opt08} alt="opt08" className="chapter__imgs" />
+				<img src={opt09} alt="opt09" className="chapter__imgs" />
+				<img src={opt10} alt="opt10" className="chapter__imgs" />
+				<img src={opt11} alt="opt11" className="chapter__imgs" />
+				불변성이 지켜지지 않으면 객체 내부의 값이 새로워져도 빠뀐 것을 감지하지
+				못합니다. 그러면 React.memo에서 서로 비교하여 최적화하는 것이
+				불가능합니다.
+			</p>
+			<p>
+				추가로 전개 연산자(... 문법)를 사용하여 객체나 배열 내부의 값을 복사할
+				때는 얕은ㄴ 복사를 하게 됩니다. 즉,{' '}
+				<b>
+					내부의 값이 완전히 새로 복사되는 것이 아니라 가장 바깥쪽에 있는 값만
+					복사됩니다.
+				</b>{' '}
+				따라서 내부의 값이 객체 혹은 배열이라면 내부의 값 또한 따로 복사해
+				주어야 합니다. 다음 코드를 읽어 보면 쉽게 이해될 것입니다.
+			</p>
+			<img src={opt12} alt="opt12" className="chapter__imgs" />
+			<img src={opt13} alt="opt13" className="chapter__imgs" />
+			<p>
+				만약 객체 안에 있는 객체라면 불변성을 지키면서 새 값을 할당해야 하므로
+				다음과 같이 해 주어야 합니다.
 			</p>
 		</div>
 	);
