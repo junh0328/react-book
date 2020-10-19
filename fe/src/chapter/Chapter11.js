@@ -12,6 +12,11 @@ import opt10 from './imgs/chapter11/opt10.png';
 import opt11 from './imgs/chapter11/opt11.png';
 import opt12 from './imgs/chapter11/opt12.png';
 import opt13 from './imgs/chapter11/opt13.png';
+import opt14 from './imgs/chapter11/opt14.png';
+import opt15 from './imgs/chapter11/opt15.png';
+import opt16 from './imgs/chapter11/opt16.png';
+import opt17 from './imgs/chapter11/opt17.png';
+
 const Chapter11 = () => {
 	return (
 		<div className="wrap">
@@ -197,6 +202,80 @@ const Chapter11 = () => {
 			<p>
 				만약 객체 안에 있는 객체라면 불변성을 지키면서 새 값을 할당해야 하므로
 				다음과 같이 해 주어야 합니다.
+			</p>
+			<h2 className="chapter__sub">11.7 TodoList 컴포넌트 최적화하기</h2>
+			<p>
+				리스트에 관련된 컴포넌트를 최적화할 때는 리스트 내부에서 사용하는
+				컴포넌트도 최적화해야 하고, 리스트로 사용되는 컴포넌트 자체도 최적화해
+				주는 것이 좋습니다.
+				<img src={opt14} alt="opt14" className="chapter__imgs" />위 최적화
+				코드는 현재 프로젝트 성능에 전혀 영향을 주지 않습니다. 왜냐하면,{' '}
+				<b>
+					TodoList 컴포넌트의 부모 컴포넌트인 App 컴포넌트가 리렌더링되는 유일한
+					이유가 todos 배열이 업데이트될 때이기 때문입니다.
+				</b>
+				즉, 지금 TodoList 컴포넌트는 불필요한 리렌더링이 발생하지 않습니다.
+				<b>
+					하지만,App 컴포넌트에 다른 state가 추가되어 해당 값들이 업데이트될
+					때는 TodoList 컴포넌트가 불필요한 리렌더링을 할 수도 있겠죠.
+				</b>{' '}
+				그렇기 때문에 지금 React.memo를 사용해서 미리 최적화해 준 것입니다.
+			</p>
+			<p>
+				리스트 관련 컴포넌트를 작성할 때는 리스트 아이템과 리스트, 이 두 가지
+				컴포넌트를 최적화해주는 것을 잊지 마세요. 그러나{' '}
+				<b>
+					내부 데이터가 100개를 넘지 않거나 업데이트가 자주 발생하지 않는다면,
+					이런 최적화 작업을 반드시 해 줄 필요는 없습니다.
+				</b>
+			</p>
+			<h2 className="chapter__sub">react-virtualized를 사용한 렌더링 최적화</h2>
+			<p>
+				지금까지는 리액트 컴포넌트 리렌더링 성능을 최적화하는 방법을
+				알아보았습니다. 리렌더링 성능을 최적화할 때는 필요할 때만 리렌더링하도록
+				설정해 줘야 합니다.
+			</p>
+			<p>
+				이번에는 react-virtualized 모듈을 사용한 렌더링 최적화에 대해서 배워보려
+				합니다. todo-app을 보면 총 2500개의 데이터로 구성해놓았지만, 우리 눈에는
+				9개만 보이고 나머지는 스크롤해야만 볼 수 있다는 것을 알 수 있습니다.
+				현재 컴포넌트가 맨 처음 렌더링될 때 2,500개 컴포넌트 중 2,491개
+				컴포넌트는 스크롤하기 전에는 보이지 않음에도 불구하고 렌더링이
+				이루어집니다. 나중에는 todos 배열에 변동이 생길 때도 TodoList 컴포넌트
+				내부의 map 함수에서 배열의 처음부터 끝가지 컴포넌트로 변환해 주는데, 이
+				중에서 2,491개는 보이지 않으므로 시스템 자원 낭비입니다.
+			</p>
+			<p>
+				react-virtualized 모듈을 사용하면 스크롤되기 전에 보이지 않는 컴포넌트는
+				렌더링하지 않고 크기만 차지하게끔 할 수 있습니다. 만약 스크롤이 되면
+				해당 스크롤 위치에 보여 주어야 할 컴포넌트를 자연스럽게 렌더링시킵니다.
+			</p>
+			<p>
+				본격적으로 react-virtualized 모듈을 사용하기 앞서 이 모듈에서 제공하는
+				List 컴포넌트를 사용합니다. 최적화를 수행하려면 사전에 먼저 해야 하는
+				작업이 있는데, 바로 각 항목의 실제 크기를 px 단위로 알아내는 것입니다.
+			</p>
+
+			<p>
+				<img src={opt15} alt="opt15" className="chapter__imgs" />
+				차례대로 TodoList에 react-virtualized 모듈을 추가한 뒤에 해당 모듈에서
+				제공하는 컴포넌트인 List를 통해 속성을 설정합니다.
+				<img src={opt16} alt="opt16" className="chapter__imgs" />
+				TodoListItem에 TodoList에서 추가한 style을 props로 받아온 후 div로
+				감싸줍니다.
+				<img src={opt17} alt="opt17" className="chapter__imgs" />
+				TodoListItem의 scss에서 추가한 div 에 대한 속성 값을 지정합니다. 기존의
+				TodoListItem에서 주었던 값을 TodoListItem-virtualized로 옮깁니다.
+			</p>
+			<h2 className="chapter__sub">11.9 정리</h2>
+			<p>
+				이 장에서는 우리가 만든 리액트 어플에 대해 많은 데이터를 렌더링하는
+				리스트(할 일 ... )를 만들어 지연을 유발해 보고, 이를 해결하는 방법을
+				알아보았습니다. 리액트 컴포넌트의 렌더링은 기본적으로 빠르기 때문에
+				컴포넌트를 개발할 때 최적화를 위해 모든 컴포넌트에 React.memo를 작성할
+				필요는 없습니다. 단, 리스트와 관련된 컴포넌트를 만들 때 보여 줄 항목이
+				100개 이상이고 업데이트가 자주 발생한다면, 이 장에서 학습한 방식을
+				사용하여 꼭 최적화하길 바랍니다.
 			</p>
 		</div>
 	);
