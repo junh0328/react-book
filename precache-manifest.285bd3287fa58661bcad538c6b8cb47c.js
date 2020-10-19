@@ -1,23 +1,23 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "9fc8c7f12e4acfb91e08d8d8da5fa58a",
+    "revision": "3e1b2104b1a224ed9bf1ca1dcd780207",
     "url": "/react-book/index.html"
   },
   {
-    "revision": "e5a9a1107ad0b667f705",
+    "revision": "945e625b7ce07b2ef629",
     "url": "/react-book/static/css/main.cdf31986.chunk.css"
   },
   {
-    "revision": "3cbcd6756826a685b0be",
-    "url": "/react-book/static/js/2.fc61ada6.chunk.js"
+    "revision": "fbd7e3f7b03699236f9b",
+    "url": "/react-book/static/js/2.758d3cbc.chunk.js"
   },
   {
     "revision": "c64c486544348f10a6d6c716950bc223",
-    "url": "/react-book/static/js/2.fc61ada6.chunk.js.LICENSE.txt"
+    "url": "/react-book/static/js/2.758d3cbc.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "e5a9a1107ad0b667f705",
-    "url": "/react-book/static/js/main.cd55053f.chunk.js"
+    "revision": "945e625b7ce07b2ef629",
+    "url": "/react-book/static/js/main.88c07cd6.chunk.js"
   },
   {
     "revision": "35d6a8c7b420b3f4c849",
@@ -250,6 +250,46 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "1bde4ce43b51d7d386cf4c245bd7c211",
     "url": "/react-book/static/media/opt07.1bde4ce4.png"
+  },
+  {
+    "revision": "2ee7f3f7de02cb6d12038fcbc4aa6986",
+    "url": "/react-book/static/media/opt08.2ee7f3f7.png"
+  },
+  {
+    "revision": "eb89a08b14f43a3c835d8726fe08e158",
+    "url": "/react-book/static/media/opt09.eb89a08b.png"
+  },
+  {
+    "revision": "4a33c47a84a40b7bddc930bcb6da41b1",
+    "url": "/react-book/static/media/opt10.4a33c47a.png"
+  },
+  {
+    "revision": "97996fdc8204e66b2703bca0dcb070c9",
+    "url": "/react-book/static/media/opt11.97996fdc.png"
+  },
+  {
+    "revision": "372a2c64a4db8cc4b59df66f0d9e5455",
+    "url": "/react-book/static/media/opt12.372a2c64.png"
+  },
+  {
+    "revision": "24c48ee14f4ec79aaa5ce8cee42abf7a",
+    "url": "/react-book/static/media/opt13.24c48ee1.png"
+  },
+  {
+    "revision": "7ad68bdf3f8046853924cf736f0d86c8",
+    "url": "/react-book/static/media/opt14.7ad68bdf.png"
+  },
+  {
+    "revision": "ec0f53383359d712ced4016ff5a730b7",
+    "url": "/react-book/static/media/opt15.ec0f5338.png"
+  },
+  {
+    "revision": "04270695cf59c87a5dff2c9e199f10bc",
+    "url": "/react-book/static/media/opt16.04270695.png"
+  },
+  {
+    "revision": "b19ea754e4254abdcc708cd5c0e7a53a",
+    "url": "/react-book/static/media/opt17.b19ea754.png"
   },
   {
     "revision": "b567cf20c3935f837045a4bceab49ee8",

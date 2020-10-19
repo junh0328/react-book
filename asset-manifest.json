@@ -1,17 +1,17 @@
 {
   "files": {
     "main.css": "/react-book/static/css/main.cdf31986.chunk.css",
-    "main.js": "/react-book/static/js/main.cd55053f.chunk.js",
-    "main.js.map": "/react-book/static/js/main.cd55053f.chunk.js.map",
+    "main.js": "/react-book/static/js/main.88c07cd6.chunk.js",
+    "main.js.map": "/react-book/static/js/main.88c07cd6.chunk.js.map",
     "runtime-main.js": "/react-book/static/js/runtime-main.562540ef.js",
     "runtime-main.js.map": "/react-book/static/js/runtime-main.562540ef.js.map",
-    "static/js/2.fc61ada6.chunk.js": "/react-book/static/js/2.fc61ada6.chunk.js",
-    "static/js/2.fc61ada6.chunk.js.map": "/react-book/static/js/2.fc61ada6.chunk.js.map",
+    "static/js/2.758d3cbc.chunk.js": "/react-book/static/js/2.758d3cbc.chunk.js",
+    "static/js/2.758d3cbc.chunk.js.map": "/react-book/static/js/2.758d3cbc.chunk.js.map",
     "index.html": "/react-book/index.html",
-    "precache-manifest.5f1792240e1c1445c0bfb8dcd9d83aed.js": "/react-book/precache-manifest.5f1792240e1c1445c0bfb8dcd9d83aed.js",
+    "precache-manifest.285bd3287fa58661bcad538c6b8cb47c.js": "/react-book/precache-manifest.285bd3287fa58661bcad538c6b8cb47c.js",
     "service-worker.js": "/react-book/service-worker.js",
     "static/css/main.cdf31986.chunk.css.map": "/react-book/static/css/main.cdf31986.chunk.css.map",
-    "static/js/2.fc61ada6.chunk.js.LICENSE.txt": "/react-book/static/js/2.fc61ada6.chunk.js.LICENSE.txt",
+    "static/js/2.758d3cbc.chunk.js.LICENSE.txt": "/react-book/static/js/2.758d3cbc.chunk.js.LICENSE.txt",
     "static/media/COMPO1.png": "/react-book/static/media/COMPO1.c56a3cd7.png",
     "static/media/COMPO10.png": "/react-book/static/media/COMPO10.5277348b.png",
     "static/media/COMPO11.png": "/react-book/static/media/COMPO11.35701622.png",
@@ -69,6 +69,16 @@
     "static/media/opt05.png": "/react-book/static/media/opt05.fc50d699.png",
     "static/media/opt06.png": "/react-book/static/media/opt06.3ad798f3.png",
     "static/media/opt07.png": "/react-book/static/media/opt07.1bde4ce4.png",
+    "static/media/opt08.png": "/react-book/static/media/opt08.2ee7f3f7.png",
+    "static/media/opt09.png": "/react-book/static/media/opt09.eb89a08b.png",
+    "static/media/opt10.png": "/react-book/static/media/opt10.4a33c47a.png",
+    "static/media/opt11.png": "/react-book/static/media/opt11.97996fdc.png",
+    "static/media/opt12.png": "/react-book/static/media/opt12.372a2c64.png",
+    "static/media/opt13.png": "/react-book/static/media/opt13.24c48ee1.png",
+    "static/media/opt14.png": "/react-book/static/media/opt14.7ad68bdf.png",
+    "static/media/opt15.png": "/react-book/static/media/opt15.ec0f5338.png",
+    "static/media/opt16.png": "/react-book/static/media/opt16.04270695.png",
+    "static/media/opt17.png": "/react-book/static/media/opt17.b19ea754.png",
     "static/media/ref1.png": "/react-book/static/media/ref1.b567cf20.png",
     "static/media/ref2.png": "/react-book/static/media/ref2.978802bf.png",
     "static/media/ref3.png": "/react-book/static/media/ref3.5b983ea3.png",
@@ -97,8 +107,8 @@
   },
   "entrypoints": [
     "static/js/runtime-main.562540ef.js",
-    "static/js/2.fc61ada6.chunk.js",
+    "static/js/2.758d3cbc.chunk.js",
     "static/css/main.cdf31986.chunk.css",
-    "static/js/main.cd55053f.chunk.js"
+    "static/js/main.88c07cd6.chunk.js"
   ]
 }
