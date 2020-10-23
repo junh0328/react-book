@@ -1,4 +1,11 @@
 import React from 'react';
+import spa1 from './imgs/chapter13/spa1.png';
+import spa2 from './imgs/chapter13/spa2.png';
+import spa3 from './imgs/chapter13/spa3.png';
+import spa4 from './imgs/chapter13/spa4.png';
+import spa5 from './imgs/chapter13/spa5.png';
+import spa6 from './imgs/chapter13/spa6.png';
+import spa7 from './imgs/chapter13/spa7.png';
 
 const Chapter13 = () => {
 	return (
@@ -79,6 +86,88 @@ const Chapter13 = () => {
 				내용과 별개로 이 블로그 형태 역시 리액트 라우트 기능을 사용하기 때문에,
 				제가 필요한 부분을 발췌하여 정리하도록 하겠습니다.
 			</p>
+			<h3 className="chapter__sub">
+				13.2.5 Link 컴포넌트를 사용하여 다른 주소로 이동하기
+			</h3>
+			<p>
+				Link 컴포넌트는 클릭하면 다른 주소로 이동시켜 주는 컴포넌트입니다. 일반
+				웹 애플리케이션에서는 a 태그를 사용하여 페이지를 전환합니다. 하지만
+				리액트 라우터를 사용할 때는 이 태그를 직접 사용하면 안 됩니다.{' '}
+				<b>
+					이 태그는 페이지를 전환하는 과정에서 페이지를 새로 불러오기 때문에
+					애플리케이션이 들고 있던 상태들을 모두 날려 버리게 됩니다.
+				</b>{' '}
+				렌더링된 컴포넌트들도 모두 사라지고 다시 처음부터 렌더링하게 됩니다.
+			</p>
+			<p>
+				Link 컴포넌트를 사용하여 페이지를 전환하면, 페이지를 새로 불러오지 않고
+				애플리케이션은 그대로 유지한 상태에서 HTML5 History API를 사용하여
+				페이지의 주소만 변경해 줍니다. Link 컴포넌트 자체는 a 태그로 이루어져
+				있지만, 페이지 전환을 방지하는 기능이 내장되어 있습니다.
+			</p>
+			<h2 className="chapter__sub">URL 파라미터와 쿼리</h2>
+			<p>
+				페이지 주소를 정의할 때 가끔은 유동적인 값을 전달해야 할 때도 있습니다.
+				이는 <b>파라미터</b>와 <b>쿼리</b>로 나눌 수 있습니다.
+				<img src={spa1} alt="spa1" className="chapter__imgs_w40" />
+				유동적인 값을 사용해야 하는 상황에서 파라미터를 써야 할지 쿼리를 써야
+				할지 정할 때, 무조건 따라야 하는 규칙은 없습니다. 다만 일반적으로
+				<b>
+					파라미터는 특정 아이디 혹은 이름을 사용하여 조회할 때 사용
+				</b>하고,{' '}
+				<b>
+					쿼리는 우리가 어떤 키워드를 검색하거나 페이지에 필요한 옵션을 전달할
+					때 사용
+				</b>
+				합니다.
+			</p>
+			<h3 className="chapter__sub">13.4.1 URL 파라미터</h3>
+			<img src={spa2} alt="spa2" className="chapter__imgs" />
+			<p>
+				/profile/junhee와 같은 형식으로 뒷부분에 유동적인 username 값을 넣어 줄
+				때 해당 값을 props로 받아 와서 조회하는 방법입니다.
+			</p>
+			<p>
+				URL 파라미터를 사용할 때는 라우트로 사용되는 컴포넌트에서 받아 오는
+				match라는 객체 안의 params 값을 참조합니다. match 객체 안에는 현재
+				컴포넌트가 어떤 경로 규칙에 의해 보이는지에 대한 정보가 들어 있습니다.
+			</p>
+			<img src={spa3} alt="spa3" className="chapter__imgs" />
+			<p>
+				주목해야 할 부분은 Route path의 /profile/:username 부분입니다.
+				파라미터를 받아오기 때문에 :username에 들어가는 부분은 Link에 따라
+				유동적으로 바뀐다는 것을 알아두어야 합니다.
+			</p>
+			<h3 className="chapter__sub"> 13.4.2 URL 쿼리</h3>
+			<p>
+				이번에는 URL에서 쿼리를 이용하여 정보를 받아 오겠습니다. 쿼리는 location
+				객체에 들어 있는 search 값에서 조회할 수 있습니다. location 객체는
+				라우트로 사용된 컴포넌트에게 props로 전돨되며, 웹 애플리케이션의 현재
+				주소에 대한 정보를 지니고 있습니다.
+			</p>
+			<img src={spa4} alt="spa4" className="chapter__imgs" />
+			<p>
+				위 location 객체는 http://localhpst:3000/about?detail=true 주소로
+				들어갔을 때의 값입니다.
+			</p>
+			<p>
+				URL 쿼리를 읽을 때는 위 객체가 지닌 값 중에서 search 값을 확인해야
+				합니다. 이 값은 문자열 형태로 되어 있습니다.
+			</p>
+			<h3 className="chapter__sub">13.6.3 Switch</h3>
+			<p>
+				Switch 컴포넌트는 여러 Router를 감싸서 그 중 일치하는 단 하나의
+				라우트만을 렌더링시켜 줍니다. Switch를 사용하면 모든 규칙과 일치하지
+				않을 때 보여 줄 Not Found 페이지도 구현할 수 있습니다.
+			</p>
+			<img src={spa5} alt="spa5" className="chapter__imgs" />
+			<p>...</p>
+			<img src={spa6} alt="spa6" className="chapter__imgs" />
+			<p>...</p>
+			<img src={spa7} alt="spa7" className="chapter__imgs" />
+			기존에 구성했던 Route path를 Switch로 감싼 후에 render합니다. path를 따로
+			정의하지 않으면 모든 상황에 렌더링될 수 있게 설정을 하였습니다. 존재하지
+			않는 페이지를 url에 직접 검색할 시에 나타나는 결과를 확인해보세요
 		</div>
 	);
 };

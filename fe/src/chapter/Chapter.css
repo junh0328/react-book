@@ -49,6 +49,15 @@ ul {
 	margin-bottom: 20px;
 }
 
+.chapter__imgs_w40 {
+	width: 40%;
+	display: block;
+	height: auto;
+	margin-top: 10px;
+	margin-left: 0;
+	margin-bottom: 20px;
+}
+
 .chapter__imgs_w100 {
 	width: 100%;
 	display: block;
