@@ -11,7 +11,7 @@ const Chapter12 = () => {
 	return (
 		<div className="wrap">
 			<h1 className="chapter__main">
-				Chapter12, immer를 사용하여 더 쉽게 불변성 유지하기
+				Chapter 12, immer를 사용하여 더 쉽게 불변성 유지하기
 			</h1>
 			<p>
 				11장에서는 컴포넌트 업데이트 성능을 어떻게 최적화해야 하는지, 불변성을
