@@ -183,7 +183,7 @@ const Chapter11 = () => {
 				<img src={opt09} alt="opt09" className="chapter__imgs" />
 				<img src={opt10} alt="opt10" className="chapter__imgs" />
 				<img src={opt11} alt="opt11" className="chapter__imgs" />
-				불변성이 지켜지지 않으면 객체 내부의 값이 새로워져도 빠뀐 것을 감지하지
+				불변성이 지켜지지 않으면 객체 내부의 값이 새로워져도 바뀐 것을 감지하지
 				못합니다. 그러면 React.memo에서 서로 비교하여 최적화하는 것이
 				불가능합니다.
 			</p>

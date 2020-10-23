@@ -13,6 +13,7 @@ import Chapter8 from './chapter/Chapter8';
 import Chapter9 from './chapter/Chapter9';
 import Chapter10 from './chapter/Chapter10';
 import Chapter11 from './chapter/Chapter11';
+import Chapter12 from './chapter/Chapter12';
 import Counter from './function/Counter';
 import Counter_Reducer from './function/Counter_Reducer';
 import Say from './function/Say';
@@ -25,6 +26,7 @@ import Average from './function/Average';
 import Average_useMemo from './function/Average_useMemo';
 import Knowledge from './ITKnowledge/Knowledge';
 import { ImPencil2 } from 'react-icons/im';
+import Immer from './function/Immer';
 
 function App() {
 	return (
@@ -73,6 +75,9 @@ function App() {
 						<Link to="/react-book/Chapter11">리액트, 챕터 11</Link>
 					</li>
 					<li className="navbar__li">
+						<Link to="/react-book/Chapter12">리액트, 챕터 12</Link>
+					</li>
+					<li className="navbar__li">
 						<Link to="/react-book/HookHome">Hooks</Link>
 					</li>
 					<li className="navbar__li">
@@ -103,6 +108,9 @@ function App() {
 					<li className="navbar__li">
 						<Link to="/react-book/Average_useMemo">useMemo</Link>
 					</li>
+					<li className="navbar__li">
+						<Link to="/react-book/Immer">Immer</Link>
+					</li>
 				</ul>
 			</div>
 
@@ -119,6 +127,7 @@ function App() {
 			<Route path="/react-book/Chapter9" component={Chapter9} />
 			<Route path="/react-book/Chapter10" component={Chapter10} />
 			<Route path="/react-book/Chapter11" component={Chapter11} />
+			<Route path="/react-book/Chapter12" component={Chapter12} />
 			<Route path="/react-book/HookHome" component={HookHome} />
 			<Route path="/react-book/Counter" component={Counter} />
 			<Route path="/react-book/Counter_Reducer" component={Counter_Reducer} />
@@ -129,6 +138,7 @@ function App() {
 			<Route path="/react-book/IterationSample" component={IterationSample} />
 			<Route path="/react-book/Average" component={Average} />
 			<Route path="/react-book/Average_useMemo" component={Average_useMemo} />
+			<Route path="/react-book/Immer" component={Immer} />
 		</div>
 	);
 }
