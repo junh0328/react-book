@@ -28,6 +28,7 @@ import Average_useMemo from './function/Average_useMemo';
 import Knowledge from './ITKnowledge/Knowledge';
 import { ImPencil2 } from 'react-icons/im';
 import Immer from './function/Immer';
+import express01 from './node/express01';
 
 function App() {
 	return (
@@ -82,6 +83,9 @@ function App() {
 						<Link to="/react-book/Chapter13">리액트, 챕터 13</Link>
 					</li>
 					<li className="navbar__li">
+						<Link to="/react-book/Express1">노드, 챕터 1</Link>
+					</li>
+					<li className="navbar__li">
 						<Link to="/react-book/HookHome">Hooks</Link>
 					</li>
 					<li className="navbar__li">
@@ -133,6 +137,7 @@ function App() {
 				<Route path="/react-book/Chapter11" component={Chapter11} />
 				<Route path="/react-book/Chapter12" component={Chapter12} />
 				<Route path="/react-book/Chapter13" component={Chapter13} />
+				<Route path="/react-book/Express1" component={express01} />
 				<Route path="/react-book/HookHome" component={HookHome} />
 				<Route path="/react-book/Counter" component={Counter} />
 				<Route path="/react-book/Counter_Reducer" component={Counter_Reducer} />
