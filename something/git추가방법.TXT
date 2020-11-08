@@ -87,3 +87,17 @@ branch를 기존 master에 병합(merge)/ 삭제(delete)하기!
 
 3. 만들었던 브랜치 삭제하기
 >> git branch -d feature/master
+
+
+-------------------------------------------------------------------
+
+원격 저장소에 저장된 branch를 가져오기
+
+1. 현재 원격 저장소를 업데이트한다.
+>> git remote update
+
+2. 원격 저장소의 리스트를 찾아본다.
+>> git branch -r
+
+3. 원격 저장소에 필요한 브랜치를 가져온다. (feaure/nested__navbar) branch
+>> git checkout -t origin/feature/nested__navbar
