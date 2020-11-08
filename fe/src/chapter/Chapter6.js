@@ -92,7 +92,7 @@ function Chapter6() {
 			</p>
 			<h3 className="chapter__sub">6.4.1 초기 상태 설정하기</h3>
 			<p className="chapter__contents">
-				Iteratopm 컴포넌트에서 useState를 사용하여 상태를 설정하겠습니다. 세
+				Iteration 컴포넌트에서 useState를 사용하여 상태를 설정하겠습니다. 세
 				가지 상태를 사용할 텐데 하나는 <b>데이터 배열</b>이고, 다른 하나는{' '}
 				<b>텍스트를 입력할 수 있는 input의 상태</b>입니다. 마지막 하나는{' '}
 				<b>
