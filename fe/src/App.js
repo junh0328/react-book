@@ -2,7 +2,7 @@ import React from 'react';
 import './App.css';
 import { Route, Link, Switch } from 'react-router-dom';
 import Home from './Home';
-import './App_control';
+import { onClicked } from './App_control';
 import Chapter1 from './chapter/Chapter1';
 import Chapter2 from './chapter/Chapter2';
 import Chapter3 from './chapter/Chapter3';
@@ -46,7 +46,7 @@ function App() {
 						<Link to="/react-book/IT">IT 지식</Link>
 					</li>
 					<li className="navbar__li">
-						<a>리액트</a>
+						<span onClick={onClicked}>리액트</span>
 						<ul className="navbar__li__child__nodes">
 							<li className="navbar__li">
 								<Link to="/react-book/Chapter1">리액트, 챕터 1</Link>
