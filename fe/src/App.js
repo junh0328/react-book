@@ -2,6 +2,7 @@ import React from 'react';
 import './App.css';
 import { Route, Link, Switch } from 'react-router-dom';
 import Home from './Home';
+import './App_control';
 import Chapter1 from './chapter/Chapter1';
 import Chapter2 from './chapter/Chapter2';
 import Chapter3 from './chapter/Chapter3';
@@ -40,48 +41,55 @@ function App() {
 							<ImPencil2 />홈
 						</Link>
 					</li>
+
 					<li className="navbar__li">
 						<Link to="/react-book/IT">IT 지식</Link>
 					</li>
 					<li className="navbar__li">
-						<Link to="/react-book/Chapter1">리액트, 챕터 1</Link>
+						<a>리액트</a>
+						<ul className="navbar__li__child__nodes">
+							<li className="navbar__li">
+								<Link to="/react-book/Chapter1">리액트, 챕터 1</Link>
+							</li>
+							<li className="navbar__li">
+								<Link to="/react-book/Chapter2">리액트, 챕터 2</Link>
+							</li>
+							<li className="navbar__li">
+								<Link to="/react-book/Chapter3">리액트, 챕터 3</Link>
+							</li>
+							<li className="navbar__li">
+								<Link to="/react-book/Chapter4">리액트, 챕터 4</Link>
+							</li>
+							<li className="navbar__li">
+								<Link to="/react-book/Chapter5">리액트, 챕터 5</Link>
+							</li>
+							<li className="navbar__li">
+								<Link to="/react-book/Chapter6">리액트, 챕터 6</Link>
+							</li>
+							<li className="navbar__li">
+								<Link to="/react-book/Chapter7">리액트, 챕터 7</Link>
+							</li>
+							<li className="navbar__li">
+								<Link to="/react-book/Chapter8">리액트, 챕터 8</Link>
+							</li>
+							<li className="navbar__li">
+								<Link to="/react-book/Chapter9">리액트, 챕터 9</Link>
+							</li>
+							<li className="navbar__li">
+								<Link to="/react-book/Chapter10">리액트, 챕터 10</Link>
+							</li>
+							<li className="navbar__li">
+								<Link to="/react-book/Chapter11">리액트, 챕터 11</Link>
+							</li>
+							<li className="navbar__li">
+								<Link to="/react-book/Chapter12">리액트, 챕터 12</Link>
+							</li>
+							<li className="navbar__li">
+								<Link to="/react-book/Chapter13">리액트, 챕터 13</Link>
+							</li>
+						</ul>
 					</li>
-					<li className="navbar__li">
-						<Link to="/react-book/Chapter2">리액트, 챕터 2</Link>
-					</li>
-					<li className="navbar__li">
-						<Link to="/react-book/Chapter3">리액트, 챕터 3</Link>
-					</li>
-					<li className="navbar__li">
-						<Link to="/react-book/Chapter4">리액트, 챕터 4</Link>
-					</li>
-					<li className="navbar__li">
-						<Link to="/react-book/Chapter5">리액트, 챕터 5</Link>
-					</li>
-					<li className="navbar__li">
-						<Link to="/react-book/Chapter6">리액트, 챕터 6</Link>
-					</li>
-					<li className="navbar__li">
-						<Link to="/react-book/Chapter7">리액트, 챕터 7</Link>
-					</li>
-					<li className="navbar__li">
-						<Link to="/react-book/Chapter8">리액트, 챕터 8</Link>
-					</li>
-					<li className="navbar__li">
-						<Link to="/react-book/Chapter9">리액트, 챕터 9</Link>
-					</li>
-					<li className="navbar__li">
-						<Link to="/react-book/Chapter10">리액트, 챕터 10</Link>
-					</li>
-					<li className="navbar__li">
-						<Link to="/react-book/Chapter11">리액트, 챕터 11</Link>
-					</li>
-					<li className="navbar__li">
-						<Link to="/react-book/Chapter12">리액트, 챕터 12</Link>
-					</li>
-					<li className="navbar__li">
-						<Link to="/react-book/Chapter13">리액트, 챕터 13</Link>
-					</li>
+
 					<li className="navbar__li">
 						<Link to="/react-book/Git1">협업을 위한 Git!</Link>
 					</li>
