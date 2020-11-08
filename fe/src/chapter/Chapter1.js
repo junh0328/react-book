@@ -34,7 +34,7 @@ function Chapter1() {
 					변경된 사항을 뷰에 반영합니다.
 				</p>
 				<p className="chpater__contents">
-					<img src={JSX1} alt="JSX1" className="chapter__imgs" />
+					<img src={JSX1} alt="JSX1" className="chapter__imgs_w40" />
 					예를 들어 JSON 파일의 객체중 likes 라는 객체의 값이 1 증가 시키고 싶을
 					때, likes 요소를 찾아 내부를 수정해야겠지요? 업데이트하는 항목에 따라
 					어떤 부분을 찾아서 변경할지 규칙을 정하는 작업은 간단하지만,
@@ -64,8 +64,8 @@ function Chapter1() {
 					프레임워크에서 사용자 인터페이스를 다룰 때 사용하는 템플릿과는 다른
 					개념입니다. 템플릿은 보통 데이터셋이 주어지면 HTML 태그 형식을
 					문자열로 반환하는데,{' '}
-					<span className="under_line">
-						이와 달리컴포넌트는 재사용이 가능한 API로 수많은 기능들을 내장하고
+					<span className="bright">
+						이와 달리 컴포넌트는 재사용이 가능한 API로 수많은 기능들을 내장하고
 						있으며, 컴포넌트 하나에서 해당 컴포넌트의 생김새와 작동 방식을
 						정의합니다.
 					</span>
@@ -158,9 +158,15 @@ function Chapter1() {
 					업데이트할 때는 다음 세 가지 절차를 밟습니다.
 				</p>
 				<ul className="chapter__ul">
-					<li className="chapter__li">전체 UI를 Virtual DOM에 리렌더링</li>
-					<li className="chapter__li">이전 내용과 현재 내용을 비교</li>
-					<li className="chapter__li">바뀐 부분만 실제 DOM에 적용</li>
+					<li className="chapter__li">
+						<span className="bright">1. 전체 UI를 Virtual DOM에 리렌더링</span>
+					</li>
+					<li className="chapter__li">
+						<span className="bright">2. 이전 내용과 현재 내용을 비교</span>
+					</li>
+					<li className="chapter__li">
+						<span className="bright">3. 바뀐 부분만 실제 DOM에 적용</span>
+					</li>
 				</ul>
 				<p className="chpater__contents">
 					리액트와 Virtual DOM이 언제나 제공할 수 있는 것은 바로 업데이트 처리

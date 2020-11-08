@@ -109,7 +109,7 @@ const Chapter11 = () => {
 				주기만 하면 됩니다. TodoListItem 컴포넌트에 다음과 같이 React.memo를
 				적용해 보겠습니다.
 			</p>
-			<img src={opt03} alt="opt03" className="chapter__imgs" />
+			<img src={opt03} alt="opt03" className="chapter__imgs_w40" />
 			<p>
 				이제 TodoListItem 컴포넌트는 todo, onRemove, onToggle이 바뀌지 않으면
 				리렌더링을 하지 않습니다.
@@ -138,7 +138,7 @@ const Chapter11 = () => {
 				</b>
 				해 주는 업데이트 함수를 넣을 수도 있습니다. 이를 <b>함수형 업데이트</b>
 				라고 합니다.
-				<img src={opt04} alt="opt04" className="chapter__imgs" />
+				<img src={opt04} alt="opt04" className="chapter__imgs_w40" />
 				SetNumber(number + 1)을 하는 것이 아니라, 위 코드처럼 어떻게
 				업데이트할지 정의해 주는 업데이트 함수를 넣어 줍니다. 그러면
 				useCallback을 사용할 때 두 번째 파라미터로 넣는 배열에 number를 넣지
@@ -180,9 +180,9 @@ const Chapter11 = () => {
 				'불변성을 지킨다'고 합니다. 다음 예시 코드에서는 불변성을 어떻게 지키고
 				있는지 생각해 보세요.
 				<img src={opt08} alt="opt08" className="chapter__imgs" />
-				<img src={opt09} alt="opt09" className="chapter__imgs" />
+				<img src={opt09} alt="opt09" className="chapter__imgs_w40" />
 				<img src={opt10} alt="opt10" className="chapter__imgs" />
-				<img src={opt11} alt="opt11" className="chapter__imgs" />
+				<img src={opt11} alt="opt11" className="chapter__imgs_w40" />
 				불변성이 지켜지지 않으면 객체 내부의 값이 새로워져도 바뀐 것을 감지하지
 				못합니다. 그러면 React.memo에서 서로 비교하여 최적화하는 것이
 				불가능합니다.
@@ -198,7 +198,7 @@ const Chapter11 = () => {
 				주어야 합니다. 다음 코드를 읽어 보면 쉽게 이해될 것입니다.
 			</p>
 			<img src={opt12} alt="opt12" className="chapter__imgs" />
-			<img src={opt13} alt="opt13" className="chapter__imgs" />
+			<img src={opt13} alt="opt13" className="chapter__imgs_w40" />
 			<p>
 				만약 객체 안에 있는 객체라면 불변성을 지키면서 새 값을 할당해야 하므로
 				다음과 같이 해 주어야 합니다.
@@ -263,7 +263,7 @@ const Chapter11 = () => {
 				<img src={opt16} alt="opt16" className="chapter__imgs" />
 				TodoListItem에 TodoList에서 추가한 style을 props로 받아온 후 div로
 				감싸줍니다.
-				<img src={opt17} alt="opt17" className="chapter__imgs" />
+				<img src={opt17} alt="opt17" className="chapter__imgs_w40" />
 				TodoListItem의 scss에서 추가한 div 에 대한 속성 값을 지정합니다. 기존의
 				TodoListItem에서 주었던 값을 TodoListItem-virtualized로 옮깁니다.
 			</p>

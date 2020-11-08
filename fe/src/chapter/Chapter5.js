@@ -65,7 +65,7 @@ function Chapter5() {
 				달고자 하는 요소에 ref라는 콜백 함수를 props로 전달해 주면 됩니다. 이
 				콜백 함수는 ref 값을 파라미터로 전달받습니다. 그리고 함수 내부에서
 				파라미터로 받으 ref를 컴포넌트의 멤버 변수로 설정해 줍니다.
-				<img src={ref3} alt="ref3" className="chapter__imgs" />
+				<img src={ref3} alt="ref3" className="chapter__imgs_w40" />
 				이렇게 하면 앞으로 this.input은 input 요소의 DOM을 가리킵니다. ref
 				이름은 원하는 것으로 자유롭게 지정할 수 있습니다. DOM 타입과 관계없이
 				this.superman = ref처럼 마음대로 지정합니다.
@@ -87,7 +87,7 @@ function Chapter5() {
 				리액트에서는 컴포넌트에도 ref를 달 수 있습니다. 이 방법은 주로 컴포넌트
 				내부에 있는 DOM을 컴포넌트 외부에서 사용할 때 씁니다. 컴포넌트에 ref를
 				다는 방법은 DOM에 ref를 다는 방법과 같습니다.
-				<img src={ref5} alt="ref5" className="chapter__imgs"></img>
+				<img src={ref5} alt="ref5" className="chapter__imgs_w40"></img>
 				이렇게 하면 컴포넌트 내부의 메서드 및 멤버 변수에도 접근할 수 있습니다.
 				즉, 내부의 ref에도 접근할 수 있습니다. (예: myComponent.handleClick,
 				myComponent.input 등..)

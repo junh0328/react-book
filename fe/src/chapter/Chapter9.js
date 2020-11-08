@@ -55,11 +55,11 @@ const Chapter9 = () => {
 			<ul>
 				<li>
 					<b>아래의 이미지는 .sass 표기법의 예시입니다.</b>
-					<img src={css1} alt="css1" className="chapter__imgs" />
+					<img src={css1} alt="css1" className="chapter__imgs_w40" />
 				</li>
 				<li>
 					<b>아래의 이미지는 .scss 표기법의 예시입니다.</b>
-					<img src={css2} alt="css2" className="chapter__imgs" />
+					<img src={css2} alt="css2" className="chapter__imgs_w40" />
 				</li>
 			</ul>
 			<p className="chapter__contents">

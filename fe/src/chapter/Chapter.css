@@ -30,6 +30,12 @@ ul {
 	margin-bottom: 30px;
 }
 
+.bright {
+	background-color: rgb(116, 196, 221);
+	filter: brightness(0.9);
+	margin: 0 3px 0 3px;
+}
+
 .inner_li {
 	font-size: 0.8em;
 	font-weight: bold;
