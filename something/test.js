@@ -1,52 +1,34 @@
-import React from "react";
-
-const data = {
-  junhee: {
-    name: "이준희",
-    description: "리액트를 좋아하는 개발자",
-  },
-  gildong: {
-    name: "홍길동",
-    description: "고전 소설 홍길동전의 주인공",
-  },
+const increase = (number) => {
+  const promise = new Promise((resolve, reject) => {
+    // resolve는 성공, reject는 실패
+    setTimeout(() => {
+      const result = number + 10;
+      if (result > 50) {
+        // 50보다 높으면 에러 발생 시키기
+        const e = new Error("Number is too big");
+        return reject(e);
+      }
+      resolve(result); // number 값에 +10 후 성공 처리
+    }, 1000);
+  });
+  return promise;
 };
 
-const test = ({ match }) => {
-  const { username } = match.params;
-  const profile = data[username];
-  if (!profile) {
-    return <div></div>;
+async function runTask() {
+  try {
+    let result = await increase(0);
+    console.log(result);
+    result = await increase(result);
+    console.log(result);
+    result = await increase(result);
+    console.log(result);
+    result = await increase(result);
+    console.log(result);
+    result = await increase(result);
+    console.log(result);
+    result = await increase(result);
+    console.log(result);
+  } catch (e) {
+    console.log(e);
   }
-  return (
-    <div>
-      <h3>
-        {username}({profile.name})
-      </h3>
-      <p>{profile.description}</p>
-    </div>
-  );
-};
-
-export default test;
-
-/*App 부분
-
-<ul>
-  <li>
-    <Link to ="/profile/junhee">junhee의 프로필</Link>
-  </li>
-</ul>
-
-<Route path="/profile/:username" component={Profile} />>
-
-*/
-
-/*
-
-{
-  "pathname" : "/about",
-  "search" : "?detai;=true",
-  "hash" : ""
 }
-
-*/

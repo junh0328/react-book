@@ -35,7 +35,7 @@ const Chapter12 = () => {
 			<img src={immer2} alt="immer2" className="chapter__imgs"></img>
 			<img src={immer3} alt="immer3" className="chapter__imgs"></img>
 			<p>
-				폼에서 아이디/이름을 입력하ㅕㄴ 하단 리스트에 추가되고, 리스트 항목을
+				폼에서 아이디/이름을 입력하면 하단 리스트에 추가되고, 리스트 항목을
 				클릭하면 삭제되는 간단한 컴포넌트를 만들었습니다. 이렇게 전개 연산자와
 				배열 내장 함수를 사용하여 불변성을 유지하는 것은 어렵지 않지만, 상태가
 				복잡해진다면 조금 귀찮은 작업이 될 수도 있습니다.
