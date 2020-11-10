@@ -5,6 +5,7 @@ import api3 from './imgs/chapter14/api03.png';
 import api4 from './imgs/chapter14/api04.png';
 import api5 from './imgs/chapter14/api05.png';
 import api6 from './imgs/chapter14/api06.png';
+import api7 from './imgs/chapter14/api07.png';
 
 const Chapter14 = () => {
 	return (
@@ -81,6 +82,12 @@ const Chapter14 = () => {
 				이 라이브러리의 특징은 HTTP 요청을 Promise 기반으로 처리한다는 점입니다.
 				리액트 프로젝트를 생성하여 이 라이브러리를 설치하고 사용하는 방법을 한번
 				알아보겠습니다.
+				<img src={api7} alt="api7" className="chapter__imgs_w100" />
+				onClick 함수를 통해 비동기적으로 데이터를 받아오는 코드를
+				작성하였습니다. axios.get 함수를 통해 해당 api에서 제공하는 정보를
+				담아오는데, 비동기 처리를 하여 데이터가 다 받아와진 후에 화면에 보여줄
+				수 있는 형식의 코드입니다. 그 불려진 data는 textarea의 형식으로 불러
+				옵니다.
 			</p>
 		</div>
 	);
