@@ -1,11 +1,14 @@
 import React from 'react';
 import spa1 from './imgs/chapter13/spa1.png';
 import spa2 from './imgs/chapter13/spa2.png';
-import spa3 from './imgs/chapter13/spa3.png';
+import spa9 from './imgs/chapter13/spa9.png';
 import spa4 from './imgs/chapter13/spa4.png';
 import spa5 from './imgs/chapter13/spa5.png';
 import spa6 from './imgs/chapter13/spa6.png';
 import spa7 from './imgs/chapter13/spa7.png';
+import spa8 from './imgs/chapter13/spa8.png';
+import spa10 from './imgs/chapter13/spa10.png';
+import spa11 from './imgs/chapter13/spa11.png';
 
 const Chapter13 = () => {
 	return (
@@ -86,6 +89,15 @@ const Chapter13 = () => {
 				내용과 별개로 이 블로그 형태 역시 리액트 라우트 기능을 사용하기 때문에,
 				제가 필요한 부분을 발췌하여 정리하도록 하겠습니다.
 			</p>
+			<h3 className="chapter__sub">13.2.2 프로젝트에 라우터 적용</h3>
+			<p>
+				프로젝트에서 리액트 라우터를 적용할 때는 src/index.js 파일에서
+				react-router-dom에 내장되어 있는 <b>BrowserRouter</b>라는 컴포넌트를
+				사용하여 감싸면 됩니다. 이 컴포넌트는 웹 애플리케이션에 HTML5의 History
+				API를 사용하여 페이지를 새로고침하지 않고도 주소를 변경하고, 현재 주소에
+				관련된 정보를 props로 쉽게 조회하거나 사용할 수 있도록 해 줍니다.
+				<img src={spa8} alt="spa8" className="chapter__imgs"></img>
+			</p>
 			<h3 className="chapter__sub">
 				13.2.5 Link 컴포넌트를 사용하여 다른 주소로 이동하기
 			</h3>
@@ -122,21 +134,27 @@ const Chapter13 = () => {
 				합니다.
 			</p>
 			<h3 className="chapter__sub">13.4.1 URL 파라미터</h3>
-			<img src={spa2} alt="spa2" className="chapter__imgs" />
+			<img src={spa2} alt="spa2" className="chapter__imgs_w40" />
 			<p>
-				/profile/junhee와 같은 형식으로 뒷부분에 유동적인 username 값을 넣어 줄
-				때 해당 값을 props로 받아 와서 조회하는 방법입니다.
+				URL 파라미터를 사용할 때는 라우트로 사용되는 컴포넌트에서 받아 오는
+				&nbsp;<b>match</b>라는 객체 안의 params 값을 참조합니다. &nbsp;
+				<b>match</b> 객체 안에는 현재 컴포넌트가 어떤 경로 규칙에 의해
+				보이는지에 대한 정보가 들어 있습니다. 사용자가 주소를 입력하면, 'Route
+				path'에 의해 라우팅되어 처리되는 url 파라미터는 개발자가 지정한 'Link
+				to' 에 따라 라우팅되어 해당 프로필로 이동하게 됩니다.
 			</p>
 			<p>
 				URL 파라미터를 사용할 때는 라우트로 사용되는 컴포넌트에서 받아 오는
-				match라는 객체 안의 params 값을 참조합니다. match 객체 안에는 현재
-				컴포넌트가 어떤 경로 규칙에 의해 보이는지에 대한 정보가 들어 있습니다.
+				&nbsp;<b>match</b>라는 객체 안의 params 값을 참조합니다. &nbsp;
+				<b>match</b> 객체 안에는 현재 컴포넌트가 어떤 경로 규칙에 의해
+				보이는지에 대한 정보가 들어 있습니다.
 			</p>
-			<img src={spa3} alt="spa3" className="chapter__imgs" />
+			<img src={spa9} alt="spa9" className="chapter__imgs" />
 			<p>
 				주목해야 할 부분은 Route path의 /profile/:username 부분입니다.
 				파라미터를 받아오기 때문에 :username에 들어가는 부분은 Link에 따라
-				유동적으로 바뀐다는 것을 알아두어야 합니다.
+				유동적으로 바뀐다는 것을 알아두어야 합니다. 이렇게 설정하면
+				match.params.username 값을 통해 현재 username 값을 조회할 수 있습니다.
 			</p>
 			<h3 className="chapter__sub"> 13.4.2 URL 쿼리</h3>
 			<p>
@@ -153,6 +171,25 @@ const Chapter13 = () => {
 			<p>
 				URL 쿼리를 읽을 때는 위 객체가 지닌 값 중에서 search 값을 확인해야
 				합니다. 이 값은 문자열 형태로 되어 있습니다.
+			</p>
+			<h2 className="chapter__sub">13.6 리액트 라우터 부가 기능</h2>
+			<h3 className="chapter__sub">13.6.1 history</h3>
+			<p>
+				<b>history</b>객체는 라우트로 사용된 컴포넌트에 match, location과 함께
+				전달되는 props 중 하나로, 이 객체를 통해 컴포넌트 내에 구현하는
+				메서드에서 라우터 API를 호출할 수 있습니다. 예를 들어 특정 버튼을 눌렀을
+				때 뒤로 가거나, 로그인 후 화면을 전환하거나, 다른 페이지로 이탈하는 것을
+				방지해야 할 때 history를 활용합니다.
+				<img src={spa10} alt="spa10" className="chapter__imgs"></img>
+			</p>
+			<h3 className="chapter__sub">13.6.2 withRouter</h3>
+			<p>
+				withRouter 함수는 HoC(Higher-order Component)입니다. 라우트로 사용된
+				컴포넌트가 아니어도 match, location, history 객체를 접근할 수 있게 해
+				줍니다.
+				<img src={spa11} alt="spa11" className="chapter__imgs"></img>
+				리액트 라우터 돔의 기능 중 하나인 withRouter를 사용하기 위해서는
+				export시킬 해당 컴포넌트를 withRouter로 감싸주면 됩니다.
 			</p>
 			<h3 className="chapter__sub">13.6.3 Switch</h3>
 			<p>
