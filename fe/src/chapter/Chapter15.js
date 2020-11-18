@@ -11,6 +11,7 @@ import con9 from './imgs/chapter15/con9.png';
 import con10 from './imgs/chapter15/con10.png';
 import con11 from './imgs/chapter15/con11.png';
 import con12 from './imgs/chapter15/con12.png';
+import con13 from './imgs/chapter15/con13.png';
 
 const Chapter15 = () => {
 	return (
@@ -18,7 +19,7 @@ const Chapter15 = () => {
 			<h1 className="chapter__main">Chapter 15, Context API</h1>
 			<p>
 				ContextAPI는 리액트 프로젝트에서{' '}
-				<span class="bright">전역적으로 사용할 데이터가 있을 때</span>
+				<span className="bright">전역적으로 사용할 데이터가 있을 때</span>
 				유용한 기능입니다. 이를테면 사용자 로그인 정보, 애플리케이션 환경 설정,
 				테마 등 여러 종류가 있겠지요. ContextAPI는 리액트 v16.3부터 사용하기
 				쉽게 많이 개선되었습니다. 이 기능은 리액트 관련 라이브러리에서도 많이
@@ -148,6 +149,33 @@ const Chapter15 = () => {
 				setSubcolor는 작은 박스의 배경색을 바꿔주는 useState 훅을 사용한
 				함수입니다.
 				<img src={con12} alt="con12" className="chapter__imgs" />
+			</p>
+			<h2 className="chapter__sub">
+				Consumer 대신 Hook또는 static contextType 사용하기
+			</h2>
+			<p>
+				이번에는 Context에 있는 값을 사용할 때 Consumer 대신 다른 방식을
+				사용하여 값을 받아 오는 방법을 알아보겠습니다.
+			</p>
+			<h2 className="chapter__sub">15.4.1 useContext Hook 사용하기</h2>
+			<p>
+				리액트에 내장되어 있는 Hooks 중에서 useContext라는 Hook을 사용하면,
+				함수형 컴포넌트에서 Context를 아주 편하게 사용할 수 있습니다. ColorBox
+				컴포넌트의 코드를 다음과 같이 수정해 보세요.
+				<img src={con13} alt="con13" className="chapter__imgs_w100" />
+				useContext 훅을 사용하여 필요한 props만을 전달받아 사용할 수 있습니다.
+				이를 통해 코드가 더 간결해졌습니다.
+			</p>
+			<p>
+				기존에는 컴포넌트 간에 상태를 교류해야 할 때 무조건 부모 ~ 자식 흐름으로
+				props를 통해 전달해 주었습니다. 하지만 이제는 Context API를 통해 더욱
+				쉽게 상태를 교류할 수 있게 되었습니다. 프로젝트의 컴포넌트 구조가 꽤
+				간단하고 다루는 상태의 종류가 그다지 많지 않다면, 굳이 Context를 사용할
+				필요는 없습니다. 하지만{' '}
+				<span className="bright">
+					전역적으로 여기저기 사용되는 상태가 있고 컴포넌트의 개수가 많은
+					상황이라면, Context API를 사용하는 것을 권장합니다.
+				</span>
 			</p>
 		</div>
 	);
