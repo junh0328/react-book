@@ -3,6 +3,10 @@ import redux1 from './imgs/chapter16/redux1.png';
 import redux2 from './imgs/chapter16/redux2.png';
 import redux3 from './imgs/chapter16/redux3.png';
 import redux4 from './imgs/chapter16/redux4.png';
+import redux5 from './imgs/chapter16/redux5.png';
+import redux6 from './imgs/chapter16/redux6.png';
+import redux7 from './imgs/chapter16/redux7.png';
+import redux8 from './imgs/chapter16/redux8.png';
 
 const Chapter16 = () => {
 	return (
@@ -72,6 +76,103 @@ const Chapter16 = () => {
 				구독(subscribe)도 스토어의 내장 함수 중 하나입니다. subscribe 함수 안에
 				리스너 함수를 파라미터로 넣어서 호출해 주면, 이 리스너 함수가 액션이
 				디스패치되어 상태가 업데이트될 때마다 호출됩니다.
+				<img src={redux5} alt="redux5" className="chapter__imgs" />
+			</p>
+			<h2 className="chapter__sub">
+				16.2 리액트 없이 쓰는 리덕스, 바닐라 리덕스
+			</h2>
+			<p>
+				리덕스는 리액트에 종속되는 라이브러리가 아닙니다. 리액트에서 사용하려고
+				만들어졌지만 실제로 다른 UI 라이브러리/프레임워크와 함께 사용할 수도
+				있습니다. 리덕스는 바닐라(vanila) 자바스크립트와 함께 사용할 수도
+				있습니다. 바닐라 자바스크립트는 라이브러리나 프레임워크 없이 사용하는
+				순수 자바스크립트 그 자체를 의미합니다.
+			</p>
+			<img src={redux6} alt="redux6" className="chapter__imgs" />
+			<p>
+				앞으로 만들 프로젝트는 ADD 버튼과 MINUS 버튼을 통해 숫자의 state(0)을/를
+				관리합니다.
+				<img src={redux7} alt="redux7" className="chapter__imgs" />
+				<img src={redux8} alt="redux8" className="chapter__imgs" />
+			</p>
+			<ul>
+				<li>
+					1. DOM 레퍼런스를 통해 자바스크립트로 add 버튼과 minus 버튼, number인
+					0 을 선택할 수 있게 만듭니다.
+				</li>
+				<li>
+					2. reducer의 기능을 사용하기 위해 createStore(reducer)를 변수 store로
+					선언합니다.
+				</li>
+				<li>
+					3. 리듀서 함수를 정의합니다. 리듀서 함수는 2개의 파라미터를 받는데, 첫
+					번째 파라미터는 state(초기 상태)이고, 두 번째 파라미터는 action입니다.
+				</li>
+				<li>
+					3.1. Switch 문을 통해 action의 type을 관리하는데, type을 변수로 선언해
+					두면 콘솔창에서 오류상태를 관리할 수 있습니다.
+				</li>
+				<li>
+					4. DOM으로 받은 객체 (add, minus) 에 addEventListener를 추가하여
+					버튼이 클릭될 때 dispatch 시킬 함수 (type: --- )를 넣는다.
+				</li>
+				<li>
+					5. reducer 함수를 통해 dispatch 시킨 함수의 변화된 값을 리턴받는다.
+				</li>
+				<li>
+					5.1. onChange( ) 함수를 통해 리턴받은 현재 상태를 number에 넣어준다.
+				</li>
+				<li>
+					6. 스토어의 값(초기 값)이 바뀔 때마다 방금 만든 onChange 함수가
+					호출되도록 해 준다.
+				</li>
+				<li>
+					6.1. 이 작업은 스토어의 내장 함수 subscribe를 사용하여 수행할 수
+					있습니다.
+				</li>
+			</ul>
+			<h2 className="chapter__sub">리덕스의 세 가지 규칙</h2>
+			<h3 className="chapter__sub">16.3.1 단일 스토어</h3>
+			<p>
+				하나의 애플리케이션 안에는 하나의 스토어가 들어 있습니다. 사실 여러 개의
+				스토어를 사용하는 것이 완전히 불가능하지는 않습니다. 특정 업데이트가
+				너무 빈번하게 일어나거나 애플리케이션의 특정 부분을 완전히 분리시킬 때
+				여러 개의 스토어를 만들 수도 있지만, 상태 관리가 복잡해질 수 있으므로
+				권장하지 않습니다.
+			</p>
+			<h3 className="chapter__sub">16.3.2 읽기 전용 상태</h3>
+			<p>
+				리덕스 상태는 읽기 전용입니다. 기존에 리액트에서 setState를 사용하여
+				state를 업데이트할 때도 객체나 배열을 업데이트하는 과정에서 불변성을
+				지켜주기 위해 spread 연산자를 사용하거나 immer와 같은 불변성
+				라이브러리를 사용했습니다. 리덕스도 마찬가지로 상태를 업데이트할 때는
+				기존의 객체를 건드리지 않고 새로운 객체를 생성해 주어야 합니다.
+			</p>
+			<p>
+				리덕스에서 불변성을 유지해야 하는 이유는 내부적으로 데이터가 변경되는
+				것을 감지하기 위해 얕은 비교(shallow equality) 검사를 하기 때문입니다.
+				객체의 변화를 감지할 때 객체의 깊숙한 안쪽까지 비교하는 것이 아니라
+				겉핥기 식으로 비교하여 좋은 성능을 유지할 수 있는 것입니다.
+			</p>
+			<h3 className="chapter__sub">16.3.3 리듀서는 순수한 함수</h3>
+			<p>
+				변화를 일으키는 리듀서 함수는 순수한 함수여야 합니다. 순수한 함수는 다음
+				조건을 만족합니다.
+				<br /> 1. 리듀서 함수는 이전 상태와 액션 객체를 파라미터로 받습니다.
+				<br /> 2. 파라미터 외의 값에는 의존하면 안 됩니다.
+				<br /> 3. 이전 상태는 절대로 건드리지 않고, 변화를 준 새로운 상태 객체를
+				만들어서 변환합니다.
+				<br /> 4. 똑같은 파라미터로 호출된 리듀서 함수는 언제나 똑같은 결과 값을
+				반환해야 합니다.
+			</p>
+			<p>
+				리듀서를 작성할 때는 위 네가지 사항을 주의해야 합니다. 예를 들어 리듀서
+				함수 내부에서 랜덤 값을 만들거나, Date 함수를 사용하여 현재 시간을
+				가져오거나, 네트워크 요청을 한다면, 파라미터가 같아도 다른 결과를 만들어
+				낼 수 있기 때문에 사용하면 안됩니다. 이러한 작업은 리듀서 함수 바깥에서
+				처리해 주어야 합니다. 액션을 만드는 과정에서 처리해도 되고, 추후 배울
+				리덕스 미들웨어에서 처리해도 됩니다. 주로 네트워크 요청과 같은 비동기
+				작업은 미들웨어를 통해 관리합니다.
 			</p>
 		</div>
 	);
