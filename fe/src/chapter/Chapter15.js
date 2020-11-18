@@ -9,6 +9,8 @@ import con7 from './imgs/chapter15/con7.png';
 import con8 from './imgs/chapter15/con8.png';
 import con9 from './imgs/chapter15/con9.png';
 import con10 from './imgs/chapter15/con10.png';
+import con11 from './imgs/chapter15/con11.png';
+import con12 from './imgs/chapter15/con12.png';
 
 const Chapter15 = () => {
 	return (
@@ -126,6 +128,26 @@ const Chapter15 = () => {
 				<img src={con9} alt="con9" className="chapter__imgs" />
 				작성한 코드를 통해 바뀐 결과 값을 브라우저에서 확인할 수 있습니다.
 				<img src={con10} alt="con10" className="chapter__imgs" />
+			</p>
+			<h3 className="chapter__sub">15.3.3 색상 선택 컴포넌트 만들기</h3>
+			<p>
+				SelectColors.js 라는 컴포넌트를 만들어서 ColorBox 컴포넌트 위에 올린 뒤,
+				셀렉트 컬러를 통해 ColorBox의 색상을 바꾸는 기능을 구현해 보겠습니다.
+				다음과 같이 코드를 작성해 주세요.
+				<img src={con11} alt="con11" className="chapter__imgs" />
+				<span className="bright">const colors</span> 라는 배열에 background의
+				속성값을 담았습니다. 후에 이 <span className="bright">colors</span>를
+				매핑해주었습니다. 우리가 이 코드를 실행하기 위해 부른{' '}
+				<span className="bright">ColorConsumer</span>
+				컴포넌트는 color.js에 담긴 ColorContext에서 createContext로 만든 value
+				값 들입니다. <b>위의 15.3.1 절의 코드를 확인하세요!</b>&nbsp;
+				ColorContext에서는 현재 색깔의 상태인 state와 이 색깔을 변경할 수 있는
+				actions(함수)를 value로 가집니다. 따라서 ColorConsumer 컴포넌트 안에
+				있는 actions를 받아와 onClick(), onContextMenu() 시에 각각의 action을
+				실행할 수 있도록 하였습니다. setColor는 큰 박스의 배경색을,
+				setSubcolor는 작은 박스의 배경색을 바꿔주는 useState 훅을 사용한
+				함수입니다.
+				<img src={con12} alt="con12" className="chapter__imgs" />
 			</p>
 		</div>
 	);
