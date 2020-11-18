@@ -24,6 +24,8 @@ p {
 
 b {
 	font-weight: bolder;
+	font-size: large;
+	color: rgb(245, 145, 106);
 }
 
 ul {
@@ -87,10 +89,6 @@ li {
 
 .wrap .section {
 	margin-bottom: 80px;
-}
-
-b {
-	color: rgb(221, 95, 81);
 }
 
 .toGit {

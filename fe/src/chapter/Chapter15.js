@@ -66,8 +66,8 @@ const Chapter15 = () => {
 			<p>
 				이번에는 ColorBox라는 컴포넌트를 만들어서 ColorContext 안에 들어 있는
 				색상을 보여 주겠습니다. 이때 색상을 props로 받아 오는 것이 아니라
-				ColorContext 안에 들어 있는 Consumer라는 컴포넌트를 통해 색상을 조회할
-				것입니다.
+				ColorContext 안에 들어 있는{' '}
+				<b>Consumer라는 컴포넌트를 통해 색상을 조회</b>할 것입니다.
 				<img src={con2} alt="con2" className="chapter__imgs"></img>
 				ColorContext.Consumer 컴포넌트 사이에 <b>중괄호를 열어서</b> 그 안에
 				함수를 넣어 주었습니다. 이러한 패턴은 <b>Function as a child</b>, 혹은{' '}
@@ -80,8 +80,8 @@ const Chapter15 = () => {
 			</p>
 			<h3 className="chapter__sub">15.2.3 Provider</h3>
 			<p>
-				Provider를 사용하면 Context의 value를 변경할 수 있습니다. App 컴포넌트를
-				다음과 같이 수정합니다.
+				<b>Provider를 사용하면 Context의 value를 변경</b>할 수 있습니다. App
+				컴포넌트를 다음과 같이 수정합니다.
 				<img src={con4} alt="con4" className="chapter__imgs"></img>
 				코드를 저장하고 나면 다음과 같이 빨간색 정사각형이 나타날 것입니다.
 				<img src={con5} alt="con5" className="chapter__imgs"></img>
@@ -89,6 +89,12 @@ const Chapter15 = () => {
 				넣어 주었습니다. 이 기본값은 Provider를 사용하지 않았을 때만 사용됩니다.
 				만약 Provider는 사용했는데 value를 명시하지 않았다면, 이 기본값을
 				사용하지 않기 때문에 오류가 발생합니다.
+			</p>
+			<p>
+				<b>Consumer</b>는 value 값 조회를 위한 기능, <b>Provider</b>는 value 값
+				변경을 위한 기능이라고 생각하시면 됩니다! &nbsp; 여기서 <b>value</b>란
+				우리가 createContext를 통해 만들어 준 속성 값입니다. 단순히 state 일수도
+				있고, actions들이 들어갈 수도 있습니다.
 			</p>
 			<h2 className="chapter__sub">15.3 동적 Context 사용하기</h2>
 			<p>

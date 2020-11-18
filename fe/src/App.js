@@ -17,6 +17,7 @@ import Chapter12 from './chapter/Chapter12';
 import Chapter13 from './chapter/Chapter13';
 import Chapter14 from './chapter/Chapter14';
 import Chapter15 from './chapter/Chapter15';
+import Chapter16 from './chapter/Chapter16';
 import Git1 from './git/Git1';
 import Counter from './function/Counter';
 import Counter_Reducer from './function/Counter_Reducer';
@@ -91,6 +92,9 @@ function App() {
 						<Link to="/react-book/Chapter15">리액트, 챕터 15</Link>
 					</li>
 					<li className="navbar__li">
+						<Link to="/react-book/Chapter16">리액트, 챕터 16</Link>
+					</li>
+					<li className="navbar__li">
 						<Link to="/react-book/Git1">협업을 위한 Git!</Link>
 					</li>
 					<li className="navbar__li">
@@ -147,6 +151,7 @@ function App() {
 				<Route path="/react-book/Chapter13" component={Chapter13} />
 				<Route path="/react-book/Chapter14" component={Chapter14} />
 				<Route path="/react-book/Chapter15" component={Chapter15} />
+				<Route path="/react-book/Chapter16" component={Chapter16} />
 				<Route path="/react-book/Git1" component={Git1} />
 				<Route path="/react-book/HookHome" component={HookHome} />
 				<Route path="/react-book/Counter" component={Counter} />
