@@ -1,23 +1,23 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "80fb114ff34c53011d4de900648c239c",
+    "revision": "03eed02db7f20c1b5a521cf97d8c5ca9",
     "url": "/react-book/index.html"
   },
   {
-    "revision": "424cade7215e1beeff6d",
-    "url": "/react-book/static/css/main.8f5cd681.chunk.css"
+    "revision": "3c6ef0ab3d2f11b3d71d",
+    "url": "/react-book/static/css/main.3e84c8dd.chunk.css"
   },
   {
-    "revision": "2a561739d4e7a00dcd63",
-    "url": "/react-book/static/js/2.f742820b.chunk.js"
+    "revision": "a2240fc6d221d6b324e9",
+    "url": "/react-book/static/js/2.3b52709b.chunk.js"
   },
   {
     "revision": "c64c486544348f10a6d6c716950bc223",
-    "url": "/react-book/static/js/2.f742820b.chunk.js.LICENSE.txt"
+    "url": "/react-book/static/js/2.3b52709b.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "424cade7215e1beeff6d",
-    "url": "/react-book/static/js/main.5f532ad5.chunk.js"
+    "revision": "3c6ef0ab3d2f11b3d71d",
+    "url": "/react-book/static/js/main.06d2db8d.chunk.js"
   },
   {
     "revision": "35d6a8c7b420b3f4c849",
@@ -144,6 +144,22 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/react-book/static/media/con1.51ae6018.png"
   },
   {
+    "revision": "87138763971c6b3a1d95d61b46ca26b6",
+    "url": "/react-book/static/media/con10.87138763.png"
+  },
+  {
+    "revision": "af51c25adacbff0c06e8ba190e3229e8",
+    "url": "/react-book/static/media/con11.af51c25a.png"
+  },
+  {
+    "revision": "f21f033c1ffa753d8547cb3f2816a7a3",
+    "url": "/react-book/static/media/con12.f21f033c.png"
+  },
+  {
+    "revision": "150e65b0a6f5a346f8e264f3026e73f3",
+    "url": "/react-book/static/media/con13.150e65b0.png"
+  },
+  {
     "revision": "f260f1757e93911476a186d8077688e6",
     "url": "/react-book/static/media/con2.f260f175.png"
   },
@@ -158,6 +174,22 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "774f65a1cf3848256a0332314ac02233",
     "url": "/react-book/static/media/con5.774f65a1.png"
+  },
+  {
+    "revision": "a21ac31f3deb380ddfb341349427de73",
+    "url": "/react-book/static/media/con6.a21ac31f.png"
+  },
+  {
+    "revision": "ba536408834f62969f2aae42d4b18053",
+    "url": "/react-book/static/media/con7.ba536408.png"
+  },
+  {
+    "revision": "4260eee8ffde02343f46e2a0ad48eaca",
+    "url": "/react-book/static/media/con8.4260eee8.png"
+  },
+  {
+    "revision": "7208dcbde7060899c703bb50cec70ace",
+    "url": "/react-book/static/media/con9.7208dcbd.png"
   },
   {
     "revision": "0700682449d37923800b69f0c5206a09",
@@ -366,6 +398,38 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "b19ea754e4254abdcc708cd5c0e7a53a",
     "url": "/react-book/static/media/opt17.b19ea754.png"
+  },
+  {
+    "revision": "c7997ca0267aa4f2f23949faf0cb7e01",
+    "url": "/react-book/static/media/redux1.c7997ca0.png"
+  },
+  {
+    "revision": "5463618af97d753136827bc065c50b7e",
+    "url": "/react-book/static/media/redux2.5463618a.png"
+  },
+  {
+    "revision": "a2b97a22eb4bf4bd77b1098b44f53a4e",
+    "url": "/react-book/static/media/redux3.a2b97a22.png"
+  },
+  {
+    "revision": "a6d62e9e60a53c786c7b04a9eb665880",
+    "url": "/react-book/static/media/redux4.a6d62e9e.png"
+  },
+  {
+    "revision": "a6f5a13f531651634c714f3fa1d3634c",
+    "url": "/react-book/static/media/redux5.a6f5a13f.png"
+  },
+  {
+    "revision": "60dc50020d0a0a402d80e4d9f7d839c9",
+    "url": "/react-book/static/media/redux6.60dc5002.png"
+  },
+  {
+    "revision": "ee085e83408ed8ae16731d8efcb2d92d",
+    "url": "/react-book/static/media/redux7.ee085e83.png"
+  },
+  {
+    "revision": "0223f8a167af640d562be3a00712daff",
+    "url": "/react-book/static/media/redux8.0223f8a1.png"
   },
   {
     "revision": "b567cf20c3935f837045a4bceab49ee8",
