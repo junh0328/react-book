@@ -1,23 +1,23 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "03eed02db7f20c1b5a521cf97d8c5ca9",
+    "revision": "1ad87a51c14d0fb235c77f10c15f87cc",
     "url": "/react-book/index.html"
   },
   {
-    "revision": "3c6ef0ab3d2f11b3d71d",
-    "url": "/react-book/static/css/main.3e84c8dd.chunk.css"
+    "revision": "f9aca15c6d31a45f46e1",
+    "url": "/react-book/static/css/main.691f9b2d.chunk.css"
   },
   {
-    "revision": "a2240fc6d221d6b324e9",
-    "url": "/react-book/static/js/2.3b52709b.chunk.js"
+    "revision": "687beec638fcaeecc1e8",
+    "url": "/react-book/static/js/2.d5a92190.chunk.js"
   },
   {
     "revision": "c64c486544348f10a6d6c716950bc223",
-    "url": "/react-book/static/js/2.3b52709b.chunk.js.LICENSE.txt"
+    "url": "/react-book/static/js/2.d5a92190.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "3c6ef0ab3d2f11b3d71d",
-    "url": "/react-book/static/js/main.06d2db8d.chunk.js"
+    "revision": "f9aca15c6d31a45f46e1",
+    "url": "/react-book/static/js/main.3c1e3062.chunk.js"
   },
   {
     "revision": "35d6a8c7b420b3f4c849",
@@ -404,6 +404,18 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/react-book/static/media/redux1.c7997ca0.png"
   },
   {
+    "revision": "479b7172c1db2c21ad58a1e02600f114",
+    "url": "/react-book/static/media/redux10.479b7172.png"
+  },
+  {
+    "revision": "e4c80bdf816b570b87d7b39fa40321e6",
+    "url": "/react-book/static/media/redux11.e4c80bdf.png"
+  },
+  {
+    "revision": "f9e7696e9dcef94740224eb2f416148a",
+    "url": "/react-book/static/media/redux12.f9e7696e.png"
+  },
+  {
     "revision": "5463618af97d753136827bc065c50b7e",
     "url": "/react-book/static/media/redux2.5463618a.png"
   },
@@ -432,6 +444,10 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/react-book/static/media/redux8.0223f8a1.png"
   },
   {
+    "revision": "f7146f96d2d883813974a1e803ff7d11",
+    "url": "/react-book/static/media/redux9.f7146f96.png"
+  },
+  {
     "revision": "b567cf20c3935f837045a4bceab49ee8",
     "url": "/react-book/static/media/ref1.b567cf20.png"
   },
@@ -450,6 +466,30 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "ad7076605d47f700277bb91338972810",
     "url": "/react-book/static/media/ref5.ad707660.png"
+  },
+  {
+    "revision": "c90ffbf68614dc2cf3b58d5af7ab6d04",
+    "url": "/react-book/static/media/rredux1.c90ffbf6.png"
+  },
+  {
+    "revision": "82cc508d5d0fdd85746d991486bf36ea",
+    "url": "/react-book/static/media/rredux2.82cc508d.png"
+  },
+  {
+    "revision": "37dbcb9058c528103bed756b51667c1f",
+    "url": "/react-book/static/media/rredux3.37dbcb90.png"
+  },
+  {
+    "revision": "36dd805ebf46afdd2ed28929c2ffe3b0",
+    "url": "/react-book/static/media/rredux4.36dd805e.png"
+  },
+  {
+    "revision": "3dde4ecc9455c1417223e6c6a52d213b",
+    "url": "/react-book/static/media/rredux5.3dde4ecc.png"
+  },
+  {
+    "revision": "dbd208c5bafb4d7591b832eb90e496e1",
+    "url": "/react-book/static/media/rredux6.dbd208c5.png"
   },
   {
     "revision": "482addb7a5011747134bdef91f111efa",
