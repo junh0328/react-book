@@ -37,6 +37,7 @@ ul {
 	background-color: rgb(116, 196, 221);
 	filter: brightness(0.9);
 	margin: 0 3px 0 3px;
+	font-size: 1.1rem;
 }
 
 .inner_li {

@@ -7,6 +7,10 @@ import redux5 from './imgs/chapter16/redux5.png';
 import redux6 from './imgs/chapter16/redux6.png';
 import redux7 from './imgs/chapter16/redux7.png';
 import redux8 from './imgs/chapter16/redux8.png';
+import redux9 from './imgs/chapter16/redux9.png';
+import redux10 from './imgs/chapter16/redux10.png';
+import redux11 from './imgs/chapter16/redux11.png';
+import redux12 from './imgs/chapter16/redux12.png';
 
 const Chapter16 = () => {
 	return (
@@ -18,12 +22,14 @@ const Chapter16 = () => {
 				더욱 효율적으로 관리할 수 있습니다. 또한, 컴포넌트끼리 똑같은 상태를
 				공유해야 할 때도 여러 컴포넌트를 거치지 않고 손쉽게 상태 값을 전달하거나
 				업데이트할 수 있습니다. 단순히 전역 상태 관리만 한다면 Context API를
-				사용하는 것만으로도 충분하지만, 리덕스를 사용하면 상태를 더욱 체계적으로
-				관리할 수 있기 때문에 프로젝트의 규모가 클 경우에는 리덕스를 사용하는
-				편이 좋습니다. 코드의 유지 보수성도 높여 주고 작업 효율도 극대화해 주기
-				때문입니다. 추가로 아주 편리한 개발자 도구도 지원하며, 미들웨어라는
-				기능을 제공하여 비동기 작업을 훨씬 효율적으로 관리할 수 있게 해 주기도
-				합니다.
+				사용하는 것만으로도 충분하지만,{' '}
+				<span className="bright">
+					리덕스를 사용하면 상태를 더욱 체계적으로 관리할 수 있기 때문에
+					프로젝트의 규모가 클 경우에는 리덕스를 사용하는 편이 좋습니다. 코드의
+					유지 보수성도 높여 주고 작업 효율도 극대화해 주기 때문입니다. 추가로
+					아주 편리한 개발자 도구도 지원하며, 미들웨어라는 기능을 제공하여
+					비동기 작업을 훨씬 효율적으로 관리할 수 있게 해 주기도 합니다.
+				</span>
 			</p>
 			<h2 className="chapter__sub">16.1 개념 미리 정리하기</h2>
 			<p>
@@ -87,8 +93,23 @@ const Chapter16 = () => {
 				있습니다. 리덕스는 바닐라(vanila) 자바스크립트와 함께 사용할 수도
 				있습니다. 바닐라 자바스크립트는 라이브러리나 프레임워크 없이 사용하는
 				순수 자바스크립트 그 자체를 의미합니다.
+				<ul>
+					<li>
+						<span className="bright"> vanila js로 만드는 리덕스 flow</span>
+					</li>
+					<li>1. DOM 레퍼런스 만들기</li>
+					<li>2. 액션 타입 만들기</li>
+					<li>3. 액션 생성 함수 정의</li>
+					<li>4. 초기값(initial State)설정</li>
+					<li>5. 리듀서 함수 설정</li>
+					<li>6. 스토어 만들기</li>
+					<li>7. html 상태 감지 함수 만들기</li>
+					<li>8. 구독하기(subscribe)</li>
+					<li>9. 액션 발생시키기(dispatch)</li>
+				</ul>
 			</p>
-			<img src={redux6} alt="redux6" className="chapter__imgs" />
+			<h3 className="chapter__sub">16.2.1 카운터 프로젝트</h3>
+			<img src={redux6} alt="redux6" className="chapter__imgs_w40" />
 			<p>
 				앞으로 만들 프로젝트는 ADD 버튼과 MINUS 버튼을 통해 숫자의 state(0)을/를
 				관리합니다.
@@ -100,36 +121,60 @@ const Chapter16 = () => {
 					1. DOM 레퍼런스를 통해 자바스크립트로 add 버튼과 minus 버튼, number인
 					0 을 선택할 수 있게 만듭니다.
 				</li>
+				<li>2. 액션 타입으로 사용할 변수 ADD와 MINUS를 선언합니다.</li>
+				<li>3. store를 만듭니다.</li>
+				<li>4. store에 파라미터로 들어가는 리듀서 함수를 선업합니다.</li>
 				<li>
-					2. reducer의 기능을 사용하기 위해 createStore(reducer)를 변수 store로
-					선언합니다.
+					4.1. 앞서 만들었던 액션 타입 변수를 리듀서 액션 타입으로 넣고 return
+					값을 설정합니다.
+				</li>
+				<li>5. html 상태 감지 함수를 만듭니다. onChange( )</li>
+				<li>
+					6. 구독(subscribe) 기능을 사용하여 상태 감지 함수를 업데이트합니다.
+				</li>
+				<li>7. 액션(클릭 이벤트)을/를 발생(dispatch)시킵니다.</li>
+			</ul>
+			<h3 className="chapter__sub">16.2.2 TodoList</h3>
+			<p>
+				{' '}
+				다음으로 만들 프로젝트는 TodoList입니다. +, - 의 기본적인 이벤트
+				리스너를 통해 상태를 관리했던 이전 프로젝트보다 더 복잡한 구조를 가지고
+				있습니다.
+			</p>
+			<img src={redux9} alt="redux9" className="chapter__imgs_w40" />
+			<p>기본적인 TodoList의 html 코드입니다.</p>
+			<img src={redux10} alt="redux10" className="chapter__imgs" />
+			<p>
+				input 태그를 통해 우리가 입력하는 내용이 add 버튼을 눌러 비어있는 ul
+				태그 사이로 들어가게 될 것입니다.
+			</p>
+			<img src={redux11} alt="redux11" className="chapter__imgs" />
+			<img src={redux12} alt="redux12" className="chapter__imgs" />
+			<ul>
+				<li>
+					<span className="bright">vanila js로 만드는 리덕스 flow2</span>
 				</li>
 				<li>
-					3. 리듀서 함수를 정의합니다. 리듀서 함수는 2개의 파라미터를 받는데, 첫
-					번째 파라미터는 state(초기 상태)이고, 두 번째 파라미터는 action입니다.
+					1. DOM 레퍼런스를 통해 동적으로 관리하기 위해 form, input, ul 태그를
+					선택할 수 있게 만듭니다.
 				</li>
+				<li>2. 액션 타입으로 ADD_TODO와 DELETE_TODO를 선언합니다.</li>
 				<li>
-					3.1. Switch 문을 통해 action의 type을 관리하는데, type을 변수로 선언해
-					두면 콘솔창에서 오류상태를 관리할 수 있습니다.
+					3. 액션 생성 함수 const addToDo와 deleteToDo를 선언합니다. 각각의
+					파라미터로 받을 value를 주의합니다.
 				</li>
+				<li>4. 스토어를 만듭니다.</li>
+				<li>5. 스토어에 들어가는 리듀서 함수를 설정합니다.</li>
 				<li>
-					4. DOM으로 받은 객체 (add, minus) 에 addEventListener를 추가하여
-					버튼이 클릭될 때 dispatch 시킬 함수 (type: --- )를 넣는다.
+					5.1 기존 배열은 유지하되 (spread 문법), 필요한 데이터를 새로
+					추가합니다. text, id
 				</li>
+				<li>6. 상태를 감지하기 위한 함수 paintToDos를 만듭니다.</li>
 				<li>
-					5. reducer 함수를 통해 dispatch 시킨 함수의 변화된 값을 리턴받는다.
+					7. input에 입력하는 데이터를 paintToDos에 올리기 위해 onSubmit 함수를
+					만듭니다.
 				</li>
-				<li>
-					5.1. onChange( ) 함수를 통해 리턴받은 현재 상태를 number에 넣어준다.
-				</li>
-				<li>
-					6. 스토어의 값(초기 값)이 바뀔 때마다 방금 만든 onChange 함수가
-					호출되도록 해 준다.
-				</li>
-				<li>
-					6.1. 이 작업은 스토어의 내장 함수 subscribe를 사용하여 수행할 수
-					있습니다.
-				</li>
+				<li>8. 구독하기 기능을 통해 paintToDos 함수를 업데이트합니다.</li>
 			</ul>
 			<h2 className="chapter__sub">리덕스의 세 가지 규칙</h2>
 			<h3 className="chapter__sub">16.3.1 단일 스토어</h3>
