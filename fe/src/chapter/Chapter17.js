@@ -8,6 +8,10 @@ import rredux6 from './imgs/chapter17/rredux6.png';
 import rredux7 from './imgs/chapter17/rredux7.png';
 import rredux8 from './imgs/chapter17/rredux8.png';
 import rredux9 from './imgs/chapter17/rredux9.png';
+import rredux10 from './imgs/chapter17/rredux10.png';
+import rredux11 from './imgs/chapter17/rredux11.png';
+import rredux12 from './imgs/chapter17/rredux12.png';
+import rredux13 from './imgs/chapter17/rredux13.png';
 
 const Chapter17 = () => {
 	return (
@@ -117,6 +121,34 @@ const Chapter17 = () => {
 				여러 개를 내보낼 수 있지만 export default는 단 한 개만 내보낼 수있다는
 				것 입니다.
 				<img src={rredux9} alt="rredux9" className="chapter__imgs" />
+			</p>
+			<h3 className="chapter__sub">17.2.2 todos 모듈 만들기</h3>
+			<h3 className="chapter__sub">
+				17.3.2.1,2 액션 타입 정의 및 액션 생성함수 만들기
+			</h3>
+			<p>
+				이전과 마찬가지로 가장 먼저 해야 할 일은 액션타입 정의입니다. 다음으로
+				액션 생성 함수를 만듭니다. 조금 전과 달리 이번에는 액션 생성 함수에서
+				파라미터가 필요합니다. 전달받은 파라미터는 액션 객체 안에 추가 필드로
+				들어가게 됩니다.
+				<img src={rredux10} alt="rredux10" className="chapter__imgs" />
+			</p>
+			<h3 className="chapter__sub">17.2.2.3 초기 상태 및 리듀서 함수 만들기</h3>
+			<p>
+				spread 연산자를 사용하여, 초기 상태 및 리듀ㅠ서 함수를 작성합니다.
+				객체에 한 개 이상의 값이 들어가므로 불변성을 유지해야 합니다. 배열에
+				변화를 줄 때는 배열 내장 함수를 사용하여 구현하면 됩니다.
+				<img src={rredux11} alt="rredux11" className="chapter__imgs_w40" />
+				<img src={rredux12} alt="rredux12" className="chapter__imgs" />
+			</p>
+			<h3 className="chapter__sub">17.2.3 루트 리듀서 만들기</h3>
+			<p>
+				이번 프로젝트에서는 리듀서를 여러 개 만들었습니다. 나중에 createStore
+				함수를 사용하여 스토어를 만들 때는 리듀서를 하나만 사용해야 합니다.
+				그렇게 때문에 기존에 만들었던 리듀서를 하나로 합쳐 주어야 하는데요, 이
+				작업은 리덕스에서 제공하는 combineReducers라는 유틸 함수를 사용하여 쉽게
+				처리할 수 있습니다.
+				<img src={rredux13} alt="rredux13" className="chapter__imgs" />
 			</p>
 		</div>
 	);
