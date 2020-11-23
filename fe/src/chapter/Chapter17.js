@@ -5,6 +5,9 @@ import rredux3 from './imgs/chapter17/rredux3.png';
 import rredux4 from './imgs/chapter17/rredux4.png';
 import rredux5 from './imgs/chapter17/rredux5.png';
 import rredux6 from './imgs/chapter17/rredux6.png';
+import rredux7 from './imgs/chapter17/rredux7.png';
+import rredux8 from './imgs/chapter17/rredux8.png';
+import rredux9 from './imgs/chapter17/rredux9.png';
 
 const Chapter17 = () => {
 	return (
@@ -76,6 +79,44 @@ const Chapter17 = () => {
 				생성 함수, 리듀서 함수를 기능별로 파일 하나에 몰아서 다 작성하는
 				방식입니다. 리덕스 관련 코드에 대한 디렉터리 구조는 정해진 방법이 없기
 				때문에 마음대로 작성해도 되지만, 위 두가지 방법이 주로 사용됩니다.
+			</p>
+			<h3 className="chapter__sub">17.2.1 counter 모듈 작성하기</h3>
+			<p>
+				Ducks 패턴을 사용하여{' '}
+				<span className="bright">
+					액션 타입, 액션 생성 함수, 리듀서를 작성한 코드
+				</span>
+				를 '모듈'이라고 합니다. 먼저 counter 모듈을 작성해 봅시다.
+			</p>
+			<h3 className="chapter__sub">17.2.1.1 액션 타입 정의하기</h3>
+			<p>
+				가장 먼저 해야 할 작업은 액션 타입을 정의하는 것입니다. 액션 타입은
+				대문자로 정의하고, 문자열 내용은 '모듈 이름/액션 이름'과 같은 형태로
+				작성합니다. 문자열 안에 모듈 이름을 넣음으로써, 나중에 프로젝트가 커졌을
+				때 액션의 이름이 충돌되지 않게 해 줍니다. 예를 들어 SHOW 혹은
+				INITIALIZE라는 이름을 가진 액션은 쉽게 중복될 수 있겠죠? 하지만 앞에
+				모듈 이름을 붙여 주면 액션 이름이 겹치는 것을 걱정하지 않아도 됩니다.
+				<img src={rredux7} alt="rredux7" className="chapter__imgs_w40" />
+			</p>
+			<h3 className="chapter__sub">17.2.1.2 액션 생성 함수 만들기</h3>
+			<p>
+				더 필요하거나 추가할 값이 없으니 그냥 위와 같이 만들어 주면 됩니다.
+				중요한 것은 export 키워드를 붙여 추후 이 함수를 다른 파일에서 불러와
+				사용할 수 있게 만들어야 합니다.
+				<img src={rredux8} alt="rredux8" className="chapter__imgs_w40" />
+			</p>
+			<h3 className="chapter__sub">17.2.1.3 초기 상태 및 리듀서 함수 만들기</h3>
+			<p>
+				이 모듈의 초기 상태에는 number 값을 설정해 주었으며, 리듀서 함수에는
+				현재 상태를 참조하여 새로운 객체를 생성해서 반환하는 코드를 작성해
+				주었습니다.
+			</p>
+			<p>
+				조금 전에 만든 액션 생성 함수는 export로 내보내 주었고, 이번에 만든
+				리듀서는 export default로 내보내 주었습니다. 두 방식의 차이점은 export는
+				여러 개를 내보낼 수 있지만 export default는 단 한 개만 내보낼 수있다는
+				것 입니다.
+				<img src={rredux9} alt="rredux9" className="chapter__imgs" />
 			</p>
 		</div>
 	);
