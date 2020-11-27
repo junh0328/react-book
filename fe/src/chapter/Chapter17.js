@@ -12,6 +12,7 @@ import rredux10 from './imgs/chapter17/rredux10.png';
 import rredux11 from './imgs/chapter17/rredux11.png';
 import rredux12 from './imgs/chapter17/rredux12.png';
 import rredux13 from './imgs/chapter17/rredux13.png';
+import rredux14 from './imgs/chapter17/rredux14.png';
 
 const Chapter17 = () => {
 	return (
@@ -38,12 +39,13 @@ const Chapter17 = () => {
 			</p>
 			<h2 className="chapter__sub">17.1 UI 준비하기</h2>
 			<p>
-				리액트 프로젝트에서 리덕스를 사용할 때 가장 많이 사용하는 패턴은
-				<b>프레젠테이셔널 컴포넌트</b>와 <b>컨테이너 컴포넌트</b>를 분리하는
-				것입니다. 여기서 프레젠테이셔널 컴포넌트란 주로 상태 관리가 이루어지지
-				않고, 그저 props를 받아 와서 화면에 UI를 보여 주기만 하는 컴포넌트를
-				말합니다. 이와 달리 컨테이너 컴포넌트는 리덕스와 연동되어 있는
-				컴포넌트로, 리덕스로부터 상태를 받아 오기도 하고 리덕스 스토어에 액션을
+				리액트 프로젝트에서 리덕스를 사용할 때 가장 많이 사용하는 패턴은 &nbsp;
+				<b>프레젠테이셔널 컴포넌트</b>와 &nbsp;<b>컨테이너 컴포넌트</b>를
+				분리하는 것입니다. 여기서 &nbsp;<b>프레젠테이셔널 컴포넌트</b>란 주로
+				상태 관리가 이루어지지 않고, 그저 props를 받아 와서 화면에 UI를 보여
+				주기만 하는 컴포넌트를 말합니다. 이와 달리 &nbsp;
+				<b>컨테이너 컴포넌트</b>는 리덕스와 연동되어 있는 컴포넌트로,
+				리덕스로부터 상태를 받아 오기도 하고 리덕스 스토어에 액션을
 				디스패치하기도 합니다.
 			</p>
 			<p>
@@ -78,11 +80,12 @@ const Chapter17 = () => {
 			</p>
 			<p>
 				<img src={rredux6} alt="rredux6" className="chapter__imgs_w40" />
-				이러한 방식을 더욱 편리하기 사용하기 위해 만든 패턴을 Ducks 패턴이라고
-				부르며, 다음과 같은 방식으로 사용됩니다. Ducks 패턴은 액션 타입, 액션
-				생성 함수, 리듀서 함수를 기능별로 파일 하나에 몰아서 다 작성하는
-				방식입니다. 리덕스 관련 코드에 대한 디렉터리 구조는 정해진 방법이 없기
-				때문에 마음대로 작성해도 되지만, 위 두가지 방법이 주로 사용됩니다.
+				이러한 방식을 더욱 편리하기 사용하기 위해 만든 패턴을 &nbsp;
+				<b>Ducks 패턴</b>이라고 부르며, 다음과 같은 방식으로 사용됩니다. &nbsp;
+				<b>Ducks 패턴</b>은 액션 타입, 액션 생성 함수, 리듀서 함수를 기능별로
+				파일 하나에 몰아서 다 작성하는 방식입니다. 리덕스 관련 코드에 대한
+				디렉터리 구조는 정해진 방법이 없기 때문에 마음대로 작성해도 되지만, 위
+				두가지 방법이 주로 사용됩니다.
 			</p>
 			<h3 className="chapter__sub">17.2.1 counter 모듈 작성하기</h3>
 			<p>
@@ -150,6 +153,27 @@ const Chapter17 = () => {
 				처리할 수 있습니다.
 				<img src={rredux13} alt="rredux13" className="chapter__imgs" />
 			</p>
+			<h2 className="chapter__sub">
+				17.3 리액트 애플리케이션에 리덕스 적용하기
+			</h2>
+			<p>
+				먼저 store를 만듭니다. 해당 스토어는 전에 combineReducers를 통해 두 개의
+				리듀서를 묶어주었던 rootReducer를 파라미터로 받아와 사용합니다. 또한
+				리액트 컴포넌트에서 스토어를 사용할 수 있도록 App 컴포넌트를
+				react-redux에서 제공하는 Provider 컴포넌트로 감싸 줍니다. 이 컴포넌트를
+				사용할 때는 store를 props로 전달해 주어야 합니다.
+				<img src={rredux14} alt="rredux14" className="chapter__imgs_w100" />
+				코드의 바뀐 부분을 비교해 보세요. 'Redux DevTools'라는 개발자 도구 또한
+				import 시켜 주었습니다. 위 도구는 크롬 확장 프로그램으로 리덕스의 과정을
+				크롬에서 지켜볼 수 있게 합니다.
+			</p>
+			<h3 className="chapter__sub">17.4 컨테이너 컴포넌트 만들기</h3>
+			<p>
+				이제는 컴포넌트에서 리덕스 스토어에 접근하여 원하는 상태를 받아 오고, 또
+				액션도 디스패치해 줄 차례입니다. 리덕스 스토어와 연동된 컴포넌트를
+				컨테이너 컴포넌트라고 부릅니다.
+			</p>
+			<h3 className="chapter__sub">17.4.1 CounterContainer 만들기</h3>
 		</div>
 	);
 };
